@@ -41,9 +41,9 @@ public class DepartmentController {
 	//page传入页码
 	private Map<String,Object> queryAllDepartment(@RequestParam(value="page",required=false)String page,HttpServletRequest request){
 		if(StringUtils.isBlank(page)){
-			page = "1";
+			page = "2";
 		}
-		Map<String,Object> map  = departmentService.queryAllDepartment();
+		Map<String,Object> map  = departmentService.queryAllDepartment(page);
 		return map;
 	}
 	

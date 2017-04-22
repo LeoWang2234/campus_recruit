@@ -5,6 +5,6 @@ import java.util.Map;
 
 public interface DepartmentService {
 
-	Map<String,Object> queryAllDepartment();
+	Map<String,Object> queryAllDepartment(String pageNumber);
 
 }

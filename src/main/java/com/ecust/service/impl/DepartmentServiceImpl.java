@@ -18,11 +18,11 @@ public class DepartmentServiceImpl implements DepartmentService {
 	@Autowired
 	private DepartmentDao departmentDao;
 
-	public Map<String, Object> queryAllDepartment() {
+	public Map<String, Object> queryAllDepartment(String pageNumber) {
 		// 分页，并判断分页参数是否存在
 		Page page = new Page();
 		if (page.getPageNo() == null || page.getPageSize() == null) {
-			page.setPageNo(1);
+			page.setPageNo(Integer.valueOf(pageNumber));
 			page.setPageSize(3);
 		}
 		PageUtils.page(page);
