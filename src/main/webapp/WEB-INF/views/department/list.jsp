@@ -5,13 +5,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <title></title>
-<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/Scripts/jquery-1.11.0.min.js"></script>
-<link type="text/css" href="${pageContext.request.contextPath}/Scripts/bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-<%--<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/Sbootstrap-pagination.min.csscripts/bootstrap-3.3.1/js/bootstrap.min.js"></script>--%>
-<link type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-pagination.min.css" rel="stylesheet" />
-<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/js/bootstrap-pagination.min.js"></script>
+
+<link type="text/css"
+	href="${pageContext.request.contextPath}/css/bootstrap-pagination.min.css"
+	rel="stylesheet" />
+<script type="text/javascript" charset="utf-8"
+	src="${pageContext.request.contextPath}/js/bootstrap-pagination.min.js"></script>
 
 <div class="row search">
 	<div class="col-md-6">
@@ -36,7 +38,7 @@
 <div>
 	<%--${map}--%>
 	<table class="table table-hover  table-bordered table-striped"
-		 style="margin-bottom: 0px;">
+		style="margin-bottom: 0px;">
 		<tr>
 			<th>序号</th>
 			<th>部门编号</th>
@@ -44,7 +46,7 @@
 			<th>操作</th>
 		</tr>
 		<table class="table table-hover  table-bordered table-striped"
-					id="depList" style="margin-bottom: 0px;">
+			id="depList" style="margin-bottom: 0px;">
 
 		</table>
 	</table>
@@ -53,52 +55,71 @@
 
 
 <script type="text/javascript">
+	$(function() {
+		var demo1 = BootstrapPagination(
+				$("#demo1"),
+				{
+					//记录总数。
+					total : 100,
+					//当前页索引编号。从其开始（从0开始）的整数。
+					pageIndex : 2,
+					pageChanged : function queryAllDepartment(pageIndex,
+							pageSize) {
+						$
+								.ajax({
+									url : "/department/queryAllDepartment?page="
+											+ pageIndex,
+									type : "GET",
+									dataType : "json",
+									async : true,
+									success : function(data) {
+										$('#depList').html("");
+										$
+												.each(
+														data,
+														function(i, item) {
+															$
+																	.each(
+																			item,
+																			function(
+																					j,
+																					val) {
+																				$(
+																						'#depList')
+																						.append(
+																								"<tr>"
+																										+ "<td>"
+																										+ j
+																										+ "</td>"
+																										+ "<td>"
+																										+ val.depId
+																										+ "</td>"
+																										+ "<td>"
+																										+ val.depName
+																										+ "</td>"
+																										+ "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"
+																										+ "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>");
+																			});
+														});
+									},
+									error : function() {
+										alert("error");
+									}
+								});
 
-    $(function () {
-        var demo1 = BootstrapPagination($("#demo1"), {
-            //记录总数。
-            total:100,
-            //当前页索引编号。从其开始（从0开始）的整数。
-            pageIndex: 2,
-            pageChanged: function queryAllDepartment(pageIndex, pageSize) {
-                $.ajax({
-                    url: "/department/queryAllDepartment?page="+pageIndex,
-                    type: "GET",
-                    dataType: "json",
-                    async: true,
-                    success: function(data) {
-                        $('#depList').html("");
-                        $.each(data, function(i, item){
-                            $.each(item, function(j, val){
-                                $('#depList').append(
-                                    "<tr>"+
-                                    "<td>"+j+"</td>"+
-                                    "<td>"+val.depId+"</td>"+
-                                    "<td>"+val.depName+"</td>"+
-                                    "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"+
-                                    "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>"
-                                );
-                            });
-                        });
-                    },
-                    error: function() {
-                        alert("error");
-                    }
-                });
-
-            },
-        });
-    });
+					},
+				});
+	});
 </script>
 
 
 <body>
-<form class="form-inline">
-	<%--<h1>Demo1：最简短代码示例</h1>--%>
-	<nav>
-		<ul id="demo1" class="pagination">
-		</ul>
-	</nav>
-</form>
+	<form class="form-inline">
+		<%--<h1>Demo1：最简短代码示例</h1>--%>
+		<nav>
+			<ul id="demo1" class="pagination">
+			</ul>
+		</nav>
+	</form>
 </body>
 </html>

@@ -27,8 +27,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 		}
 		PageUtils.page(page);
 		List<Map<String, Object>> map = departmentDao.queryAllDepartment();
-		Map<String,Object> result = new HashMap<String,Object>(); 
-		result.put("data", map);
+		Map<String,Object> result = PageUtils.proccess(map);
 		return result;
 	}
 }
