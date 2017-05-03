@@ -108,7 +108,4 @@ width:992px;
 </body>
    
 </html>
-<script type="text/javascript">
 
-
-</script>

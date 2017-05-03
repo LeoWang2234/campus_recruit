@@ -30,8 +30,8 @@ public class DepartmentController {
 	private DepartmentService departmentService;
 	
 	//切换到list.jsp
-	@RequestMapping(value="/pageDepartment",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	private String pageDepartment(HttpServletRequest request){
+	@RequestMapping(value="/pageDepartment",method = RequestMethod.GET)
+	public String pageDepartment(HttpServletRequest request){
 	
 		return "department/list";
 	}
@@ -39,7 +39,7 @@ public class DepartmentController {
 	@ResponseBody
 	@RequestMapping(value="/queryAllDepartment",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	//page传入页码
-	private Map<String,Object> queryAllDepartment(@RequestParam(value="page",required=false)String page,HttpServletRequest request){
+	public Map<String,Object> queryAllDepartment(@RequestParam(value="page",required=false)String page){
 		if(StringUtils.isBlank(page)){
 			page = "2";
 		}

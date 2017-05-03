@@ -36,79 +36,64 @@
 	</div>
 </div>
 <div>
-	<%--${map}--%>
+
 	<table class="table table-hover  table-bordered table-striped"
-		style="margin-bottom: 0px;">
+		style="margin-bottom: 0px;" id="depList">
 		<tr>
 			<th>序号</th>
 			<th>部门编号</th>
 			<th>部门名称</th>
 			<th>操作</th>
 		</tr>
-		<table class="table table-hover  table-bordered table-striped"
-			id="depList" style="margin-bottom: 0px;">
-
-		</table>
 	</table>
 </div>
 
 
 
 <script type="text/javascript">
+
+
 	$(function() {
 		var demo1 = BootstrapPagination(
-				$("#demo1"),
-				{
-					//记录总数。
-					total : 100,
-					//当前页索引编号。从其开始（从0开始）的整数。
-					pageIndex : 2,
-					pageChanged : function queryAllDepartment(pageIndex,
-							pageSize) {
-						$
-								.ajax({
-									url : "/department/queryAllDepartment?page="
-											+ pageIndex,
-									type : "GET",
-									dataType : "json",
-									async : true,
-									success : function(data) {
-										$('#depList').html("");
-										$
-												.each(
-														data,
-														function(i, item) {
-															$
-																	.each(
-																			item,
-																			function(
-																					j,
-																					val) {
-																				$(
-																						'#depList')
-																						.append(
-																								"<tr>"
-																										+ "<td>"
-																										+ j
-																										+ "</td>"
-																										+ "<td>"
-																										+ val.depId
-																										+ "</td>"
-																										+ "<td>"
-																										+ val.depName
-																										+ "</td>"
-																										+ "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"
-																										+ "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>");
-																			});
-														});
-									},
-									error : function() {
-										alert("error");
-									}
+			$("#demo1"),
+			{
+				//记录总数。
+				total : 100,
+				//当前页索引编号。从其开始（从0开始）的整数。
+				pageIndex : 2,
+				pageChanged : function queryAllDepartment(pageIndex,
+						pageSize) {
+					$.ajax({
+						url : "${pageContext.request.contextPath}/department/queryAllDepartment?page="+ pageIndex,
+						type : "GET",
+						dataType : "json",
+						async : true,
+						success : function(data) {
+							$('#depList').html("");
+								$.each(data,function(i, item) {
+									$.each(item,function(j,val) {
+										$('#depList').append(
+											"<tr>"
+											+ "<td>"
+											+ j
+											+ "</td>"
+											+ "<td>"
+											+ val.depId
+											+ "</td>"
+											+ "<td>"
+											+ val.depName
+											+ "</td>"
+											+ "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"
+											+ "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>");
+									});
 								});
-
-					},
-				});
+							},
+						error : function() {
+							alert("error");
+						}
+					});
+				},
+		});
 	});
 </script>
 

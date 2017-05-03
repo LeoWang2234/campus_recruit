@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.EquipmentDao">
+	<select id="queryAllEquipment" resultType="java.util.Map">
+		SELECT
+			e.equipmentId,
+			e.no,
+			e.state,
+			e.name,
+			e.produceName
+		FROM 
+			equ_equipment e
+			<if test="name != null and name != ''">
+				WHERE e.name like CONCAT('%',#{name},'%')
+			</if>
+		ORDER BY e.name	
+		
+	</select>
+	<select id="queryEquipmentById" resultType="java.util.Map">
+		SELECT
+			e.no,
+			e.name,
+			e.produceName
+		FROM
+			equ_equipment e
+		WHERE
+			e.equipmentId = #{equipmentId}
+	</select>
+	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
+		UPDATE
+			equ_equipment
+		SET
+			no = #{no},
+			name = #{name},
+			produceName = #{produceName}
+		WHERE
+			equipmentId = #{equipmentId}
+	</update>
+	<insert id="createEquipment">
+		INSERT INTO equ_equipment(
+			no,
+			name,
+			produceName,
+			state
+		)VALUES(
+			#{no},
+			#{name},
+			#{produceName},
+			0
+		)
+	</insert>
+	<delete id="deleteEquipment">
+		DELETE FROM
+			equ_equipment
+		WHERE
+			equipmentId = #{equipmentId}
+	
+	</delete>
+	
+</mapper>
