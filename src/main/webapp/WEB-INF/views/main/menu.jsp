@@ -1,10 +1,10 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!-- data-spy="affix" -->
 <ul id="main-nav" class="nav nav-tabs nav-stacked ">
-	<li class="active" style="margin: 0"><a href="#"> <i
+	<li class="active" style="margin: 0" id="home"><a > <i
 			class="glyphicon glyphicon-th-large"></i> 首页
 	</a></li>
-	<li style="margin: 0" id="bbb"><a href="#systemSetting"
+	<li style="margin: 0" id="equipmentMenu"><a href="#systemSetting"
 		class="nav-header collapsed" data-toggle="collapse"> <i
 			class="glyphicon glyphicon-cog"></i> 设备管理 <span
 			class="pull-right glyphicon glyphicon-chevron-down"></span>
@@ -26,65 +26,31 @@
 			class="glyphicon glyphicon-globe"></i> 配件 <span
 			class="label label-warning pull-right">5</span>
 	</a></li>
-	<li style="margin: 0" id="aaa"><a href="javascript:queryAllDepartment()">
+	<li style="margin: 0" id="departmentMenu"><a >
 			<i class="glyphicon glyphicon-calendar"></i> 部门管理
 	</a></li>
-	<li style="margin: 0"><a href="#account"
+	<li style="margin: 0" id="userMenu"><a href="#account"
 		class="nav-header collapsed" data-toggle="collapse"> <i
 			class="glyphicon glyphicon-cog"></i> 用户管理 <span
 			class="pull-right glyphicon glyphicon-chevron-down"></span>
 	</a>
 		<ul id="account" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
-			<li><a href="#"><i class="glyphicon glyphicon-user"></i>账户管理</a></li>
-			<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>角色管理</a></li>
+			<li><a href="javascript:pageUser()"><i class="glyphicon glyphicon-user"></i>账户管理</a></li>
+			<li><a href="javascript:pageRole()"><i class="glyphicon glyphicon-th-list"></i>角色管理</a></li>
 		</ul></li>
 </ul>
 <script type="text/javascript">
 	//查询所有部门
-	function queryAllDepartment() {
-		/*  $(this).parent().addClass('active').siblings().removeClass('active'); */
-		$("#aaa").addClass("active").siblings().removeClass('active');
+	 $('#departmentMenu').click(function(event) {
+		 $(this).addClass("active").siblings().removeClass("active");
 		pageDepartment();
-		$
-				.ajax({
-					url : "${pageContext.request.contextPath}/department/queryAllDepartment",
-					type : "GET",
-					dataType : "json",
-					async : true,
-					success : function(data) {
-						$
-								.each(
-										data,
-										function(i, item) {
-											$
-													.each(
-															item,
-															function(j, val) {
-																$('#depList')
-																		.append(
-																				"<tr>"
-																						+ "<td>"
-																						+ j
-																						+ "</td>"
-																						+ "<td>"
-																						+ val.depId
-																						+ "</td>"
-																						+ "<td>"
-																						+ val.depName
-																						+ "</td>"
-																						+ "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"
-																						+ "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>");
-															});
-										});
-					},
-					error : function() {
-						alert("error");
-					}
-				});
-
-	}
-
+	});
+	
+	//点击设备管理
+	 $('#equipmentMenu').click(function(event) {
+		 $(this).addClass("active").siblings().removeClass("active");
+	 });
 	//切换到department/list.jsp
 	function pageDepartment() {
 		$
@@ -93,9 +59,9 @@
 					type : "GET",
 					dataType : "html",
 					async : false,
-					success : function(jsonhtml) {
+					success : function(data) {
 						$('#main').empty();
-						$('#main').html(jsonhtml);
+						$('#main').html(data);
 					},
 					error : function() {
 						alert("error");
@@ -113,13 +79,69 @@
 			dataType : "html",
 			//true有时会得不到数据
 			async : false,
-			success : function(jsonhtml) {
+			success : function(data) {
 				$('#main').empty();
-				$('#main').html(jsonhtml);
+				$('#main').html(data);
 			},
 			error : function() {
 				alert("error");
 			}
+		});
+	}
+	
+	//点击首页
+	$("#home").click(function(event){
+		$(this).addClass("active").siblings().removeClass("active");
+		$.ajax(
+			{
+				url: "${pageContext.request.contextPath}/user/home",
+				type: "GET",
+				datatype: "html",
+				success : function(data){
+					$("#main").empty();
+					$("#main").html(data);
+				},
+				error: function(){
+					alert("errer");
+				}
+		});
+	});
+	
+	//点击联系人
+	$("#userMenu").click(function(event){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	//切换到user/list.jsp
+	function pageUser(){
+		$.ajax(
+			{
+				url: "${pageContext.request.contextPath}/user/pageUser",
+				type: "GET",
+				datatype: "html",
+				success : function(data){
+					$("#main").empty();
+					$("#main").html(data);
+				},
+				error: function(){
+					alert("errer");
+				}
+		});
+	}
+	
+	//切换到user/roleList.jsp
+	function pageRole(){
+		$.ajax(
+			{
+				url: "${pageContext.request.contextPath}/user/pageRole",
+				type: "GET",
+				datatype: "html",
+				success : function(data){
+					$("#main").empty();
+					$("#main").html(data);
+				},
+				error: function(){
+					alert("errer");
+				}
 		});
 	}
 </script>

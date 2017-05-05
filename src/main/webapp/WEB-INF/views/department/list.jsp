@@ -9,102 +9,159 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <title></title>
 
-<link type="text/css"
-	href="${pageContext.request.contextPath}/css/bootstrap-pagination.min.css"
-	rel="stylesheet" />
-<script type="text/javascript" charset="utf-8"
-	src="${pageContext.request.contextPath}/js/bootstrap-pagination.min.js"></script>
-
 <div class="row search">
-	<div class="col-md-6">
-		<form
-			action="${pageContext.request.contextPath}/views/department/list"
-			method="post">
-			<div class="input-group" style="width: 300px">
-				<input type="text" class="form-control" name="deptName"
-					placeholder="请输入要查询的部门..."> <span class="input-group-btn">
-					<button class="btn btn-default" type="submit">
-						<span class="glyphicon glyphicon-search"></span>&nbsp;查询
-					</button>
-				</span>
-			</div>
-		</form>
-	</div>
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary" style="float: right;"
-			onclick="javascript:window.location.href='${pageContext.request.contextPath}/department/preSave.do'">添加</button>
-	</div>
+	<button type="button" class="btn btn-primary" style="float: right;"
+			data-toggle="modal" data-target="#createDepartment">添加</button>
 </div>
-<div>
-
-	<table class="table table-hover  table-bordered table-striped"
-		style="margin-bottom: 0px;" id="depList">
-		<tr>
-			<th>序号</th>
-			<th>部门编号</th>
-			<th>部门名称</th>
-			<th>操作</th>
-		</tr>
+<div >
+	<table class="table table-hover  table-bordered table-striped">
+		<thead>
+			<th class="col-md-1">序号</th>
+			<th class="col-md-3">部门名称</th>
+			<th class="col-md-3">创建人</th>
+			<th class="col-md-3">创建时间</th>
+			<th class="col-md-2">操作</th>
+		</thead>
+		<tbody id="depList"></tbody>
 	</table>
 </div>
-
+<!-- 添加模态框 -->
+<form method="post" class="form-horizontal" action="" role="form"
+	id="createForm" style="margin: 20px;">
+	<div class="modal fade" id="createDepartment" tabindex="-1"
+		role="dialog" aria-labelledby="createModalLabel" aria-hidden="true"
+		data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="crdateModalLabel">添加部门</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="depName" class="col-md-4 control-label">部门名称</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="depName" 
+								placeholder="请输入部门名称">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="text-align:center">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消
+					</button>
+					<button type="submit" class="btn btn-primary">添加</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
 
 
 <script type="text/javascript">
 
 
 	$(function() {
-		var demo1 = BootstrapPagination(
-			$("#demo1"),
-			{
-				//记录总数。
-				total : 100,
-				//当前页索引编号。从其开始（从0开始）的整数。
-				pageIndex : 2,
-				pageChanged : function queryAllDepartment(pageIndex,
-						pageSize) {
-					$.ajax({
-						url : "${pageContext.request.contextPath}/department/queryAllDepartment?page="+ pageIndex,
-						type : "GET",
-						dataType : "json",
-						async : true,
-						success : function(data) {
-							$('#depList').html("");
-								$.each(data,function(i, item) {
-									$.each(item,function(j,val) {
-										$('#depList').append(
-											"<tr>"
-											+ "<td>"
-											+ j
-											+ "</td>"
-											+ "<td>"
-											+ val.depId
-											+ "</td>"
-											+ "<td>"
-											+ val.depName
-											+ "</td>"
-											+ "<td><button type='button' class='btn btn-info btn-xs' onclick=''>修改</button>"
-											+ "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick=''>删除</button></td>");
-									});
-								});
-							},
-						error : function() {
-							alert("error");
-						}
+		queryAllDepartment();
+	});
+	
+	//查询所有部门
+	function queryAllDepartment(){
+		$.ajax({
+			url : "${pageContext.request.contextPath}/department/queryAllDepartment",
+			type : "GET",
+			dataType : "json",
+			success : function(data) {
+				$('#depList').empty();
+					$.each(data.data,function(i, val) {
+						$('#depList').append(
+							"<tr>"
+							+ "<td>"
+							+ (i+1)
+							+ "</td>"
+							+ "<td>"
+							+ val.depName
+							+ "</td>"
+							+ "<td>"
+							+ val.createName
+							+ "</td>"
+							+ "<td>"
+							+ val.createTime
+							+ "</td>"
+							+ "<td>&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteDepartment("+val.depId+")'>删除</button></td>");
 					});
 				},
+			error : function() {
+				alert("error");
+			}
 		});
-	});
+	}
+	
+	//添加部门
+	$("#createForm")
+			.submit(
+					function(e) {
+						var depName = $.trim($("#depName").val());
+						if (!depName) {
+							alert("部门不能为空！");
+							return false;
+						}
+						$
+								.ajax({
+									url : "${pageContext.request.contextPath}/department/createDepartment",
+									type : "post",
+									contentType : "application/json",
+									data : JSON.stringify({
+										depName : depName,
+										createId : ${currentUser.id}
+									}),
+									success : function(data) {
+										if (data == true) {
+											$("#createDepartment").modal('hide');
+											queryAllDepartment();
+											alert("添加成功!");
+										} else {
+											alert("添加失败！");
+										}
+
+									},
+									error : function() {
+										alert("添加出错!");
+									}
+
+								});
+						e.preventDefault();
+				});
+	
+	//删除部门
+	function deleteDepartment(depId) {
+		if (!depId) {
+			alert("登录失效，请重新登录！");
+			return false;
+		}
+		var result = confirm("确定删除当前角色？");
+		if (result) {
+
+		} else {
+			return false;
+		}
+		$
+				.ajax({
+					url : "${pageContext.request.contextPath}/department/deleteDepartment/"
+							+ depId,
+					type : "get",
+					success : function(data) {
+						if (data == true) {
+							alert("删除成功！");
+							queryAllDepartment();
+						} else {
+							alert("删除失败！");
+						}
+					},
+					error : function() {
+						alert("删除错误");
+					},
+				});
+	}
 </script>
-
-
-<body>
-	<form class="form-inline">
-		<%--<h1>Demo1：最简短代码示例</h1>--%>
-		<nav>
-			<ul id="demo1" class="pagination">
-			</ul>
-		</nav>
-	</form>
-</body>
 </html>

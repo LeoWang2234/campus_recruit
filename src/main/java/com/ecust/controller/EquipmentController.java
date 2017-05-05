@@ -71,7 +71,7 @@ public class EquipmentController {
 	//删除设备
 	@ResponseBody
 	@RequestMapping(value="/deleteEquipment/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean createEquipment(@PathVariable("equipmentId") String equipmentId){
+	public boolean deleteEquipment(@PathVariable("equipmentId") String equipmentId){
 		Boolean bool = equipmentService.deleteEquipment(equipmentId);
 		return bool;
 	}

@@ -27,7 +27,9 @@
 			</div>
 		</form>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-2 alert alert-success alert-dismissable text-center" id="total"
+	style="margin-bottom:10px;"></div>
+	<div class="col-md-4">
 		<button type="button" class="btn btn-primary" style="float: right;"
 			data-toggle="modal" data-target="#createEquipment">添加</button>
 	</div>
@@ -37,22 +39,21 @@
 		style="margin-bottom: 0px;">
 		<thead>
 			<tr>
-				<th>序号</th>
-				<th>设备名称</th>
-				<th>工序</th>
-				<th>设备编号</th>
-				<th>操作</th>
+				<th class="col-md-2">序号</th>
+				<th class="col-md-3">设备名称</th>
+				<th class="col-md-2">工序</th>
+				<th class="col-md-3">设备编号</th>
+				<th class="col-md-2">操作</th>
 			</tr>
 		</thead>
 		<tbody id="equList"></tbody>
-	</table>
+	</table>	
 </div>
 <div id="pagination">
 	<center>
 		<ul class="pagination"></ul>
 	</center>
-	<input type="text" class="form-control" id="total"></input> <input
-		type="text" id="currentPage" style="display:none" value="1"></input>
+	<input type="text" id="currentPage" style="display:none" value="1"></input> 
 </div>
 
 <!-- 更新模态框 -->
@@ -182,7 +183,7 @@
 							alert("删除成功！");
 							pagehtml($("#currentPage").val());
 						} else {
-							alert("删除失败！")
+							alert("删除失败！");
 						}
 					},
 					error : function() {
@@ -309,15 +310,15 @@
 						name : $.trim($("#queryName").val())
 					}),
 					success : function(data) {
-						$("#total").val(data.page.totalElements)
+						$("#total").html("当前共有"+data.page.totalElements+"件设备");
 						var options = {
 							alignment : "center",//居中显示
 							currentPage : data.page.pageNo,//当前页数
-							totalPages : data.page.totalPages,//总页数 注意不是总条数
+							totalPages : data.page.totalPages,//总页数 
 							bootstrapMajorVersion : 3,
 							onPageClicked : function(event, originalEvent,
 									type, page) {
-								$("#currentPage").val(page)
+								$("#currentPage").val(page);
 								pagehtml(page);
 							}
 						};

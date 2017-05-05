@@ -23,11 +23,14 @@ public class EquipmentServiceImpl implements EquipmentService {
 		if (page.getPageNo() == null && page.getPageSize() == null) {
 			page.setPageNo(pageNumber);
 			page.setPageSize(pageSize);
+		}else{
+			page.setPageNo(1);
+			page.setPageSize(10);
 		}
 		PageUtils.page(page);
 		List<Map<String, Object>> map = equipmentDao.queryAllEquipment(name);
 		Map<String,Object> result = PageUtils.proccess(map);
-		return result;
+		return result;	
 		
 	}
 

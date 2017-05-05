@@ -79,7 +79,7 @@ html,body {
 }
 
 #main {
-	padding-top: 20px;
+	padding-top: 10px;
 	/* background-color: #cfeace; */
 	height: 100%;
 	overflow-y: auto;
@@ -105,7 +105,7 @@ html,body {
 				<jsp:include page="main/menu.jsp"></jsp:include>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10" id="main">
-				<jsp:include page="main/default.jsp"></jsp:include>
+				<jsp:include page="main/home.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>

@@ -8,7 +8,14 @@ public class Department implements Serializable {
 	private String depName;
 	private String remark;
 	private int parent;
-	public int getDepId() {
+	private int createId;
+	public int getCreateId() {
+		return createId;
+	}
+	public void setCreateId(int createId) {
+		this.createId = createId;
+	}
+	private int getDepId() {
 		return depId;
 	}
 	public void setDepId(int depId) {
