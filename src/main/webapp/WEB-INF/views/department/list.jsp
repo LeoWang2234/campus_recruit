@@ -11,7 +11,7 @@
 
 <div class="row search">
 	<button type="button" class="btn btn-primary" style="float: right;"
-			data-toggle="modal" data-target="#createDepartment">添加</button>
+			data-toggle="modal" data-target="#createDepartment" >添加</button>
 </div>
 <div >
 	<table class="table table-hover  table-bordered table-striped">
@@ -163,5 +163,7 @@
 					},
 				});
 	}
+	
+	
 </script>
 </html>

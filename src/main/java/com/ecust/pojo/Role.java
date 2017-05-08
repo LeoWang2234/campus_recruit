@@ -1,10 +1,12 @@
 package com.ecust.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Role {
+public class Role implements Serializable{
 	private Integer id;
 	private String roleName;
+	//创建人ID
 	private Integer createId;
 	private Date createTime;
 	private String reamrk;

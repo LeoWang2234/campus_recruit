@@ -13,7 +13,15 @@ public class Equipment implements Serializable{
 	//设备状态：0正常1待维修2正在维修
 	private Integer state;
 	//备注
-		private String remark;
+	private String remark;
+	//设备类型
+	private Integer typeId;
+	public Integer getTypeId() {
+		return typeId;
+	}
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
+	}
 	public String getRemark() {
 		return remark;
 	}

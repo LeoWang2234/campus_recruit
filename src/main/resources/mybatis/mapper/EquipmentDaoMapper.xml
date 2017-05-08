@@ -5,17 +5,21 @@
 <mapper namespace="com.ecust.dao.EquipmentDao">
 	<select id="queryAllEquipment" resultType="java.util.Map">
 		SELECT
-			e.equipmentId,
-			e.no,
-			e.state,
-			e.name,
-			e.produceName
+			ee.equipmentId,
+			ee.no,
+			ee.state,
+			ee.name,
+			ee.produceName,
+			et.typeName,
+			ee.repairId
 		FROM 
-			equ_equipment e
-			<if test="name != null and name != ''">
-				WHERE e.name like CONCAT('%',#{name},'%')
+			equ_equipment ee
+			
+		LEFT JOIN equ_type et ON ee.typeId = et.typeId
+		<if test="name != null and name != ''">
+				WHERE ee.name like CONCAT('%',#{name},'%')
 			</if>
-		ORDER BY e.name	
+		ORDER BY ee.name	
 		
 	</select>
 	<select id="queryEquipmentById" resultType="java.util.Map">
@@ -34,7 +38,8 @@
 		SET
 			no = #{no},
 			name = #{name},
-			produceName = #{produceName}
+			produceName = #{produceName},
+			typeId = #{typeId}
 		WHERE
 			equipmentId = #{equipmentId}
 	</update>
@@ -43,12 +48,14 @@
 			no,
 			name,
 			produceName,
-			state
+			state,
+			typeId
 		)VALUES(
 			#{no},
 			#{name},
 			#{produceName},
-			0
+			0,
+			#{typeId}
 		)
 	</insert>
 	<delete id="deleteEquipment">
@@ -58,5 +65,30 @@
 			equipmentId = #{equipmentId}
 	
 	</delete>
-	
+	<select id="queryAllType" resultType="java.util.Map">
+		SELECT et.*,eu.trueName AS createName 
+		FROM 
+			equ_type et,equ_user eu
+		WHERE
+			et.createId = eu.id
+		ORDER BY et.typeId ASC
+	</select>
+	<insert id="createType">
+		INSERT INTO equ_type(
+			typeName,
+			createId,
+			createTime
+			)
+		VALUES(
+			#{typeName},
+			#{createId},
+			NOW()
+		)
+	</insert>
+	<delete id="deleteType">
+		DELETE FROM
+			equ_type
+		WHERE
+			typeId = #{typeId}
+	</delete>
 </mapper>

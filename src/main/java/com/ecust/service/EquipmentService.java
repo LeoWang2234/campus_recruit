@@ -18,4 +18,10 @@ public interface EquipmentService {
 
 	Boolean deleteEquipment(String equipmentId);
 
+	Map<String, Object> queryAllType();
+
+	boolean createType(String createId, String typeName);
+
+	Boolean deleteType(String typeId);
+
 }

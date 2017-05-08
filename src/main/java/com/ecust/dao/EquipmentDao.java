@@ -19,4 +19,10 @@ public interface EquipmentDao {
 
 	void deleteEquipment(@Param("equipmentId") String equipmentId);
 
+	List<Map<String, Object>> queryAllType();
+
+	void createType(@Param("createId")String createId, @Param("typeName")String typeName);
+
+	void deleteType(@Param("typeId")String typeId);
+
 }

@@ -11,21 +11,32 @@
 	</a>
 		<ul id="systemSetting" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
-			<li ><a href="javascript:pageEquipment()"><i
-					class="glyphicon glyphicon-user"></i>所有设备</a></li>
-			<li><a href="#"><i class="glyphicon glyphicon-user"></i>按部门</a></li>
-			<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>按使用状态</a></li>
+			<li><a href="javascript:pageStateChart()"><i class="glyphicon glyphicon-user"></i>使用状态</a></li>
+			<li ><a href="javascript:pageEquipment()"><i class="glyphicon glyphicon-user"></i>所有设备</a></li>
+			<li><a href="javascript:pageType()"><i class="glyphicon glyphicon-th-list"></i>设备类型</a></li>
+			<!-- 
 			<li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>按设备类型</a></li>
 			<li><a href="#"><i class="glyphicon glyphicon-edit"></i>按设备标识</a></li>
-			<li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>安检验情况</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>安检验情况</a></li> -->
 		</ul></li>
-	<li style="margin: 0"><a href="#"> <i
-			class="glyphicon glyphicon-credit-card"></i> 设备维护
-	</a></li>
-	<li style="margin: 0"><a href="#"> <i
+<!-- 	<li style="margin: 0" id="repairMenu"><a href="javascript:pageRepair()"> <i
+			class="glyphicon glyphicon-credit-card"></i> 设备维修
+	</a></li> -->
+	<li style="margin: 0" id="repairMenu"><a href="#repair"
+		class="nav-header collapsed" data-toggle="collapse"> <i
+			class="glyphicon glyphicon-cog"></i> 设备维护 <span
+			class="pull-right glyphicon glyphicon-chevron-down"></span>
+	</a>
+		<ul id="repair" class="nav nav-list collapse secondmenu"
+			style="height: 0px;">
+			<li><a href="javascript:pageRepair()"><i class="glyphicon glyphicon-user"></i>设备维修 </a></li>
+			<li><a href="javascript:pageRepairHistory()"><i class="glyphicon glyphicon-th-list"></i>维护历史</a></li>
+			<li><a href="javascript:pageRepairChart()"><i class="glyphicon glyphicon-globe"></i>维护统计</a></li>
+		</ul></li>
+	<!-- <li style="margin: 0"><a href="#"> <i
 			class="glyphicon glyphicon-globe"></i> 配件 <span
 			class="label label-warning pull-right">5</span>
-	</a></li>
+	</a></li> -->
 	<li style="margin: 0" id="departmentMenu"><a >
 			<i class="glyphicon glyphicon-calendar"></i> 部门管理
 	</a></li>
@@ -41,6 +52,31 @@
 		</ul></li>
 </ul>
 <script type="text/javascript">
+
+	//用户权限管理
+	$(function(){
+		var roleName = "${currentUser.roleName}";
+		//管理员，最高权限
+		if(roleName == "管理员"){
+		}
+		//维修人员，只能查看设备维修
+		else if(roleName == "维修者"){
+			$("#equipmentMenu").hide();
+			$("#departmentMenu").hide();
+			$("#userMenu").hide();
+		}
+		//用户只能查看设备管理和设备维修
+		else if(roleName == "用户"){
+			$("#departmentMenu").hide();
+			$("#userMenu").hide();
+		}
+		//其他人权限，暂定
+		else{
+			$("#departmentMenu").hide();
+			$("#userMenu").hide();
+		}
+	});
+	
 	//查询所有部门
 	 $('#departmentMenu').click(function(event) {
 		 $(this).addClass("active").siblings().removeClass("active");
@@ -144,4 +180,94 @@
 				}
 		});
 	}
+	
+	//点击设备维修
+	$("#repairMenu").click(function(event){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	//切换到repair/list.jsp
+	function pageRepair(){
+		$.ajax(
+			{
+				url: "${pageContext.request.contextPath}/repair/pageRepair",
+				type: "GET",
+				datatype: "html",
+				success : function(data){
+					$("#main").empty();
+					$("#main").html(data);
+				},
+				error: function(){
+					alert("errer");
+				}
+		});
+	}
+	
+	//点击维修历史
+	function pageRepairHistory(){
+		$.ajax(
+				{
+					url: "${pageContext.request.contextPath}/repair/pageRepairHistory",
+					type: "GET",
+					datatype: "html",
+					success : function(data){
+						$("#main").empty();
+						$("#main").html(data);
+					},
+					error: function(){
+						alert("errer");
+					}
+			});
+	}
+	
+	//切换到equipment/type.jsp
+	function pageType(){
+		$.ajax(
+			{
+				url: "${pageContext.request.contextPath}/equipment/pageType",
+				type: "GET",
+				datatype: "html",
+				success : function(data){
+					$("#main").empty();
+					$("#main").html(data);
+				},
+				error: function(){
+					alert("errer");
+				}
+		});
+	}
+	
+	//切换到equipment/stateChart.jsp
+	function pageStateChart(){
+		$.ajax(
+				{
+					url: "${pageContext.request.contextPath}/equipment/pageStateChart",
+					type: "GET",
+					datatype: "html",
+					success : function(data){
+						$("#main").empty();
+						$("#main").html(data);
+					},
+					error: function(){
+						alert("errer");
+					}
+			});
+	}
+	
+	//切换到repair/repairChart.jsp
+	function pageRepairChart(){
+		$.ajax(
+				{
+					url: "${pageContext.request.contextPath}/repair/pageRepairChart",
+					type: "GET",
+					datatype: "html",
+					success : function(data){
+						$("#main").empty();
+						$("#main").html(data);
+					},
+					error: function(){
+						alert("errer");
+					}
+			});
+	}
+	
 </script>

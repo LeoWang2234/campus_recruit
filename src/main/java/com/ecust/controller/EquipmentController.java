@@ -4,7 +4,6 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -39,7 +38,6 @@ public class EquipmentController {
 		int pageSize = Integer.parseInt(param.get("pageSize"));
 		String name = param.get("name");
 		int pageNo = Integer.parseInt(param.get("pageNo"));
-		System.out.println(pageSize+" "+name);
 		Map<String,Object> map  = equipmentService.queryAllEquipment(pageNo,pageSize,name);
 		return map;
 	}
@@ -76,4 +74,42 @@ public class EquipmentController {
 		return bool;
 	}
 	
+	//切换到type.jsp
+	@RequestMapping(value="/pageType",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public String pageType(HttpServletRequest request){
+	
+		return "equipment/type";
+	}
+	
+	//查询所有角色
+	@ResponseBody
+	@RequestMapping(value="/queryAllType",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public Map<String,Object> queryAllType(){
+		Map<String,Object> map  = equipmentService.queryAllType();
+		return map;
+	}
+	
+	//添加设备类型
+	@ResponseBody
+	@RequestMapping(value="/createType",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean createType(@RequestBody Map<String,String> param){
+		String createId = param.get("createId");
+		String TypeName = param.get("typeName");
+		boolean bool = equipmentService.createType(createId,TypeName);
+		return bool;
+	}
+	
+	//删除设备设备类型
+	@ResponseBody
+	@RequestMapping(value="/deleteType/{typeId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean deleteType(@PathVariable("typeId") String typeId){
+		Boolean bool = equipmentService.deleteType(typeId);
+		return bool;
+	}
+	
+	//查询设备状态图
+	@RequestMapping(value="/pageStateChart",method = RequestMethod.GET)
+	public String pageStateChart(){
+		return "equipment/stateChart";
+	}
 }

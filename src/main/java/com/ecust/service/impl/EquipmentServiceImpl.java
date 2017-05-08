@@ -1,5 +1,8 @@
 package com.ecust.service.impl;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -57,6 +60,34 @@ public class EquipmentServiceImpl implements EquipmentService {
 	@Override
 	public Boolean deleteEquipment(String equipmentId) {
 		equipmentDao.deleteEquipment(equipmentId);
+		return true;
+	}
+
+	@Override
+	public Map<String, Object> queryAllType() {
+		List<Map<String, Object>> map = equipmentDao.queryAllType();
+		//日期格式转换
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		for(int i = 0;i<map.size();i++){
+			Timestamp ctreatTime = (Timestamp) map.get(i).get("createTime");
+			String str = df.format(ctreatTime);
+			map.get(i).put("createTime", str);
+		}
+		Map<String, Object> result = new HashMap<String, Object>();
+		result.put("data", map);
+		return result;
+	}
+
+	@Override
+	public boolean createType(String createId, String typeName) {
+		
+		equipmentDao.createType(createId,typeName);
+		return true;
+	}
+
+	@Override
+	public Boolean deleteType(String typeId) {
+		equipmentDao.deleteType(typeId);
 		return true;
 	}
 

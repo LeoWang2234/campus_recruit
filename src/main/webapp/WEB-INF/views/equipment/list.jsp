@@ -31,7 +31,7 @@
 	style="margin-bottom:10px;"></div>
 	<div class="col-md-4">
 		<button type="button" class="btn btn-primary" style="float: right;"
-			data-toggle="modal" data-target="#createEquipment">添加</button>
+			data-toggle="modal" data-target="#createEquipment" onclick="addType('#crTypeId')">添加</button>
 	</div>
 </div>
 <div>
@@ -39,10 +39,11 @@
 		style="margin-bottom: 0px;">
 		<thead>
 			<tr>
-				<th class="col-md-2">序号</th>
-				<th class="col-md-3">设备名称</th>
+				<th class="col-md-1">序号</th>
+				<th class="col-md-2">设备名称</th>
 				<th class="col-md-2">工序</th>
-				<th class="col-md-3">设备编号</th>
+				<th class="col-md-2">设备编号</th>
+				<th class="col-md-3">设备类型</th>
 				<th class="col-md-2">操作</th>
 			</tr>
 		</thead>
@@ -50,12 +51,18 @@
 	</table>	
 </div>
 <div id="pagination">
-	<center>
+	<div class="col-md-5 col-md-offset-3">
 		<ul class="pagination"></ul>
-	</center>
-	<input type="text" id="currentPage" style="display:none" value="1"></input> 
+	</div>
+	<div class="btn-group col-md-3" style="margin-top:20px">
+		<button type="button" class="btn btn-default" value="10" onclick="changePageSize(this)">10</button>
+		<button type="button" class="btn btn-default" value="20" onclick="changePageSize(this)">20</button>
+		<button type="button" class="btn btn-default" value="50" onclick="changePageSize(this)">50</button>
+		<button type="button" class="btn btn-default" value="100" onclick="changePageSize(this)">100</button>
+	</div>
+	<input type="text" id="currentPage" style="display:none" value="1"></input>
+	<input type="text" id="pageSize" style="display:none" value="10"></input> 
 </div>
-
 <!-- 更新模态框 -->
 <form method="post" class="form-horizontal" action="" role="form"
 	id="updateForm" style="margin: 20px;">
@@ -92,6 +99,14 @@
 						<div class="col-md-6">
 							<input type="text" class="form-control" name="no" id="upNo"
 								placeholder="设备编号">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for=upTypeId" class="col-md-4 control-label">部门</label>
+						<div class="col-md-6">
+							<select class="form-control" id="upTypeId">
+								<option value="none" >请选择设备类型</option>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -140,6 +155,14 @@
 						<div class="col-md-6">
 							<input type="text" class="form-control" name="no" id="crNo"
 								placeholder="请输入设备编号">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="crTypeId" class="col-md-4 control-label">部门</label>
+						<div class="col-md-6">
+							<select class="form-control" id="crTypeId">
+								<option value="none" >请选择设备类型</option>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -198,6 +221,7 @@
 			alert('Error！');
 			return false;
 		}
+		addType("#upTypeId");
 		$
 				.ajax({
 					url : "${pageContext.request.contextPath}/equipment/queryEquipmentById",
@@ -225,7 +249,8 @@
 						var name = $.trim($("#upName").val());
 						var produceName = $.trim($("#upProduceName").val());
 						var no = $.trim($("#upNo").val());
-						if (!name || !produceName || !no) {
+						var typeId = $.trim($("#upTypeId").val());
+						if (!name || !produceName || !no || typeId == "none") {
 							alert("设备信息不完整！");
 							return false;
 						}
@@ -238,7 +263,8 @@
 										name : name,
 										produceName : produceName,
 										no : no,
-										equipmentId : $("#upEquipmentId").val()
+										equipmentId : $("#upEquipmentId").val(),
+										typeId : typeId
 									}),
 									success : function(data) {
 										if (data == true) {
@@ -265,6 +291,7 @@
 						var name = $.trim($("#crName").val());
 						var no = $.trim($("#crNo").val());
 						var produceName = $.trim($("#crProduceName").val());
+						var typeId = $.trim($("#crTypeId").val());
 						if (!name || !produceName || !no) {
 							alert("不能有空值！");
 							return false;
@@ -277,7 +304,8 @@
 									data : JSON.stringify({
 										name : name,
 										produceName : produceName,
-										no : no
+										no : no,
+										typeId: typeId
 									}),
 									success : function(data) {
 										if (data == true) {
@@ -306,7 +334,7 @@
 					contentType : "application/json",
 					data : JSON.stringify({
 						pageNo : pageNo,
-						pageSize : "10",
+						pageSize : $("#pageSize").val(),
 						name : $.trim($("#queryName").val())
 					}),
 					success : function(data) {
@@ -351,6 +379,9 @@
 																		+ "<td>"
 																		+ val.no
 																		+ "</td>"
+																		+ "<td>"
+																		+ val.typeName
+																		+ "</td>"
 																		+ "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
 																		+ val.equipmentId
 																		+ ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>"
@@ -376,6 +407,32 @@
 		return false;
 	}
 	
+	//加载设备类型下拉框
+	function addType(id){
+		$.ajax({
+			url : "${pageContext.request.contextPath}/equipment/queryAllType",
+			type: "get",
+			dataType : "json",
+			success : function(data) {
+				var html;
+				html = "<option value='none'>请选择设备类型</option>";
+				$.each(data.data,function(i,item){
+					html += "<option value="+item.typeId+">"+item.typeName+"</option>"; 
+				});
+				$(id).html(html);
+				},
+				error : function() {
+					alert("查询出错");
+				},
+		});
+	};
+	
+	//切换每页显示数据数
+	function changePageSize(obj){
+		var pageSize = obj.value;
+		$("#pageSize").val(pageSize);
+		pagehtml(1);
+	}
 </script>
 
 
