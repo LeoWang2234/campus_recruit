@@ -79,7 +79,7 @@ html,body {
 }
 
 #main {
-	padding-top: 20px;
+	padding-top: 10px;
 	/* background-color: #cfeace; */
 	height: 100%;
 	overflow-y: auto;
@@ -88,15 +88,7 @@ html,body {
 
 
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
-<script
-	src="${pageContext.request.contextPath}/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-<%
-	String mainJsp = (String) request.getSession().getAttribute("mainJsp");
-	if (mainJsp == null || mainJsp.equals("")) {
-		mainJsp = "main/default.jsp";
-	}
-%>
+<script src="${pageContext.request.contextPath}/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -113,11 +105,10 @@ html,body {
 				<jsp:include page="main/menu.jsp"></jsp:include>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10" id="main">
-				<jsp:include page="<%=mainJsp%>"></jsp:include>
-				<%-- <jsp:include page="${mainJsp} "></jsp:include> --%>
+				<jsp:include page="main/home.jsp"></jsp:include>
 			</div>
 		</div>
-
+	</div>
 <script type="text/javascript">
 	
 

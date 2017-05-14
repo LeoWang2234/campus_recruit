@@ -1,27 +1,60 @@
 package com.ecust.pojo;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class User implements Serializable{
 	private Integer id;
+	//账号
 	private String userName;
 	private String password;
+	//真实姓名
 	private String trueName;
 	//角色：管理员，使用者，维修者
 	private String roleName;
-	private Integer deptId;
+	//部门
 	private String deptName;
+	private Integer createId;
+	private Date createTime; 
+	private String phone;
+	public Integer getCreateId() {
+		return createId;
+	}
+
+	public void setCreateId(Integer createId) {
+		this.createId = createId;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
 	public Integer getId() {
 		return id;
 	}
+	
 	
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", userName=" + userName + ", password="
 				+ password + ", trueName=" + trueName + ", roleName="
-				+ roleName + ", deptId=" + deptId + ", deptName=" + deptName
+				+ roleName + ", deptName=" + deptName + ", createId="
+				+ createId + ", createTime=" + createTime + ", phone=" + phone
 				+ "]";
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -49,18 +82,14 @@ public class User implements Serializable{
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
 	}
-	public Integer getDeptId() {
-		return deptId;
-	}
-	public void setDeptId(Integer deptId) {
-		this.deptId = deptId;
-	}
 	public String getDeptName() {
 		return deptName;
 	}
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
 	}
+
+	
 	
 	
 }

@@ -16,7 +16,7 @@
 	<div class="container-fluid">
 		<!-- 导航条左边 -->
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand"><img src="" alt="设备"></a>
+			<a href="#" class="navbar-brand"><img src="" alt="设备管理系统"></a>
 			<!-- 页面缩小时显示按钮 -->
 			<!-- <button type="button" class="navbar-toggle" data-toggle="collapse"
 				data-target="#navbar-collapse">

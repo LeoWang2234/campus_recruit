@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.ChartsDao">
+	<select id="queryTypeNames" resultType="java.util.Map">
+		SELECT 
+			typeName AS typeName
+		FROM
+			equ_type
+		ORDER BY typeId
+	</select>
+	<select id="queryTypeValues" resultType="java.util.Map">
+		SELECT
+			COUNT(*) AS typeValue
+		FROM
+			equ_equipment
+		GROUP BY typeId 
+	</select>
+	<select id="queryState" resultType="java.util.Map">
+		SELECT
+			COUNT(*) AS value,state AS name
+		FROM
+			equ_equipment
+		GROUP BY state
+	</select>
+	<select id="queryRepairChart" resultType="java.util.Map">
+		 SELECT
+		 	count(*) AS value,
+		 	<if test="time == 1">
+		 		date_format(createTime,'%Y-%m-%d') AS createTime
+		 	</if>
+		 	<if test="time == 2">
+		 		date_format(createTime,'%Y-%m-%d') AS createTime
+		 	</if> 
+		 	<if test="time == 3">
+		 		date_format(createTime,'%Y-%m') AS createTime
+		 	</if> 
+		 	
+		 FROM
+		 	equ_repair
+		 WHERE
+		 	<if test="time == 1">
+		 		YEARWEEK(date_format(createTime,'%Y-%m-%d')) = YEARWEEK(now())
+		 	</if>
+		 	<if test="time == 2">
+		 		date_format(createTime,'%Y-%m')=date_format(now(),'%Y-%m')
+		 	</if> 
+		 	<if test="time == 3">
+		 		date_format(createTime,'%Y')=date_format(now(),'%Y')
+		 	</if>  
+		 	
+		 GROUP BY
+		 	<if test="time == 1">
+		 		date_format(createTime,'%Y-%m-%d')
+		 	</if>
+		 	<if test="time == 2">
+		 		date_format(createTime,'%Y-%m-%d')
+		 	</if> 
+		 	<if test="time == 3">
+		 		date_format(createTime,'%Y-%m')
+		 	</if> 
+		 	
+	
+	</select>
+</mapper>

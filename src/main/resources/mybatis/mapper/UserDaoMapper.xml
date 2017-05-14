@@ -10,5 +10,97 @@
 			 e.userName = #{userName} AND e.password = #{password}
 	
 	</select>
-
+	<select id="queryAllUser" resultType="java.util.Map">
+		SELECT e2.*,e1.trueName AS createName
+		
+		FROM 
+			equ_user e1 JOIN equ_user e2 ON e1.id = e2.createId
+		ORDER BY 
+			id	
+		
+	</select>
+	<select id="queryAllRole" resultType="java.util.Map">
+		SELECT er.*,eu.trueName AS createName 
+		FROM 
+			equ_role er,equ_user eu
+		WHERE
+			er.createId = eu.id
+		ORDER BY er.id ASC
+	</select>
+	<insert id="createRole">
+		INSERT INTO
+			equ_role(
+				roleName,
+				createId,
+				createTime,
+				remark
+			)
+		VALUES(
+			#{roleName},
+			#{createId},
+			NOW(),
+			#{remark}
+		)
+	
+	</insert>
+	<delete id="deleteRole">
+		DELETE FROM
+			equ_role
+		WHERE
+			id = #{id}
+	</delete>
+	<insert id="createUser" parameterType="User">
+		INSERT INTO
+			equ_user(
+				userName,
+				password,
+				roleName,
+				trueName,
+				deptName,
+				createId,
+				createTime,
+				phone
+			)
+		VALUES(
+			#{userName},
+			#{password},
+			#{roleName},
+			#{trueName},
+			#{deptName},
+			#{createId},
+			NOW(),
+			#{phone}
+		)
+	</insert>
+	<select id="queryUserById" resultType="java.util.Map">
+		SELECT
+			*
+		FROM
+			equ_user
+		WHERE
+			id = #{id}
+			
+	</select>
+	<update id="updateUser" parameterType="User">
+		UPDATE 
+			equ_user
+		SET
+			userName = #{userName},
+			password = #{password},
+			roleName = #{roleName},
+			trueName = #{trueName},
+			deptName = #{deptName}, 
+			createId = #{createId},
+			createTime = NOW(),
+			phone = #{phone}
+		WHERE
+			id = #{id}
+	
+	</update>
+	<delete id="deleteUser">
+		DELETE FROM
+			equ_user
+		WHERE
+			id = #{id}
+	</delete>
 </mapper>

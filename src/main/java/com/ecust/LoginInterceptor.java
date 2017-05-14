@@ -37,11 +37,11 @@ public class LoginInterceptor implements HandlerInterceptor {
         
         
         //用户未登陆或登陆过期
-        if(currentUser == null)  
-        {  
-        	response.sendRedirect(request.getContextPath()+"/login.jsp");  
-            return false;                      
-        }  
+//        if(currentUser == null)
+//        {
+//        	response.sendRedirect(request.getContextPath()+"/login.jsp");
+//            return false;
+//        }
         
              
         return true;  

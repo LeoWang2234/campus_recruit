@@ -5,6 +5,36 @@
 <mapper namespace="com.ecust.dao.DepartmentDao">
 	
 	<select id="queryAllDepartment" resultType="java.util.Map">
-		SELECT * FROM equ_department
+		SELECT ed.*,eu.trueName AS createName 
+		FROM 
+			equ_department ed
+		LEFT JOIN 
+			equ_user eu
+		ON
+			ed.createId = eu.id
+		ORDER BY ed.depId ASC
 	</select>
+	<insert id="createDepartment" parameterType="Department">
+		INSERT INTO 
+			equ_department(
+				depName,
+				createId,
+				createTime
+			)
+		VALUES(
+			#{depName},
+			#{createId},
+			NOW()
+		
+		)	
+	</insert>
+	<delete id="deleteDepartment">
+		DELETE FROM 
+			equ_department
+		WHERE
+			depId = #{depId}
+	
+	</delete>
+	
+	
 </mapper>

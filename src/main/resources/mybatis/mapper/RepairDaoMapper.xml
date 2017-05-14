@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.RepairDao">
+	<update id="repairEquipment" parameterType="java.lang.Integer">
+		UPDATE 
+			equ_equipment
+		SET
+			<if test="state == 3">
+				repairId = #{repairId},
+			</if>
+			<if test="state == 2 || state == 0">
+				repairId = 0,
+			</if>
+			state = #{state}
+			
+		WHERE
+			equipmentId = #{equipmentId}
+	</update>
+	<insert id="repairHistory"  useGeneratedKeys="true" keyProperty="repairId" parameterType="Repair">
+		INSERT INTO
+			equ_repair(
+				equipmentId,
+		        createId,
+				createTime,
+				state
+			)
+		VALUES(
+			#{equipmentId},
+	        #{createId},
+	        NOW(),
+			#{state}
+		)
+	</insert>
+	<update id="updateHistory" parameterType="Repair">
+		UPDATE 
+			equ_repair
+		SET
+			repairManId = #{repairManId},
+			repairTime = NOW(),
+			state = #{state}
+		WHERE
+			repairId = #{repairId}
+	
+	</update>
+	<select id="queryAllRepairHistory" resultType="java.util.Map">
+		SELECT 
+			er.createTime,er.state,er.repairTime,ee.no,ee.name,ee.produceName,eu1.trueName 
+			AS createMan,eu2.trueName AS repairMan
+		FROM 
+			equ_repair er
+		LEFT JOIN equ_equipment ee
+			ON er.equipmentId = ee.equipmentId
+		LEFT JOIN equ_user eu1
+			ON er.createId = eu1.id
+		LEFT JOIN equ_user eu2
+		ON er.repairManId = eu2.id
+		
+		ORDER BY er.repairId DESC
+		
+	</select>
+	
+</mapper>

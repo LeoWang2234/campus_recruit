@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.EquipmentDao">
+	<select id="queryAllEquipment" resultType="java.util.Map">
+		SELECT
+			ee.equipmentId,
+			ee.no,
+			ee.state,
+			ee.name,
+			ee.produceName,
+			et.typeName,
+			ee.repairId
+		FROM 
+			equ_equipment ee
+			
+		LEFT JOIN equ_type et ON ee.typeId = et.typeId
+		<if test="name != null and name != ''">
+				WHERE ee.name like CONCAT('%',#{name},'%')
+			</if>
+		ORDER BY ee.name	
+		
+	</select>
+	<select id="queryEquipmentById" resultType="java.util.Map">
+		SELECT
+			e.no,
+			e.name,
+			e.produceName
+		FROM
+			equ_equipment e
+		WHERE
+			e.equipmentId = #{equipmentId}
+	</select>
+	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
+		UPDATE
+			equ_equipment
+		SET
+			no = #{no},
+			name = #{name},
+			produceName = #{produceName},
+			typeId = #{typeId}
+		WHERE
+			equipmentId = #{equipmentId}
+	</update>
+	<insert id="createEquipment">
+		INSERT INTO equ_equipment(
+			no,
+			name,
+			produceName,
+			state,
+			typeId
+		)VALUES(
+			#{no},
+			#{name},
+			#{produceName},
+			0,
+			#{typeId}
+		)
+	</insert>
+	<delete id="deleteEquipment">
+		DELETE FROM
+			equ_equipment
+		WHERE
+			equipmentId = #{equipmentId}
+	
+	</delete>
+	<select id="queryAllType" resultType="java.util.Map">
+		SELECT et.*,eu.trueName AS createName 
+		FROM 
+			equ_type et,equ_user eu
+		WHERE
+			et.createId = eu.id
+		ORDER BY et.typeId ASC
+	</select>
+	<insert id="createType">
+		INSERT INTO equ_type(
+			typeName,
+			createId,
+			createTime
+			)
+		VALUES(
+			#{typeName},
+			#{createId},
+			NOW()
+		)
+	</insert>
+	<delete id="deleteType">
+		DELETE FROM
+			equ_type
+		WHERE
+			typeId = #{typeId}
+	</delete>
+</mapper>

@@ -15,12 +15,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ecust.pojo.Department;
+import com.ecust.pojo.User;
 import com.ecust.service.DepartmentService;
 
 @Controller
@@ -30,25 +33,34 @@ public class DepartmentController {
 	private DepartmentService departmentService;
 	
 	//切换到list.jsp
-	@RequestMapping(value="/pageDepartment",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	private String pageDepartment(HttpServletRequest request){
+	@RequestMapping(value="/pageDepartment",method = RequestMethod.GET)
+	public String pageDepartment(HttpServletRequest request){
 	
 		return "department/list";
 	}
 	//查询所有部门
 	@ResponseBody
 	@RequestMapping(value="/queryAllDepartment",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	//page传入页码
-	private Map<String,Object> queryAllDepartment(@RequestParam(value="page",required=false)String page,HttpServletRequest request){
-		if(StringUtils.isBlank(page)){
-			page = "1";
-		}
+	public Map<String,Object> queryAllDepartment(){
+		
 		Map<String,Object> map  = departmentService.queryAllDepartment();
 		return map;
 	}
 	
+	//添加部门
+	@ResponseBody
+	@RequestMapping(value="/createDepartment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean createDepartment(@RequestBody Department department){
+		
+		boolean bool = departmentService.createDepartment(department);
+		return bool;
+	}
 
-
-
-	
+	//删除部门
+	@ResponseBody
+	@RequestMapping(value="/deleteDepartment/{depId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean deleteDepartment(@PathVariable("depId") String depId){
+		Boolean bool = departmentService.deleteDepartment(depId);
+		return bool;
+	}
 }
