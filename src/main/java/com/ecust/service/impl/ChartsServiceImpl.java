@@ -81,10 +81,10 @@ public class ChartsServiceImpl implements ChartsService {
 		//查询本周
 		if(time.equals("1")){
 			cal.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
-			if(result != null){
+			if(result != null ){
 				for(int i = 0;i<7;i++){
 					String date = sdf.format(cal.getTime());
-					if(date.equals(result.get(index).get("createTime")) && index<result.size()){
+					if(index<result.size() && date.equals(result.get(index).get("createTime"))){
 						value.add(result.get(index).get("value").toString());
 						index++;
 					}else{
