@@ -11,7 +11,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js" ></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
 
-<title>设备管理系统登录</title>
+<title>校园招聘管理系统</title>
 <style>
 .logon_title{
 color: rgb(22, 87, 115);
@@ -33,7 +33,7 @@ width:992px;
     <div class="login_logo">
         <img src="${pageContext.request.contextPath}/images/logo_hand_180.jpg"/>
     </div>
-     <div  class="logon_title"><h3>设备管理系统</h3></div>
+     <div  class="logon_title"><h3>校园招聘管理系统</h3></div>
     <div class="login_container">
         <div class="login_inb">
       
@@ -49,7 +49,7 @@ width:992px;
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="${pageContext.request.contextPath}/images/login_2.jpg">
+                            <img src="${pageContext.request.contextPath}/images/new21.jpg">
                             <div class="carousel-caption">
                             </div>
                         </div>
@@ -59,7 +59,7 @@ width:992px;
                             </div>
                         </div>
                         <div class="item">
-                            <img src="${pageContext.request.contextPath}/images/new2.jpg">
+                            <img src="${pageContext.request.contextPath}/images/login_2.jpg">
                             <div class="carousel-caption">
                             </div>
                         </div>

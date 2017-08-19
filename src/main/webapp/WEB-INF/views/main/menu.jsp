@@ -6,14 +6,14 @@
 	</a></li>
 	<li style="margin: 0" id="equipmentMenu"><a href="#systemSetting"
 		class="nav-header collapsed" data-toggle="collapse"> <i
-			class="glyphicon glyphicon-cog"></i> 设备管理 <span
+			class="glyphicon glyphicon-cog"></i> 所有招聘 <span
 			class="pull-right glyphicon glyphicon-chevron-down"></span>
 	</a>
 		<ul id="systemSetting" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
-			<li><a href="javascript:pageStateChart()"><i class="glyphicon glyphicon-user"></i>使用状态</a></li>
-			<li ><a href="javascript:pageEquipment()"><i class="glyphicon glyphicon-user"></i>所有设备</a></li>
-			<li><a href="javascript:pageType()"><i class="glyphicon glyphicon-th-list"></i>设备类型</a></li>
+			<li><a href="javascript:pageStateChart()"><i class="glyphicon glyphicon-user"></i>招聘状态</a></li>
+			<li ><a href="javascript:pageEquipment()"><i class="glyphicon glyphicon-user"></i>所有招聘</a></li>
+			<li><a href="javascript:pageType()"><i class="glyphicon glyphicon-th-list"></i>招聘类型</a></li>
 			<!-- 
 			<li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>按设备类型</a></li>
 			<li><a href="#"><i class="glyphicon glyphicon-edit"></i>按设备标识</a></li>
@@ -24,21 +24,21 @@
 	</a></li> -->
 	<li style="margin: 0" id="repairMenu"><a href="#repair"
 		class="nav-header collapsed" data-toggle="collapse"> <i
-			class="glyphicon glyphicon-cog"></i> 设备维护 <span
+			class="glyphicon glyphicon-cog"></i> 招聘维护 <span
 			class="pull-right glyphicon glyphicon-chevron-down"></span>
 	</a>
 		<ul id="repair" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
-			<li><a href="javascript:pageRepair()"><i class="glyphicon glyphicon-user"></i>设备维修 </a></li>
-			<li><a href="javascript:pageRepairHistory()"><i class="glyphicon glyphicon-th-list"></i>维护历史</a></li>
-			<li><a href="javascript:pageRepairChart()"><i class="glyphicon glyphicon-globe"></i>维护统计</a></li>
+			<li><a href="javascript:pageRepair()"><i class="glyphicon glyphicon-user"></i>添加招聘 </a></li>
+			<li><a href="javascript:pageRepairHistory()"><i class="glyphicon glyphicon-th-list"></i>添加历史</a></li>
+			<li><a href="javascript:pageRepairChart()"><i class="glyphicon glyphicon-globe"></i>历史统计</a></li>
 		</ul></li>
 	<!-- <li style="margin: 0"><a href="#"> <i
 			class="glyphicon glyphicon-globe"></i> 配件 <span
 			class="label label-warning pull-right">5</span>
 	</a></li> -->
 	<li style="margin: 0" id="departmentMenu"><a >
-			<i class="glyphicon glyphicon-calendar"></i> 部门管理
+			<i class="glyphicon glyphicon-calendar"></i> 后台管理
 	</a></li>
 	<li style="margin: 0" id="userMenu"><a href="#account"
 		class="nav-header collapsed" data-toggle="collapse"> <i

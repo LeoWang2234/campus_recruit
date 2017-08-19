@@ -3,6 +3,7 @@ package com.ecust.dao;
 import java.util.List;
 import java.util.Map;
 
+import com.ecust.pojo.Company;
 import org.apache.ibatis.annotations.Param;
 
 import com.ecust.pojo.Equipment;
@@ -15,7 +16,7 @@ public interface EquipmentDao {
 
 	void updateEquipment(Equipment equipment);
 
-	void createEquipment(Equipment equipment);
+	void createEquipment(Company coompany);
 
 	void deleteEquipment(@Param("equipmentId") String equipmentId);
 

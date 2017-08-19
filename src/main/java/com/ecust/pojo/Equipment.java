@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Equipment implements Serializable{
 	//设备ID
 	private String equipmentId;
-	//设备名称ID
+	//公司名称ID
 	private String name;
 	private String produceName;
 	//设备编号

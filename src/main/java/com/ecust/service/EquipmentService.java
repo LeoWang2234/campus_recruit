@@ -2,6 +2,7 @@ package com.ecust.service;
 
 import java.util.Map;
 
+import com.ecust.pojo.Company;
 import com.ecust.pojo.Equipment;
 
 
@@ -14,7 +15,7 @@ public interface EquipmentService {
 
 	Boolean updateEquipment(Equipment equipment);
 
-	Boolean createEquipment(Equipment equipment);
+	Boolean createEquipment(Company company);
 
 	Boolean deleteEquipment(String equipmentId);
 

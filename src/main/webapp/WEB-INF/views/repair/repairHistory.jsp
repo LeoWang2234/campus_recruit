@@ -17,8 +17,8 @@
 		<thead>
 			<tr>
 				<th class="col-md-1">序号</th>
-				<th class="col-md-1">设备名称</th>
-				<th class="col-md-1">工序</th>
+				<th class="col-md-1">公司名称</th>
+				<th class="col-md-1">招聘岗位</th>
 				<th class="col-md-1">设备编号</th>
 				<th class="col-md-1">报修人</th>
 				<th class="col-md-2">报修时间</th>

@@ -4,6 +4,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ecust.dto.CompanyForm;
+import com.ecust.pojo.Company;
+import com.ecust.utils.DataTrans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -61,9 +64,10 @@ public class EquipmentController {
 	//添加设备
 	@ResponseBody
 	@RequestMapping(value="/createEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean createEquipment(@RequestBody Equipment equipment){
-		Boolean bool = equipmentService.createEquipment(equipment);
-		return bool;
+	public boolean createEquipment(@RequestBody CompanyForm companyForm){
+		Company company = DataTrans.toCompany(companyForm);
+		Boolean bool = equipmentService.createEquipment(company);
+		return true;
 	}
 	
 	//删除设备

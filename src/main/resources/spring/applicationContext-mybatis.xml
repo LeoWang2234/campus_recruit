@@ -15,7 +15,7 @@
 		<!--引入mybatis的总配置  -->
 		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
 		<!-- 类型别名扫描包 -->
-		<property name="typeAliasesPackage" value="com.ecust.pojo"></property>
+		<property name="typeAliasesPackage" value="com.ecust.pojo,com.ecust.dto"></property>
 		<!-- 使用通配符配置xml -->
 		<property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"></property>
 	</bean>

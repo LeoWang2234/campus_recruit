@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.ecust.pojo.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -51,9 +52,9 @@ public class EquipmentServiceImpl implements EquipmentService {
 	}
 
 	@Override
-	public Boolean createEquipment(Equipment equipment) {
+	public Boolean createEquipment(Company company) {
 		
-		equipmentDao.createEquipment(equipment);
+		equipmentDao.createEquipment(company);
 		return true;
 	}
 

@@ -1,75 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0"
-    xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    
-	<display-name>equipmentMS</display-name>
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/applicationContext*.xml</param-value>
-	</context-param>
-	<!--Spring的ApplicationContext 载入 -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
+    <display-name>equipmentMS</display-name>
 
-	<!-- 编码过滤器，以UTF8编码 -->
-	<filter>
-		<filter-name>encodingFilter</filter-name>
-		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-		<init-param>
-			<param-name>encoding</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>encodingFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-	
-	
-	<!-- 避免静态资源被拦截 -->
-	<servlet-mapping>    
-	    <servlet-name>default</servlet-name>    
-	    <url-pattern>/js/*</url-pattern>    
-	    <url-pattern>/css/*</url-pattern>    
-	    <url-pattern>/images/*</url-pattern>
-	    <url-pattern>/bootstrap-3.3.7-dist/*</url-pattern>    
-	</servlet-mapping> 
-	<!-- 配置SpringMVC -->
-	<servlet>
-		<servlet-name>equipmentMS</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<!-- 指定加载外部的spring-mvc配置文件 -->
-			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring/equipmentMS-servlet.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>equipmentMS</servlet-name>
-		<!-- 拦截所有的请求，除了jsp。  /xx.html js css 会 
-			<url-pattern>*.do</url-pattern>
-			<url-pattern>*.action</url-pattern>
-		-->
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	
-	<welcome-file-list>
-		<welcome-file>login.jsp</welcome-file>
-	</welcome-file-list>
-	
-	
-	 <!-- 加载log4j配置文件 -->
     <context-param>
-      <param-name>log4jConfigLocation</param-name>
-      <param-value>classpath:log4j.properties</param-value>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/applicationContext*.xml</param-value>
+    </context-param>
+    <!--Spring的ApplicationContext 载入 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- 编码过滤器，以UTF8编码 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- 避免静态资源被拦截 -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/js/*</url-pattern>
+        <url-pattern>/css/*</url-pattern>
+        <url-pattern>/images/*</url-pattern>
+        <url-pattern>/bootstrap-3.3.7-dist/*</url-pattern>
+    </servlet-mapping>
+    <!-- 配置SpringMVC -->
+    <servlet>
+        <servlet-name>equipmentMS</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <!-- 指定加载外部的spring-mvc配置文件 -->
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring/equipmentMS-servlet.xml,classpath:spring/spring-quartz.xml
+            </param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--配置项目启动初始化-->
+    <!-- 初始化项目需要的启动文件，一开始如果不需要初始化可以隐藏 -->
+    <servlet>
+        <servlet-name>interface_url-init_servlet</servlet-name>
+        <servlet-class>com.wechat.start.InterfaceUrlIntiServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>equipmentMS</servlet-name>
+        <!-- 拦截所有的请求，除了jsp。  /xx.html js css 会
+            <url-pattern>*.do</url-pattern>
+            <url-pattern>*.action</url-pattern>
+        -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/views/main.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 加载log4j配置文件 -->
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>classpath:log4j.properties</param-value>
     </context-param>
     <listener>
-       <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
+
 </web-app>

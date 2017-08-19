@@ -25,7 +25,7 @@ public class RepairController {
 	//切换到list.jsp
 	@RequestMapping(value="/pageRepair",method = RequestMethod.GET)
 	public String pageDepartment(HttpServletRequest request){
-		return "repair/list";
+		return "repair/addCom";
 	}
 	
 	//修理设备

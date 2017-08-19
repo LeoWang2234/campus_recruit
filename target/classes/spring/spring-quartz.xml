@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!-- 要调用的工作类 -->
+    <bean id="quartzJob" class="com.wechat.quartz.QuartzJob"></bean>
+
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="jobtaskForToken"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="quartzJob" />
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>workForToken</value>
+        </property>
+
+    </bean>
+    <!-- 定义触发时间 -->
+    <bean id="doTimeForToken" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="jobtaskForToken" />
+        </property>
+        <!-- cron 表达式 -->
+        <property name="cronExpression">
+            <value>0 0/20 * * * ?</value>  <!-- 每20分钟触发一次 -->
+        </property>
+    </bean>
+
+    <!-- 总管理类 如果将 lazy-init='false'那么容器启动就会执行调度程序 -->
+    <bean id="startQuertz" lazy-init="false" autowire="no"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="doTimeForToken" />
+            </list>
+        </property>
+    </bean>
+
+</beans>

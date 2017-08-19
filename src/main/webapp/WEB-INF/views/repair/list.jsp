@@ -19,7 +19,7 @@
 		<form action="" method="post">
 			<div class="input-group" style="width: 300px">
 				<input type="text" class="form-control" id="queryName"
-					placeholder="请输入设备名称..."> <span class="input-group-btn">
+					placeholder="请输入公司名称..."> <span class="input-group-btn">
 					<button class="btn btn-default" onclick="return queryEquipment()">
 						<span class="glyphicon glyphicon-search"></span>&nbsp;查询
 					</button>
@@ -34,8 +34,8 @@
 		<thead>
 			<tr>
 				<th class="col-md-1">序号</th>
-				<th class="col-md-2">设备名称</th>
-				<th class="col-md-2">工序</th>
+				<th class="col-md-2">公司名称</th>
+				<th class="col-md-2">招聘岗位</th>
 				<th class="col-md-2">设备编号</th>
 				<th class="col-md-2">设备状态</th>
 				<th class="col-md-3">操作</th>
@@ -213,7 +213,7 @@
 						name : $.trim($("#queryName").val())
 					}),
 					success : function(data) {
-						$("#total").html("当前共有"+data.page.totalElements+"件设备");
+						$("#total").html("当前共有"+data.page.totalElements+"家公司");
 						var options = {
 							alignment : "center",//居中显示
 							currentPage : data.page.pageNo,//当前页数
