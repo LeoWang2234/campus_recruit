@@ -12,13 +12,17 @@
     <!-- 启用切面 -->
     <aop:aspectj-autoproxy/>
 
-    <!-- 定时任务 -->
-    <task:annotation-driven/>
-
     <!-- 自动加载构建bean -->
     <context:component-scan base-package="com.ecust"
                             scope-resolver="org.springframework.context.annotation.Jsr330ScopeMetadataResolver">
     </context:component-scan>
+
+    <!-- 开启定时任务 -->
+    <task:annotation-driven />
+    <!-- 开启注解 -->
+    <context:annotation-config />
+    <!-- 指定相关的包路径 -->
+    <context:component-scan base-package="com.ecust.*"/>
 
     <!-- 自动扫描(自动注入) -->
     <context:component-scan base-package="com.wechat.*" />

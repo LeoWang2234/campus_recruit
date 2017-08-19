@@ -23,6 +23,22 @@
 
 	<!--</select>-->
 
+	<select id="queryAllEquipmentForValidation" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+	</select>
+
 	<select id="queryAllEquipment" resultType="java.util.Map">
 		SELECT
 		ee.id,
@@ -68,6 +84,15 @@
 		WHERE
 			ee.id = #{equipmentId}
 	</select>
+
+	<update id="updateStatus">
+		UPDATE
+		companies
+		SET
+		status = #{status}
+		WHERE
+		id = #{id}
+	</update>
 	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
 		UPDATE
 			equ_equipment

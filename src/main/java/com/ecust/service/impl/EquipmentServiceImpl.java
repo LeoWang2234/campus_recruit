@@ -21,6 +21,17 @@ public class EquipmentServiceImpl implements EquipmentService {
 	private EquipmentDao equipmentDao;
 
 	@Override
+	public List<Map<String, Object>> queryAllEquipmentForValidation(){
+		List<Map<String, Object>> list = equipmentDao.queryAllEquipmentForValidation();
+		return list;
+	}
+
+	@Override
+	public Boolean updateStatus(int id,int status){
+		equipmentDao.updateStatus(id,status);
+		return true;
+	}
+	@Override
 	public Map<String, Object> queryAllEquipment(int pageNumber,int pageSize,String name,int applied) {
 		
 		// 分页，并判断分页参数是否存在
