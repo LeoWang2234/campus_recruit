@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.EquipmentDao">
+	<!--<select id="queryAllEquipment" resultType="java.util.Map">-->
+		<!--SELECT-->
+			<!--ee.equipmentId,-->
+			<!--ee.no,-->
+			<!--ee.state,-->
+			<!--ee.name,-->
+			<!--ee.produceName,-->
+			<!--et.typeName,-->
+			<!--ee.repairId-->
+		<!--FROM-->
+			<!--equ_equipment ee-->
+
+		<!--LEFT JOIN equ_type et ON ee.typeId = et.typeId-->
+		<!--<if test="name != null and name != ''">-->
+				<!--WHERE ee.name like CONCAT('%',#{name},'%')-->
+			<!--</if>-->
+		<!--ORDER BY ee.name-->
+
+	<!--</select>-->
+
+	<select id="queryAllEquipment" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+		WHERE
+		<if test=" applied == 0">   <!-- 只查未投 -->
+			 ee.applied = 0
+		</if>
+		<if test=" applied == 1">   <!-- 只查已投 -->
+			ee.applied = 1
+		</if>
+		<if test=" applied == 2">   <!-- 全部查询 -->
+			ee.applied IN (0,1)
+		</if>
+		<if test="name != null and name != ''">
+			AND ee.name like CONCAT('%',#{name},'%')
+		</if>
+		ORDER BY ee.id
+
+	</select>
+	<select id="queryEquipmentById" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status
+		FROM
+			companies ee
+		WHERE
+			ee.id = #{equipmentId}
+	</select>
+	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
+		UPDATE
+			equ_equipment
+		SET
+			no = #{no},
+			name = #{name},
+			produceName = #{produceName},
+			typeId = #{typeId}
+		WHERE
+			equipmentId = #{equipmentId}
+	</update>
+	<insert id="createEquipment">
+		INSERT INTO companies(
+			name,
+			position,
+			link,
+			deadline,
+			push,
+			push_code,
+			status
+		)VALUES(
+			#{name},
+			#{position},
+			#{link},
+			#{deadline},
+			#{push},
+			#{push_code},
+			#{status}
+		)
+	</insert>
+	<update id="apply">
+		update companies set applied=ABS(applied - 1) where id=#{equipmentId};
+	</update>
+	<delete id="deleteEquipment">
+		DELETE FROM
+			companies
+		WHERE
+			id = #{equipmentId}
+	
+	</delete>
+	<select id="queryAllType" resultType="java.util.Map">
+		SELECT et.*,eu.trueName AS createName 
+		FROM 
+			equ_type et,equ_user eu
+		WHERE
+			et.createId = eu.id
+		ORDER BY et.typeId ASC
+	</select>
+	<insert id="createType">
+		INSERT INTO equ_type(
+			typeName,
+			createId,
+			createTime
+			)
+		VALUES(
+			#{typeName},
+			#{createId},
+			NOW()
+		)
+	</insert>
+	<delete id="deleteType">
+		DELETE FROM
+			equ_type
+		WHERE
+			typeId = #{typeId}
+	</delete>
+</mapper>
