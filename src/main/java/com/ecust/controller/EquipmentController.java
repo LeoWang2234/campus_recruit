@@ -41,8 +41,15 @@ public class EquipmentController {
 		int pageSize = Integer.parseInt(param.get("pageSize"));
 		String name = param.get("name");
 		int pageNo = Integer.parseInt(param.get("pageNo"));
-		Map<String,Object> map  = equipmentService.queryAllEquipment(pageNo,pageSize,name);
+		int applied = Integer.parseInt(param.get("applied"));
+		Map<String,Object> map  = equipmentService.queryAllEquipment(pageNo,pageSize,name,applied);
 		return map;
+	}
+	//查询所有消息页面
+	@RequestMapping(value="/pageType",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public String pageType(HttpServletRequest request){
+
+		return "equipment/listall";
 	}
 	
 	//根据设备ID查询设备
@@ -77,13 +84,16 @@ public class EquipmentController {
 		Boolean bool = equipmentService.deleteEquipment(equipmentId);
 		return bool;
 	}
-	
-	//切换到type.jsp
-	@RequestMapping(value="/pageType",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public String pageType(HttpServletRequest request){
-	
-		return "equipment/type";
+
+	//设置为已投状态
+	@ResponseBody
+	@RequestMapping(value="/apply/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean apply(@PathVariable("equipmentId") String equipmentId){
+		Boolean bool = equipmentService.apply(equipmentId);
+		return bool;
 	}
+	
+
 	
 	//查询所有角色
 	@ResponseBody
@@ -114,6 +124,6 @@ public class EquipmentController {
 	//查询设备状态图
 	@RequestMapping(value="/pageStateChart",method = RequestMethod.GET)
 	public String pageStateChart(){
-		return "equipment/stateChart";
+		return "equipment/lisunapplied";
 	}
 }

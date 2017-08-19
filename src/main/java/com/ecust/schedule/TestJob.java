@@ -14,7 +14,7 @@ public class TestJob {
     public static SimpleDateFormat sdf_yyyyMMddHHmmss = new SimpleDateFormat("yyyyMMddHHmmss");
 
 
-    @Scheduled(cron = "0/5 * * * * ?")
+    @Scheduled(fixedRate = 1000*60*1)
     public void exejob() {
         System.out.println(sdf_yyyyMMddHHmmss.format(new Date()) + " £ºÖ´ÐÐÖÐ¡£¡£¡£");
     }

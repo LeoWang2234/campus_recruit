@@ -32,22 +32,41 @@
 		ee.deadline,
 		ee.push,
 		ee.push_code,
-		ee.status
+		ee.status,
+		ee.applied
 		FROM
 		companies ee
 
+		WHERE
+		<if test=" applied == 0">   <!-- 只查未投 -->
+			 ee.applied = 0
+		</if>
+		<if test=" applied == 1">   <!-- 只查已投 -->
+			ee.applied = 1
+		</if>
+		<if test=" applied == 2">   <!-- 全部查询 -->
+			ee.applied IN (0,1)
+		</if>
+		<if test="name != null and name != ''">
+			AND ee.name like CONCAT('%',#{name},'%')
+		</if>
 		ORDER BY ee.id
 
 	</select>
 	<select id="queryEquipmentById" resultType="java.util.Map">
 		SELECT
-			e.no,
-			e.name,
-			e.produceName
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status
 		FROM
-			equ_equipment e
+			companies ee
 		WHERE
-			e.equipmentId = #{equipmentId}
+			ee.id = #{equipmentId}
 	</select>
 	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
 		UPDATE
@@ -79,11 +98,14 @@
 			#{status}
 		)
 	</insert>
+	<update id="apply">
+		update companies set applied=ABS(applied - 1) where id=#{equipmentId};
+	</update>
 	<delete id="deleteEquipment">
 		DELETE FROM
-			equ_equipment
+			companies
 		WHERE
-			equipmentId = #{equipmentId}
+			id = #{equipmentId}
 	
 	</delete>
 	<select id="queryAllType" resultType="java.util.Map">

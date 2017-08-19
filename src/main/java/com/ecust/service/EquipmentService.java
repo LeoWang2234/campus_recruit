@@ -9,7 +9,7 @@ import com.ecust.pojo.Equipment;
 
 public interface EquipmentService {
 
-	Map<String, Object> queryAllEquipment(int pageNo,int pageSize,String name);
+	Map<String, Object> queryAllEquipment(int pageNo,int pageSize,String name,int applied);
 
 	Map<String, Object> queryEquipmentById(int equipmentId);
 
@@ -18,6 +18,8 @@ public interface EquipmentService {
 	Boolean createEquipment(Company company);
 
 	Boolean deleteEquipment(String equipmentId);
+
+	Boolean apply(String equipmentId);
 
 	Map<String, Object> queryAllType();
 

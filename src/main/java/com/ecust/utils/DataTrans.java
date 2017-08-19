@@ -11,12 +11,13 @@ public class DataTrans {
         Company company = new Company();
         company.setName(companyForm.getName());
         company.setPosition(companyForm.getPosition());
-        company.setLink(companyForm.getLink()==null?"未知":companyForm.getLink());
-        company.setDeadline(companyForm.getDeadline() == null ? "未知" : companyForm.getDeadline());
-        if (companyForm.getPush_code() == null) {
-            company.setPush(1);  // 1 not push; 0 push
+        company.setLink(companyForm.getLink()==""?"未知":companyForm.getLink());
+        company.setDeadline(companyForm.getDeadline() == "" ? "未知" : companyForm.getDeadline());
+        if (companyForm.getPush_code() == "") {
+            company.setPush(0);  // 1 push; 0 not push
+            company.setPush_code("");
         }else {
-            company.setPush(0);
+            company.setPush(1);
             company.setPush_code(companyForm.getPush_code());
         }
         company.setStatus(0); // 0 :未投递 1: 已投递

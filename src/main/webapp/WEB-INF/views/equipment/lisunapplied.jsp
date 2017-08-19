@@ -17,6 +17,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" charset="utf-8"
+        src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
 
 <div class="row search">
     <div class="col-md-6">
@@ -34,10 +36,6 @@
     <div class="col-md-2 alert alert-success alert-dismissable text-center" id="total"
          style="margin-bottom:10px;"></div>
     <div class="col-md-4">
-        <button type="button" class="btn btn-primary" style="float: right;"
-                data-toggle="modal" data-target="#createEquipment" >继续添加
-        </button>
-
     </div>
 </div>
 <div>
@@ -46,13 +44,14 @@
         <thead>
         <tr>
             <th class="col-md-1">序号</th>
-            <th class="col-md-2">公司名称</th>
-            <th class="col-md-2">招聘岗位</th>
+            <th class="col-md-1">公司名称</th>
+            <th class="col-md-1">招聘岗位</th>
             <th class="col-md-2">投递链接</th>
             <th class="col-md-2">截止时间</th>
             <th class="col-md-1">是否内推</th>
             <th class="col-md-1">内推码</th>
             <th class="col-md-1">状态</th>
+            <th class="col-md-2">操作</th>
         </tr>
         </thead>
         <tbody id="equList"></tbody>
@@ -71,34 +70,37 @@
     <input type="text" id="currentPage" style="display:none" value="1"></input>
     <input type="text" id="pageSize" style="display:none" value="10"></input>
 </div>
-<!-- 添加模态框 -->
+
+<!-- 更新模态框 -->
 <form method="post" class="form-horizontal" action="" role="form"
-      id="createForm" style="margin: 20px;">
-    <div class="modal fade" id="createEquipment" tabindex="-1"
-         role="dialog" aria-labelledby="createModalLabel" aria-hidden="true"
+      id="updateForm" style="margin: 20px;">
+    <div class="modal fade" id="updateEquipment" tabindex="-1"
+         role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true"
          data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
+                <input type="text" name="equipmentId" id="upEquipmentId"
+                       style="display:none"/>
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
                             aria-hidden="true">&times;
                     </button>
-                    <h4 class="modal-title" id="crdateModalLabel">添加招聘</h4>
+                    <h4 class="modal-title" id="updateModalLabel">信息修改</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="crName" class="col-md-4 control-label">公司名称</label>
+                        <label for="upName" class="col-md-4 control-label">公司名称</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="crName" name="name"
-                                   placeholder="请输入公司名称">
+                            <input type="text" class="form-control" id="upName" name="name"
+                                   placeholder="公司名称">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="positioin" class="col-md-4 control-label">招聘岗位</label>
+                        <label for="upProduceName" class="col-md-4 control-label">招聘岗位</label>
                         <div class="col-md-6">
                             <input type="text" class="form-control" name="produceName"
-                                   value="" id="positioin" placeholder="请输入招聘岗位">
+                                   value="" id="upProduceName" placeholder="招聘岗位">
                         </div>
                     </div>
                     <div class="form-group">
@@ -106,13 +108,6 @@
                         <div class="col-md-6">
                             <input type="text" class="form-control" name="no" id="link"
                                    placeholder="请输入投递链接">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="push" class="col-md-4 control-label">内推码</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" name="no" id="push"
-                                   placeholder="不是内推不需填写">
                         </div>
                     </div>
                     <div id="datetimepicker" class="form-group">
@@ -126,27 +121,22 @@
                                    data-date-icon="icon-calendar"></i>
                             </span>
                         </div>
-
                     </div>
-
                 </div>
+
+
                 <div class="modal-footer" style="text-align:center">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消
                     </button>
-                    <button type="submit" class="btn btn-primary">添加</button>
+                    <button type="submit" class="btn btn-primary">修改</button>
                 </div>
             </div>
             <!-- /.modal-content -->
         </div>
         <!-- /.modal -->
     </div>
-
 </form>
-
 <script type="text/javascript">
-    $('#createEquipment').modal()
-
-
     $(function () {
         pagehtml($("#currentPage").val());
 
@@ -163,17 +153,117 @@
         inputMask: true,
         startDate: new Date()
     });
+    //删除设备
+    function deleteEquipment(equipmentId) {
+
+        if (!equipmentId) {
+            alert('Error！');
+            return false;
+        }
+        var result = confirm("确定删除当前信息？");
+        if (result) {
+
+        } else {
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/deleteEquipment/"
+                + equipmentId,
+                type: "get",
+                success: function (data) {
+                    if (data == true) {
+                        alert("删除成功！");
+                        pagehtml($("#currentPage").val());
+                    } else {
+                        alert("删除失败！");
+                    }
+                },
+                error: function () {
+                    alert("删除错误");
+                },
+            });
+    }
+
+    //获取要修改的设备
+    function getEquipmentById(equipmentId) {
+
+        if (!equipmentId) {
+            alert('Error！');
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/queryEquipmentById",
+                data: {
+                    "equipmentId": equipmentId
+                },
+                type: "get",
+                success: function (data) {
+                    $("#upName").val(data.name);
+                    $("#upProduceName").val(data.position);
+                    $("#link").val(data.link);
+                    $("#dead_line").val(data.deadline);
+                    $("#dupEquipmentId").val(data.id);
+                },
+                error: function () {
+                    alert("请求出错");
+                },
+            });
+        return false;
+    }
+    //修改设备
+    $("#updateForm")
+        .submit(
+            function (e) {
+                var name = $.trim($("#upName").val());
+                var produceName = $.trim($("#upProduceName").val());
+                var no = $.trim($("#upNo").val());
+                var typeId = $.trim($("#upTypeId").val());
+                if (!name || !produceName || !no || typeId == "none") {
+                    alert("设备信息不完整！");
+                    return false;
+                }
+                $
+                    .ajax({
+                        url: "${pageContext.request.contextPath}/equipment/updateEquipment",
+                        type: "post",
+                        contentType: "application/json",
+                        data: JSON.stringify({
+                            name: name,
+                            produceName: produceName,
+                            no: no,
+                            equipmentId: $("#upEquipmentId").val(),
+                            typeId: typeId
+                        }),
+                        success: function (data) {
+                            if (data == true) {
+                                $("#updateEquipment").modal('hide');
+                                alert("修改成功!");
+                                pagehtml($("#currentPage").val());
+                            } else {
+                                alert("修改失败！");
+                            }
+
+                        },
+                        error: function () {
+                            alert("修改出错!");
+                        }
+
+                    });
+                e.preventDefault();
+            });
+
     //添加设备
     $("#createForm")
         .submit(
             function (e) {
                 var name = $.trim($("#crName").val());
-                var link = $.trim($("#link").val());
-                var position = $.trim($("#positioin").val());
-                var push = $.trim($("#push").val());
-                var deadline = $("#datetimepicker").find("input").val();
-                if (!name || !position) {
-                    alert("填写信息不完整！");
+                var no = $.trim($("#crNo").val());
+                var produceName = $.trim($("#crProduceName").val());
+                var typeId = $.trim($("#crTypeId").val());
+                if (!name || !produceName || !no) {
+                    alert("不能有空值！");
                     return false;
                 }
                 $
@@ -183,10 +273,9 @@
                         contentType: "application/json",
                         data: JSON.stringify({
                             name: name,
-                            link: link,
-                            position: position,
-                            push_code: push,
-                            deadline: deadline
+                            produceName: produceName,
+                            no: no,
+                            typeId: typeId
                         }),
                         success: function (data) {
                             if (data == true) {
@@ -217,7 +306,7 @@
                     pageNo: pageNo,
                     pageSize: $("#pageSize").val(),
                     name: $.trim($("#queryName").val()),
-                    applied:2
+                    applied:0
                 }),
                 success: function (data) {
                     $("#total").html("当前共有" + data.page.totalElements + "家公司");
@@ -240,39 +329,61 @@
                         $("#pagination").hide();
                         return false;
                     } else {
+
                         $
                             .each(
                                 data.data,
                                 function (j, val) {
-                                    $('#equList')
-                                        .append(
-                                            "<tr>"
-                                            + "<td>"
-                                            + ((data.page.pageNo - 1)
-                                            * data.page.pageSize
-                                            + j + 1)
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.name
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.position
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.link
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.deadline
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.push
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.push_code
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.status
-                                            + "</td>");
+                                    var html;
+                                    html = "<tr>"
+                                        + "<td>"
+                                        + ((data.page.pageNo - 1)
+                                        * data.page.pageSize
+                                        + j + 1)
+                                        + "</td>"
+                                        + "<td>"
+                                        + val.name
+                                        + "</td>"
+                                        + "<td>"
+                                        + val.position
+                                        + "</td>"
+                                        + "<td>"
+                                        + "<a href= \"#\" onclick= \"goVisit(" + val.link + ")\">" + val.link + "</a>"
+                                        + "</td>"
+                                        + "<td>"
+                                        + val.deadline
+                                        + "</td>"
+                                        + "<td>";
+
+                                        if(val.push==0){
+                                            html += "否";
+                                        }else{
+                                            html += "是";
+                                        }
+                                        html += "</td>"
+                                        + "<td>"
+                                        + val.push_code
+                                            + "</td>";
+
+                                    if(val.status == 0){
+                                        html += "<td style='background:#7CCD7C'>正在进行";
+                                    }else if(val.status == 1){
+                                        html += "<td style='background:#F9F100'>即将过期";
+                                    }else if(val.status == 2){
+                                        html += "<td style='background:#FF3030'>已经结束";
+                                    }else{
+                                        html += "<td >状态未知";
+                                    }
+
+                                    html += "</td>"
+                                        + "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
+                                        + val.id
+                                        + ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>"
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return apply("+val.id+")'>置为已投</button>"
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteEquipment("
+                                        + val.id
+                                        + ")' data-target='#addUserModal'>删除</button></td></tr>>";
+                                    $("#equList").append(html);
 
                                 });
                         $("#pagination").show();
@@ -285,6 +396,12 @@
                 }
             });
     }
+
+    function goVisit(dest) {
+        //       window.open(dest);
+//        location.href = "http://www.baidu.com";
+//        alert(dest);
+    }
     //查询设备
     function queryEquipment() {
         //不管name是否为空，使得搜索条件为空时，查询所有
@@ -292,11 +409,42 @@
         return false;
     }
 
+
     //切换每页显示数据数
     function changePageSize(obj) {
         var pageSize = obj.value;
         $("#pageSize").val(pageSize);
         pagehtml(1);
+    }
+
+    // 设置为已经投递
+    function  apply(equipmentId) {
+        var result = confirm("确定置为已投？");
+        if (result) {
+
+        } else {
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/apply/"+ equipmentId,
+                data: {
+                    "equipmentId": equipmentId
+                },
+                type: "get",
+                success: function (data) {
+                    if (data == true) {
+                        alert("设置成功！");
+                        pagehtml($("#currentPage").val());
+                    } else {
+                        alert("设置失败！");
+                    }
+                },
+                error: function () {
+                    alert("设置错误");
+                },
+            });
+        return false;
     }
 </script>
 

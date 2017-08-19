@@ -19,8 +19,9 @@ import com.ecust.utils.PageUtils;
 public class EquipmentServiceImpl implements EquipmentService {
 	@Autowired
 	private EquipmentDao equipmentDao;
-	
-	public Map<String, Object> queryAllEquipment(int pageNumber,int pageSize,String name) {
+
+	@Override
+	public Map<String, Object> queryAllEquipment(int pageNumber,int pageSize,String name,int applied) {
 		
 		// 分页，并判断分页参数是否存在
 		Page page = new Page();
@@ -32,7 +33,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 			page.setPageSize(10);
 		}
 		PageUtils.page(page);
-		List<Map<String, Object>> map = equipmentDao.queryAllEquipment(name);
+		List<Map<String, Object>> map = equipmentDao.queryAllEquipment(name,applied);
 		Map<String,Object> result = PageUtils.proccess(map);
 		return result;	
 		
@@ -89,6 +90,12 @@ public class EquipmentServiceImpl implements EquipmentService {
 	@Override
 	public Boolean deleteType(String typeId) {
 		equipmentDao.deleteType(typeId);
+		return true;
+	}
+
+	@Override
+	public Boolean apply(String equipmentId){
+		equipmentDao.apply(equipmentId);
 		return true;
 	}
 

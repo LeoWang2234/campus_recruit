@@ -10,7 +10,7 @@ import com.ecust.pojo.Equipment;
 
 public interface EquipmentDao {
 
-	List<Map<String, Object>> queryAllEquipment(@Param("name")String name);
+	List<Map<String, Object>> queryAllEquipment(@Param("name")String name,@Param("applied")int applied);
 
 	Map<String, Object> queryEquipmentById(@Param("equipmentId")int equipmentId);
 
@@ -19,6 +19,8 @@ public interface EquipmentDao {
 	void createEquipment(Company coompany);
 
 	void deleteEquipment(@Param("equipmentId") String equipmentId);
+
+	void apply(@Param("equipmentId") String equipmentId);
 
 	List<Map<String, Object>> queryAllType();
 

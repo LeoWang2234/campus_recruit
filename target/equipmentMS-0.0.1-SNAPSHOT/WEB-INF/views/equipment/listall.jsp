@@ -363,7 +363,7 @@
                     pageNo: pageNo,
                     pageSize: $("#pageSize").val(),
                     name: $.trim($("#queryName").val()),
-                    applied:1
+                    applied:2
                 }),
                 success: function (data) {
                     $("#total").html("当前共有" + data.page.totalElements + "家公司");
@@ -420,24 +420,23 @@
                                         html += "</td>"
                                         + "<td>"
                                         + val.push_code
-                                        + "</td>";
+                                            + "</td>";
 
-                                         if(val.status == 0){
-                                             html += "<td style='background:#7CCD7C'>正在进行";
-                                         }else if(val.status == 1){
-                                             html += "<td style='background:#F9F100'>即将过期";
-                                         }else if(val.status == 2){
-                                             html += "<td style='background:#FF3030'>已经结束";
-                                         }else{
-                                             html += "<td >状态未知";
-                                         }
+                                    if(val.status == 0){
+                                        html += "<td style='background:#7CCD7C'>正在进行";
+                                    }else if(val.status == 1){
+                                        html += "<td style='background:#F9F100'>即将过期";
+                                    }else if(val.status == 2){
+                                        html += "<td style='background:#FF3030'>已经结束";
+                                    }else{
+                                        html += "<td >状态未知";
+                                    }
 
-                                        html += "</td>"
+                                    html += "</td>"
                                         + "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
                                         + val.id
                                         + ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>"
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return apply("+val.id+")'>";
-
                                         if(val.applied==0){
                                             html += "置为已投";
                                         }else{
@@ -483,7 +482,7 @@
 
     // 设置为已经投递
     function  apply(equipmentId) {
-        var result = confirm("确定置为未投？");
+        var result = confirm("确定执行此操作？");
         if (result) {
 
         } else {
