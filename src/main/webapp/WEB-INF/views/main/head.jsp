@@ -47,7 +47,7 @@
 		<ul class="nav navbar-nav navbar-right ">
 			<li>
 				<a style="color:black;">
-					欢迎您：<span class="glyphicon glyphicon-user"></span>${currentUser.trueName }【${currentUser.roleName }】
+					欢迎您：<span class="glyphicon glyphicon-user"></span>${currentUser.trueName }【${currentUser.userName }】
 				</a>
 			</li>
 			<li onmouseover="this.style.backgroundColor='#7b92aa'" onmouseout="this.style.backgroundColor='transparent'"><a  href="javascript:logout()"><span class="glyphicon glyphicon-remove-sign"></span>

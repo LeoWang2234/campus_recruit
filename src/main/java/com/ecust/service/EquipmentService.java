@@ -5,12 +5,12 @@ import java.util.Map;
 
 import com.ecust.pojo.Company;
 import com.ecust.pojo.Equipment;
-
+import org.apache.ibatis.annotations.Param;
 
 
 public interface EquipmentService {
 
-	Map<String, Object> queryAllEquipment(int pageNo, int pageSize, String name, int applied);
+	Map<String, Object> queryAllEquipment(int pageNo, int pageSize, String name, int applied,int userId);
 
 	List<Map<String, Object>> queryAllEquipmentForValidation();
 
@@ -22,7 +22,7 @@ public interface EquipmentService {
 
 	Boolean deleteEquipment(String equipmentId);
 
-	Boolean apply(String equipmentId);
+	Boolean apply(String equipmentId,int userId);
 
 	Map<String, Object> queryAllType();
 
@@ -31,5 +31,7 @@ public interface EquipmentService {
 	Boolean deleteType(String typeId);
 
 	Boolean updateStatus(int id,int status);
+
+	public Boolean addToMe(int equipmentId,int userId);
 
 }

@@ -429,13 +429,9 @@
                                         + "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
                                         + val.id
                                         + ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>"
-                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return apply("+val.id+")'>";
-                                        if(val.applied==0){
-                                            html += "置为已投";
-                                        }else{
-                                            html += "置为未投";
-                                        }
-                                        html += "</button>"
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return addToMe("+val.id+")'>"
+                                        + "加入我的未投"
+                                        + "</button>"
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteEquipment("
                                         + val.id
                                         + ")' data-target='#addUserModal'>删除</button></td></tr>>";
@@ -474,7 +470,7 @@
     }
 
     // 设置为已经投递
-    function  apply(equipmentId) {
+    function  addToMe(equipmentId) {
         var result = confirm("确定执行此操作？");
         if (result) {
 
@@ -483,7 +479,7 @@
         }
         $
             .ajax({
-                url: "${pageContext.request.contextPath}/equipment/apply/"+ equipmentId,
+                url: "${pageContext.request.contextPath}/equipment/addToMe/"+ equipmentId,
                 data: {
                     "equipmentId": equipmentId
                 },

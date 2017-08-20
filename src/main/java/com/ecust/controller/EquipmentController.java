@@ -3,11 +3,13 @@ package com.ecust.controller;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import com.ecust.dto.CompanyForm;
 import com.ecust.permision.AdminPermission;
 import com.ecust.permission.AdmintPermission;
 import com.ecust.pojo.Company;
+import com.ecust.pojo.User;
 import com.ecust.utils.DataTrans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -38,12 +40,18 @@ public class EquipmentController {
 	@ResponseBody
 	@RequestMapping(value="/queryAllEquipment",method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	//page传入页码
-	public Map<String,Object> queryAllDepartment(@RequestBody Map<String, String> param){
+	public Map<String,Object> queryAllDepartment(@RequestBody Map<String, String> param,HttpServletRequest request){
 		int pageSize = Integer.parseInt(param.get("pageSize"));
 		String name = param.get("name");
 		int pageNo = Integer.parseInt(param.get("pageNo"));
 		int applied = Integer.parseInt(param.get("applied"));
-		Map<String,Object> map  = equipmentService.queryAllEquipment(pageNo,pageSize,name,applied);
+		//创建session
+		HttpSession session = request.getSession();
+
+		//获得session中的用户
+		User currentUser = (User) session.getAttribute("currentUser");
+
+		Map<String,Object> map  = equipmentService.queryAllEquipment(pageNo,pageSize,name,applied,currentUser.getId());
 		return map;
 	}
 	//查询所有消息页面
@@ -59,6 +67,19 @@ public class EquipmentController {
 	public Map<String,Object> queryEquipmentById(@RequestParam("equipmentId")int equipmentId){
 		Map<String,Object> map = equipmentService.queryEquipmentById(equipmentId);
 		return map;
+	}
+
+	//根据设备ID查询设备
+	@ResponseBody
+	@RequestMapping(value="/addToMe/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public Boolean addToMe(@PathVariable("equipmentId")int equipmentId,HttpServletRequest request){
+		//创建session
+		HttpSession session = request.getSession();
+
+		//获得session中的用户
+		User currentUser = (User) session.getAttribute("currentUser");
+		equipmentService.addToMe(equipmentId,currentUser.getId());
+		return true;
 	}
 	
 	//更新设备
@@ -88,12 +109,17 @@ public class EquipmentController {
 		return bool;
 	}
 
-	//设置为已投状态
-	@AdminPermission
+	//更改投递状态
 	@ResponseBody
 	@RequestMapping(value="/apply/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean apply(@PathVariable("equipmentId") String equipmentId){
-		Boolean bool = equipmentService.apply(equipmentId);
+	public boolean apply(@PathVariable("equipmentId") String equipmentId,HttpServletRequest request){
+		//创建session
+		HttpSession session = request.getSession();
+
+		//获得session中的用户
+		User currentUser = (User) session.getAttribute("currentUser");
+
+		Boolean bool = equipmentService.apply(equipmentId,currentUser.getId());
 		return bool;
 	}
 	

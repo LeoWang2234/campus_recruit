@@ -11,10 +11,10 @@
 	</a>
 		<ul id="systemSetting" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
-			<li><a href="javascript:pageStateChart()"><i class="glyphicon glyphicon-user"></i>所有未投</a></li>
-			<li ><a href="javascript:pageEquipment()"><i class="glyphicon glyphicon-user"></i>所有已投</a></li>
-			<li><a href="javascript:pageType()"><i class="glyphicon glyphicon-th-list"></i>全部招聘</a></li>
-			<!-- 
+			<li><a href="javascript:pageType()"><i class="glyphicon glyphicon-th-list"></i>新增招聘</a></li>
+			<li><a href="javascript:pageStateChart()"><i class="glyphicon glyphicon-user"></i>我的未投</a></li>
+			<li ><a href="javascript:pageEquipment()"><i class="glyphicon glyphicon-user"></i>我的已投</a></li>
+			<!--
 			<li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>按设备类型</a></li>
 			<li><a href="#"><i class="glyphicon glyphicon-edit"></i>按设备标识</a></li>
 			<li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>安检验情况</a></li> -->

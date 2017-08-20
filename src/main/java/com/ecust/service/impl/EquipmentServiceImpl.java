@@ -32,7 +32,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 		return true;
 	}
 	@Override
-	public Map<String, Object> queryAllEquipment(int pageNumber,int pageSize,String name,int applied) {
+	public Map<String, Object> queryAllEquipment(int pageNumber,int pageSize,String name,int applied,int userId) {
 		
 		// 分页，并判断分页参数是否存在
 		Page page = new Page();
@@ -44,7 +44,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 			page.setPageSize(10);
 		}
 		PageUtils.page(page);
-		List<Map<String, Object>> map = equipmentDao.queryAllEquipment(name,applied);
+		List<Map<String, Object>> map = equipmentDao.queryAllEquipment(name,applied,userId);
 		Map<String,Object> result = PageUtils.proccess(map);
 		return result;	
 		
@@ -57,6 +57,11 @@ public class EquipmentServiceImpl implements EquipmentService {
 		return map;
 	}
 
+	@Override
+	public Boolean addToMe(int equipmentId,int userId) {
+		equipmentDao.addToMe(equipmentId,userId);
+		return true;
+	}
 	@Override
 	public Boolean updateEquipment(Company company) {
 		equipmentDao.updateEquipment(company);
@@ -105,8 +110,9 @@ public class EquipmentServiceImpl implements EquipmentService {
 	}
 
 	@Override
-	public Boolean apply(String equipmentId){
-		equipmentDao.apply(equipmentId);
+	public Boolean apply(String equipmentId,int userId){
+
+		equipmentDao.apply(equipmentId,userId);
 		return true;
 	}
 
