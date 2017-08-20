@@ -13,10 +13,10 @@
 	rel="stylesheet" /> --%>
 <script type="text/javascript" charset="utf-8"
         src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
 <script type="text/javascript" charset="utf-8"
         src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
 
@@ -79,7 +79,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <input type="text" name="equipmentId" id="upEquipmentId"
-                       style="display:none"/>
+                       style="display: none"/>
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
                             aria-hidden="true">&times;
@@ -261,7 +261,7 @@
                     $("#upProduceName").val(data.position);
                     $("#link").val(data.link);
                     $("#dead_line").val(data.deadline);
-                    $("#dupEquipmentId").val(data.id);
+                    $("#upEquipmentId").val(data.id);
                 },
                 error: function () {
                     alert("请求出错");
@@ -274,13 +274,9 @@
         .submit(
             function (e) {
                 var name = $.trim($("#upName").val());
-                var produceName = $.trim($("#upProduceName").val());
-                var no = $.trim($("#upNo").val());
-                var typeId = $.trim($("#upTypeId").val());
-                if (!name || !produceName || !no || typeId == "none") {
-                    alert("设备信息不完整！");
-                    return false;
-                }
+                var position = $.trim($("#upProduceName").val());
+                var link = $.trim($("#link").val());
+                var deadline = $.trim($("#dead_line").val());
                 $
                     .ajax({
                         url: "${pageContext.request.contextPath}/equipment/updateEquipment",
@@ -288,26 +284,25 @@
                         contentType: "application/json",
                         data: JSON.stringify({
                             name: name,
-                            produceName: produceName,
-                            no: no,
-                            equipmentId: $("#upEquipmentId").val(),
-                            typeId: typeId
+                            position: position,
+                            link: link,
+                            id: $("#upEquipmentId").val(),
+                            deadline: deadline
                         }),
                         success: function (data) {
                             if (data == true) {
-                                $("#updateEquipment").modal('hide');
                                 alert("修改成功!");
                                 pagehtml($("#currentPage").val());
                             } else {
                                 alert("修改失败！");
                             }
-
                         },
                         error: function () {
                             alert("修改出错!");
                         }
 
                     });
+
                 e.preventDefault();
             });
 
@@ -336,7 +331,7 @@
                         }),
                         success: function (data) {
                             if (data == true) {
-                                $("#createEquipment").modal('hide');
+                                $("#createEquipment").modal('toggle');
                                 alert("添加成功!");
                                 pagehtml($("#currentPage").val());
                             } else {

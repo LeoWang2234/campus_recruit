@@ -16,7 +16,7 @@ public interface EquipmentDao {
 
 	Map<String, Object> queryEquipmentById(@Param("equipmentId")int equipmentId);
 
-	void updateEquipment(Equipment equipment);
+	void updateEquipment(Company company);
 
 	void createEquipment(Company coompany);
 

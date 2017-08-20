@@ -41,10 +41,10 @@ public class UserController {
 			request.setAttribute("loginMsg","用户名或密码非法不能登录");
 			return "forward:/login.jsp";
 		}
-		//User currentUser = userService.login(user);
-		User currentUser = new User();
-		currentUser.setPassword("SUPER");
-		currentUser.setUserName("SUPER");
+		User currentUser = userService.login(user);
+//		User currentUser = new User();
+//		currentUser.setPassword("SUPER");
+//		currentUser.setUserName("SUPER");
 
 		if(currentUser == null){
 			request.setAttribute("loginMsg", "用户名或密码错误！");

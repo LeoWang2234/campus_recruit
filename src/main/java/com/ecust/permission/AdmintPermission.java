@@ -1,4 +1,4 @@
-package com.ecust.permision;
+package com.ecust.permission;
 
 /**
  * Created by cheng on 2017/8/20.

@@ -7,21 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc9821b-1f8b-41e5-a50c-cd6b06ca8125" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/schedule/TestJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-quartz.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ecust/schedule/TestJob.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-quartz.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/schedule/TestJob.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/spring-quartz.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/permision/AdmintPermission.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/equipmentMS-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/spring/equipmentMS-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/equipmentMS-servlet.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/equipmentMS-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/list.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listall.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/lisunapplied.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/lisunapplied.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,138 +49,169 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ValidationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/schedule/ValidationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="605" column="81" lean-forward="false" selection-start-line="605" selection-start-column="77" selection-end-line="605" selection-end-column="81" />
-              <folding>
-                <element signature="e#6390#6391#0" expanded="true" />
-                <element signature="e#6438#6439#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2432">
-              <caret line="433" column="0" lean-forward="true" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
-              <folding>
-                <marker date="1503154670000" expanded="true" signature="15775:15782" ph="×" />
-                <marker date="1503154670000" expanded="true" signature="17830:17848" ph="..." />
-                <marker date="1503154670000" expanded="true" signature="17990:18008" ph="..." />
-                <marker date="1503154670000" expanded="true" signature="18150:18168" ph="..." />
-                <marker date="1503154670000" expanded="true" signature="18725:18731" ph="&amp;nbsp;" />
-                <marker date="1503154670000" expanded="true" signature="18731:18737" ph="&amp;nbsp;" />
-                <marker date="1503154670000" expanded="true" signature="19198:19204" ph="&amp;nbsp;" />
-                <marker date="1503154670000" expanded="true" signature="19204:19210" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduledMethodRunnable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar!/org/springframework/scheduling/support/ScheduledMethodRunnable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelegatingErrorHandlingRunnable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentDaoMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-              <folding>
-                <marker date="1503163387000" expanded="true" signature="273:675" ph="SELECT ee.eq... equ_equipment" />
-                <marker date="1503163387000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="774:917" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="992:1143" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="992:1360" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="992:1470" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="1546:1709" ph="SELECT ee.id... companies" />
-                <marker date="1503163387000" expanded="true" signature="1752:1818" ph="UPDATE compa... " />
-                <marker date="1503163387000" expanded="true" signature="1904:2062" ph="UPDATE equ_e... " />
-                <marker date="1503163387000" expanded="true" signature="2107:2319" ph="INSERT INTO companies... " />
-                <marker date="1503163387000" expanded="true" signature="2354:2423" ph="update compa... " />
-                <marker date="1503163387000" expanded="true" signature="2469:2524" ph="DELETE FROM " />
-                <marker date="1503163387000" expanded="true" signature="2595:2724" ph="SELECT et.*,... equ_type" />
-                <marker date="1503163387000" expanded="true" signature="2764:2885" ph="INSERT INTO equ_type... " />
-                <marker date="1503163387000" expanded="true" signature="2925:2978" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="lisunapplied.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="208" column="36" lean-forward="true" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
+                  <folding>
+                    <marker date="1503206384000" expanded="true" signature="12923:12930" ph="×" />
+                    <marker date="1503206384000" expanded="true" signature="14972:14990" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15122:15140" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15272:15290" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15828:15834" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15834:15840" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15983:15989" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15989:15995" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ChartsController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/ChartsController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <marker date="1503205356000" expanded="true" signature="3371:3509" ph="@{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="equipmentMS-servlet.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="429">
+                  <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="189">
+                  <caret line="282" column="37" lean-forward="true" selection-start-line="282" selection-start-column="37" selection-end-line="282" selection-end-column="37" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#table#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#1;n#div#2;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#3953#3960#0#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#1;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#7024#7031#0#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#1;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1503206375000" expanded="true" signature="15680:15687" ph="×" />
+                    <marker date="1503206375000" expanded="true" signature="17735:17753" ph="..." />
+                    <marker date="1503206375000" expanded="true" signature="17895:17913" ph="..." />
+                    <marker date="1503206375000" expanded="true" signature="18055:18073" ph="..." />
+                    <marker date="1503206375000" expanded="true" signature="18630:18636" ph="&amp;nbsp;" />
+                    <marker date="1503206375000" expanded="true" signature="18636:18642" ph="&amp;nbsp;" />
+                    <marker date="1503206375000" expanded="true" signature="19103:19109" ph="&amp;nbsp;" />
+                    <marker date="1503206375000" expanded="true" signature="19109:19115" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/head.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="lisunapplied.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="383">
+                  <caret line="229" column="41" lean-forward="false" selection-start-line="229" selection-start-column="41" selection-end-line="229" selection-end-column="41" />
+                  <folding>
+                    <marker date="1503206384000" expanded="true" signature="12923:12930" ph="×" />
+                    <marker date="1503206384000" expanded="true" signature="14972:14990" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15122:15140" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15272:15290" ph="..." />
+                    <marker date="1503206384000" expanded="true" signature="15828:15834" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15834:15840" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15983:15989" ph="&amp;nbsp;" />
+                    <marker date="1503206384000" expanded="true" signature="15989:15995" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,13 +227,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jackson.core</find>
-      <find>jackson</find>
-      <find>he</find>
-      <find>hello</find>
-      <find>applicati</find>
-      <find>a</find>
-      <find>app</find>
       <find>appl</find>
       <find>appli</find>
       <find>applic</find>
@@ -210,6 +250,13 @@
       <find>contextConfigLocation</find>
       <find>pageStateChart</find>
       <find>Date</find>
+      <find>get</find>
+      <find>updateForm</find>
+      <find>updateEquipment</find>
+      <find>upEquipmentId</find>
+      <find>equipmentId</find>
+      <find>queryEquipmentById</find>
+      <find>dupEquipmentId</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -232,11 +279,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/utils/SignUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/MsgDispatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/BaseMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/req/ImageMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/req/LinkMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/req/LocationMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/req/TextMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/message/req/VideoMessage.java" />
@@ -273,16 +315,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/common/WeChatTask.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-quartz.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/schedule/TestJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/schedule/ValidationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" />
       </list>
     </option>
   </component>
@@ -340,7 +387,6 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1255" />
     <option name="height" value="777" />
@@ -361,8 +407,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,16 +417,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -460,40 +496,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repair" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,7 +589,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Scripts" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,184 +748,6 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="start" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quartz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dispatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -926,40 +776,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ecust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipmentMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1065,7 +881,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schedule" />
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="permision" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1139,7 +1023,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1865,10 +1749,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106424000" />
+    <option name="totallyTimeSpent" value="110039000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1255" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1255" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1883,18 +1767,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48175183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81313866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64671534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48467153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.95182484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33882934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81459856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2539159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1991,7 +1875,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2000,94 +1884,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/LocationMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/TextMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/VideoMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/VoiceMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/resp/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/resp/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/com/thoughtworks/xstream/XStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="691" column="16" lean-forward="false" selection-start-line="691" selection-start-column="16" selection-end-line="691" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar!/org/apache/http/client/methods/HttpGet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="360" column="26" lean-forward="false" selection-start-line="360" selection-start-column="26" selection-end-line="360" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/start/GlobalConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#410#411#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/interface_url.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/start/InterfaceUrlInti.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
@@ -2104,8 +1900,8 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2121,9 +1917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2148,7 +1941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2170,10 +1962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3705">
           <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2743#2758#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2181,9 +1969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2191,9 +1976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2204,28 +1986,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-quartz.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-quartz.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/utils/SignUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2252,23 +2017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="308" column="29" lean-forward="false" selection-start-line="308" selection-start-column="29" selection-end-line="308" selection-end-column="29" />
-          <folding>
-            <marker date="1503154670000" expanded="true" signature="13021:13028" ph="×" />
-            <marker date="1503154670000" expanded="true" signature="15070:15088" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="15220:15238" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="15370:15388" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="15926:15932" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="15932:15938" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="16081:16087" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="16087:16093" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/RepairController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2285,27 +2033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2342,10 +2073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="605" column="81" lean-forward="false" selection-start-line="605" selection-start-column="77" selection-end-line="605" selection-end-column="81" />
-          <folding>
-            <element signature="e#6390#6391#0" expanded="true" />
-            <element signature="e#6438#6439#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2353,7 +2080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2361,47 +2087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding>
-            <marker date="1503163387000" expanded="true" signature="273:675" ph="SELECT ee.eq... equ_equipment" />
-            <marker date="1503163387000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="774:917" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="992:1143" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="992:1360" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="992:1470" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="1546:1709" ph="SELECT ee.id... companies" />
-            <marker date="1503163387000" expanded="true" signature="1752:1818" ph="UPDATE compa... " />
-            <marker date="1503163387000" expanded="true" signature="1904:2062" ph="UPDATE equ_e... " />
-            <marker date="1503163387000" expanded="true" signature="2107:2319" ph="INSERT INTO companies... " />
-            <marker date="1503163387000" expanded="true" signature="2354:2423" ph="update compa... " />
-            <marker date="1503163387000" expanded="true" signature="2469:2524" ph="DELETE FROM " />
-            <marker date="1503163387000" expanded="true" signature="2595:2724" ph="SELECT et.*,... equ_type" />
-            <marker date="1503163387000" expanded="true" signature="2764:2885" ph="INSERT INTO equ_type... " />
-            <marker date="1503163387000" expanded="true" signature="2925:2978" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2410,40 +2095,320 @@
         <state relative-caret-position="246">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/AdminPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="146" column="33" lean-forward="false" selection-start-line="146" selection-start-column="3" selection-end-line="146" selection-end-column="33" />
+          <folding>
+            <marker date="1503202778000" expanded="true" signature="960:1788" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="987:1444" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1026:1433" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="1072:1084" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1085:1417" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1157:1205" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1236:1398" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1308:1386" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1364:1370" ph="&amp;nbsp;" />
+            <marker date="1503202778000" expanded="true" signature="1532:1575" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="1549:1568" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1602:1781" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="1665:1678" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1679:1769" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1794:2357" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1862:2350" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="1881:1900" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1917:2300" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="1930:2283" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="2379:3141" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="2422:2470" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="2515:2530" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="2531:2976" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="3025:3037" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="3102:3114" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3223:6593" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="3253:3266" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3331:6584" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3475:6548" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3515:6496" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3558:3819" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3636:3720" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="3684:3691" ph="×" />
+            <marker date="1503202778000" expanded="true" signature="3860:6187" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="3905:4248" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4040:4221" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4133:4190" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4432:4632" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4520:4601" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4704:5041" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4837:5014" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="4926:4983" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5086:5423" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5218:5396" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5307:5365" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5488:6163" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5669:6135" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5791:5848" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5898:6104" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="5998:6068" ph="..." />
+            <marker date="1503202778000" expanded="false" signature="6238:6255" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="6256:6477" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="6344:6376" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="6626:12620" ph="..." />
+            <marker date="1503202778000" expanded="true" signature="6682:6733" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="6777:7011" ph="{&quot;format&quot;: 'MM/dd/yyyy'...}" />
+            <marker date="1503202778000" expanded="true" signature="7088:8663" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="7426:7518" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="7563:8611" ph="{&quot;url&quot;: &quot;${pageContext.request.contextPath}/equipment/createEquipment&quot;...}" />
+            <marker date="1503202778000" expanded="true" signature="7798:8045" ph="{&quot;name&quot;: name...}" />
+            <marker date="1503202778000" expanded="true" signature="8097:8472" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="8145:8360" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="8366:8445" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="8517:8588" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="8706:12332" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="8736:12324" ph="{&quot;url&quot;: &quot;${pageContext.request.contextPath}/equipment/queryAllEquipment&quot;...}" />
+            <marker date="1503202778000" expanded="true" signature="8941:9135" ph="{&quot;pageNo&quot;: pageNo...}" />
+            <marker date="1503202778000" expanded="true" signature="9179:12213" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="9295:9804" ph="{&quot;alignment&quot;: &quot;center&quot;...}" />
+            <marker date="1503202778000" expanded="true" signature="9654:9782" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="9890:10257" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="10065:10072" ph="×" />
+            <marker date="1503202778000" expanded="true" signature="10263:12194" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="10419:12051" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="12255:12310" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="12374:12460" ph="{...}" />
+            <marker date="1503202778000" expanded="true" signature="12511:12611" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-paginator.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="26">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="101" column="27" lean-forward="true" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding>
+            <marker date="1503204377000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
+            <marker date="1503204377000" expanded="true" signature="992:1470" ph="SELECT ee.id... companies" />
+            <marker date="1503204377000" expanded="true" signature="1546:1709" ph="SELECT ee.id... companies" />
+            <marker date="1503204377000" expanded="true" signature="1752:1818" ph="UPDATE compa... " />
+            <marker date="1503204377000" expanded="true" signature="1904:2042" ph="UPDATE compa... " />
+            <marker date="1503204377000" expanded="true" signature="2087:2299" ph="INSERT INTO companies... " />
+            <marker date="1503204377000" expanded="true" signature="2334:2403" ph="update compa... " />
+            <marker date="1503204377000" expanded="true" signature="2449:2504" ph="DELETE FROM " />
+            <marker date="1503204377000" expanded="true" signature="2575:2704" ph="SELECT et.*,... equ_type" />
+            <marker date="1503204377000" expanded="true" signature="2744:2865" ph="INSERT INTO equ_type... " />
+            <marker date="1503204377000" expanded="true" signature="2905:2958" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/AdmintPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state relative-caret-position="17">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1503205356000" expanded="true" signature="3371:3509" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1309">
+          <caret line="302" column="23" lean-forward="true" selection-start-line="302" selection-start-column="23" selection-end-line="302" selection-end-column="23" />
+          <folding>
+            <marker date="1503206375000" expanded="true" signature="15675:15682" ph="×" />
+            <marker date="1503206375000" expanded="true" signature="17724:17742" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="17874:17892" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="18024:18042" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="18580:18586" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="18586:18592" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="19052:19058" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="19058:19064" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/ChartsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="208" column="36" lean-forward="true" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
+          <folding>
+            <marker date="1503206384000" expanded="true" signature="12923:12930" ph="×" />
+            <marker date="1503206384000" expanded="true" signature="14972:14990" ph="..." />
+            <marker date="1503206384000" expanded="true" signature="15122:15140" ph="..." />
+            <marker date="1503206384000" expanded="true" signature="15272:15290" ph="..." />
+            <marker date="1503206384000" expanded="true" signature="15828:15834" ph="&amp;nbsp;" />
+            <marker date="1503206384000" expanded="true" signature="15834:15840" ph="&amp;nbsp;" />
+            <marker date="1503206384000" expanded="true" signature="15983:15989" ph="&amp;nbsp;" />
+            <marker date="1503206384000" expanded="true" signature="15989:15995" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2432">
-          <caret line="433" column="0" lean-forward="true" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="282" column="37" lean-forward="true" selection-start-line="282" selection-start-column="37" selection-end-line="282" selection-end-column="37" />
           <folding>
-            <marker date="1503154670000" expanded="true" signature="15775:15782" ph="×" />
-            <marker date="1503154670000" expanded="true" signature="17830:17848" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="17990:18008" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="18150:18168" ph="..." />
-            <marker date="1503154670000" expanded="true" signature="18725:18731" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="18731:18737" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="19198:19204" ph="&amp;nbsp;" />
-            <marker date="1503154670000" expanded="true" signature="19204:19210" ph="&amp;nbsp;" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3953#3960#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7024#7031#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#1;n#html#0;n#!!top" expanded="true" />
+            <marker date="1503206375000" expanded="true" signature="15680:15687" ph="×" />
+            <marker date="1503206375000" expanded="true" signature="17735:17753" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="17895:17913" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="18055:18073" ph="..." />
+            <marker date="1503206375000" expanded="true" signature="18630:18636" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="18636:18642" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="19103:19109" ph="&amp;nbsp;" />
+            <marker date="1503206375000" expanded="true" signature="19109:19115" ph="&amp;nbsp;" />
           </folding>
         </state>
       </provider>

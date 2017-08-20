@@ -68,8 +68,12 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>/WEB-INF/views/login.jsp</welcome-file>-->
+    <!--</welcome-file-list>-->
+
     <welcome-file-list>
-        <welcome-file>/WEB-INF/views/main.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- 加载log4j配置文件 -->
@@ -80,8 +84,4 @@
     <listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
-
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
 </web-app>

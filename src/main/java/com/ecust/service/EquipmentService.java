@@ -16,7 +16,7 @@ public interface EquipmentService {
 
 	Map<String, Object> queryEquipmentById(int equipmentId);
 
-	Boolean updateEquipment(Equipment equipment);
+	Boolean updateEquipment(Company company);
 
 	Boolean createEquipment(Company company);
 

@@ -58,14 +58,14 @@ public class EquipmentServiceImpl implements EquipmentService {
 	}
 
 	@Override
-	public Boolean updateEquipment(Equipment equipment) {
-		equipmentDao.updateEquipment(equipment);
+	public Boolean updateEquipment(Company company) {
+		equipmentDao.updateEquipment(company);
 		return true;
 	}
 
 	@Override
 	public Boolean createEquipment(Company company) {
-		
+
 		equipmentDao.createEquipment(company);
 		return true;
 	}

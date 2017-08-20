@@ -95,14 +95,14 @@
 	</update>
 	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
 		UPDATE
-			equ_equipment
+			companies
 		SET
-			no = #{no},
 			name = #{name},
-			produceName = #{produceName},
-			typeId = #{typeId}
+			position = #{position},
+			link = #{link},
+			deadline = #{deadline}
 		WHERE
-			equipmentId = #{equipmentId}
+			id = #{id}
 	</update>
 	<insert id="createEquipment">
 		INSERT INTO companies(

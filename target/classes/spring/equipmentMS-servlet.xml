@@ -45,5 +45,9 @@
 			<mvc:mapping path="/**"/>
 			<bean class = "com.ecust.LoginInterceptor"></bean>
 		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/equipment/**"/>
+			<bean class = "com.ecust.PermissionsInterceptor"></bean>
+		</mvc:interceptor>
 	</mvc:interceptors>
 </beans>

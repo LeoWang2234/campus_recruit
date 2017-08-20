@@ -5,6 +5,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import com.ecust.dto.CompanyForm;
+import com.ecust.permision.AdminPermission;
+import com.ecust.permission.AdmintPermission;
 import com.ecust.pojo.Company;
 import com.ecust.utils.DataTrans;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ecust.pojo.Equipment;
 import com.ecust.service.EquipmentService;
 
 @Controller
@@ -61,14 +62,16 @@ public class EquipmentController {
 	}
 	
 	//更新设备
+	@AdminPermission
 	@ResponseBody
 	@RequestMapping(value="/updateEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean updateEquipment(@RequestBody Equipment equipment){
-		Boolean bool = equipmentService.updateEquipment(equipment);
+	public boolean updateEquipment(@RequestBody Company company){
+		Boolean bool = equipmentService.updateEquipment(company);
 		return bool;
 	}
 	
 	//添加设备
+	@AdminPermission
 	@ResponseBody
 	@RequestMapping(value="/createEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean createEquipment(@RequestBody CompanyForm companyForm){
@@ -78,6 +81,7 @@ public class EquipmentController {
 	}
 	
 	//删除设备
+	@AdminPermission
 	@ResponseBody
 	@RequestMapping(value="/deleteEquipment/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean deleteEquipment(@PathVariable("equipmentId") String equipmentId){
@@ -86,6 +90,7 @@ public class EquipmentController {
 	}
 
 	//设置为已投状态
+	@AdminPermission
 	@ResponseBody
 	@RequestMapping(value="/apply/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean apply(@PathVariable("equipmentId") String equipmentId){
