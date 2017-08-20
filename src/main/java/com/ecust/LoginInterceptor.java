@@ -18,7 +18,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         //创建session
         HttpSession session = request.getSession();
         //无需登录，允许访问的地址  
-        String[] allowUrls = new String[]{"/login"};
+        String[] allowUrls = new String[]{"/login","/signup"};
 
         //获取请求地址  
         String url = request.getRequestURL().toString();

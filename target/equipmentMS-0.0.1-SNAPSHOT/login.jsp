@@ -85,6 +85,10 @@ width:992px;
                             </div>
 
                             <input type="submit" class="formBtn-login" value="登 录" />
+                            <div>
+                                <p style="text-align: center"><a href="${pageContext.request.contextPath}/signup"  >点 我 注 册</a></p>
+                            </div>
+
                         </form>
                     </div>
                     <div class="clear"></div>

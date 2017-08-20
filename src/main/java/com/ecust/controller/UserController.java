@@ -5,6 +5,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.ecust.pojo.RUser;
+import com.ecust.utils.DataTrans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -89,11 +91,21 @@ public class UserController {
 	
 	//添加角色
 	@ResponseBody
-	@RequestMapping(value="/createUser",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean createUser(@RequestBody User user){
-		
+	@RequestMapping(value="/createUser",method = RequestMethod.POST)
+	public String createUser(HttpServletRequest request){
+		String name = request.getParameter("userName");
+		String password = request.getParameter("password");
+		User user = new User();
+		user.setRoleName("用户");
+		user.setPassword(password);
+		user.setUserName(name);
 		boolean bool = userService.createUser(user);
-		return bool;
+
+		if(bool){
+			return "Sign up succeed";
+		}else {
+			return "Sign up Failed";
+		}
 	}
 	
 	//获取要修改的用户

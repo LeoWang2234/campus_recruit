@@ -2,6 +2,8 @@ package com.ecust.utils;
 
 import com.ecust.dto.CompanyForm;
 import com.ecust.pojo.Company;
+import com.ecust.pojo.RUser;
+import com.ecust.pojo.User;
 
 /**
  * Created by cheng on 2017/8/18.
@@ -22,6 +24,14 @@ public class DataTrans {
         }
         company.setStatus(0); // 0 :未投递 1: 已投递
         return company;
+    }
+
+    public static User toUser(RUser rUser) {
+        User user = new User();
+        user.setUserName(rUser.getUserName());
+        user.setPassword(rUser.getPassword());
+        user.setRoleName("用户");
+        return user;
     }
 
     public static void main(String[] args) {
