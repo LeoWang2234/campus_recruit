@@ -71,7 +71,6 @@ public class EquipmentController {
 	}
 	
 	//添加设备
-	@AdminPermission
 	@ResponseBody
 	@RequestMapping(value="/createEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean createEquipment(@RequestBody CompanyForm companyForm){

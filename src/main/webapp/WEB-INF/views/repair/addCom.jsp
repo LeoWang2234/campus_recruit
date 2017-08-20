@@ -13,10 +13,10 @@
 	rel="stylesheet" /> --%>
 <script type="text/javascript" charset="utf-8"
         src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
 
 <div class="row search">
     <div class="col-md-6">
@@ -190,7 +190,6 @@
                         }),
                         success: function (data) {
                             if (data == true) {
-                                $("#createEquipment").modal('hide');
                                 alert("添加成功!");
                                 pagehtml($("#currentPage").val());
                             } else {

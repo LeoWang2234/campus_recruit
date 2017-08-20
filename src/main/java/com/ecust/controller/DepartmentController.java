@@ -28,7 +28,7 @@ import com.ecust.service.DepartmentService;
 
 @Controller
 @RequestMapping("/department")
-public class DepartmentController {
+public class 	DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	

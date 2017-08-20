@@ -35,7 +35,7 @@ public class ValidationTest {
             try {
                 date1 = sdf.parse(dateString);
                 int days = (int) ((date1.getTime() - date2.getTime()) / (1000 * 3600 * 24));
-                if (days <= 0) { // 已经过期
+                if (days < 0) { // 已经过期
                     equipmentService.updateStatus(((Long)oneCompany.get("id")).intValue(),2);
                 }else if(days < 3 ){ // 即将过期
                     equipmentService.updateStatus(((Long)oneCompany.get("id")).intValue(),1);

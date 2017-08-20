@@ -30,7 +30,8 @@
 		<ul id="repair" class="nav nav-list collapse secondmenu"
 			style="height: 0px;">
 			<li><a href="javascript:pageRepair()"><i class="glyphicon glyphicon-user"></i>添加招聘 </a></li>
-			<li><a href="javascript:pageRepairHistory()"><i class="glyphicon glyphicon-th-list"></i>添加历史</a></li>
+			<!--href="javascript:pageRepairHistory()"-->
+			<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>添加历史</a></li>
 			<li><a href="javascript:pageRepairChart()"><i class="glyphicon glyphicon-globe"></i>历史统计</a></li>
 		</ul></li>
 	<!-- <li style="margin: 0"><a href="#"> <i
@@ -55,26 +56,29 @@
 
 	//用户权限管理
 	$(function(){
-		var roleName = "${currentUser.roleName}";
-		//管理员，最高权限
-		if(roleName == "管理员"){
-		}
-		//维修人员，只能查看设备维修
-		else if(roleName == "维修者"){
-			$("#equipmentMenu").hide();
-			$("#departmentMenu").hide();
-			$("#userMenu").hide();
-		}
-		//用户只能查看设备管理和设备维修
-		else if(roleName == "用户"){
-			$("#departmentMenu").hide();
-			$("#userMenu").hide();
-		}
-		//其他人权限，暂定
-		else{
-			$("#departmentMenu").hide();
-			$("#userMenu").hide();
-		}
+
+        $("#userMenu").hide();
+        $("#departmentMenu").hide();
+		<%--var roleName = "${currentUser.roleName}";--%>
+		<%--//管理员，最高权限--%>
+		<%--if(roleName == "管理员"){--%>
+		<%--}--%>
+		<%--//维修人员，只能查看设备维修--%>
+		<%--else if(roleName == "维修者"){--%>
+			<%--$("#equipmentMenu").hide();--%>
+			<%--$("#departmentMenu").hide();--%>
+			<%--$("#userMenu").hide();--%>
+		<%--}--%>
+		<%--//用户只能查看设备管理和设备维修--%>
+		<%--else if(roleName == "用户"){--%>
+			<%--$("#departmentMenu").hide();--%>
+			<%--$("#userMenu").hide();--%>
+		<%--}--%>
+		<%--//其他人权限，暂定--%>
+		<%--else{--%>
+			<%--$("#departmentMenu").hide();--%>
+			<%--$("#userMenu").hide();--%>
+		<%--}--%>
 	});
 	
 	//查询所有部门
