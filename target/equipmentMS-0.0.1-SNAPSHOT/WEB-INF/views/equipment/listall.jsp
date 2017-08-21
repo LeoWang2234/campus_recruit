@@ -237,7 +237,7 @@
                     }
                 },
                 error: function () {
-                    alert("删除错误");
+                    alert("设置出错");
                 },
             });
     }
