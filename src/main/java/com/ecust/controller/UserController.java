@@ -35,12 +35,12 @@ public class UserController {
 		String password = request.getParameter("password");
 		//用户名或密码为空,用户输入账号或密码不能为字符串“null”
 		if(name == null || password == null){
-			request.setAttribute("loginMsg","用户名或密码不能为空");
+			request.setAttribute("loginMsg","enter your info first");
 			return "forward:/login.jsp";
 		}
 		//注册时进行空格等信息的过滤
 		if(!(name.trim().length()>0 && password.trim().length()>0)){
-			request.setAttribute("loginMsg","用户名或密码非法不能登录");
+			request.setAttribute("loginMsg","invalid input");
 			return "forward:/login.jsp";
 		}
 		User currentUser = userService.login(user);
@@ -49,7 +49,7 @@ public class UserController {
 //		currentUser.setUserName("SUPER");
 
 		if(currentUser == null){
-			request.setAttribute("loginMsg", "用户名或密码错误！");
+			request.setAttribute("loginMsg", "username or password is wrong");
 			return "forward:/login.jsp";
 		}else{
 			HttpSession session = request.getSession();
@@ -99,12 +99,22 @@ public class UserController {
 		user.setRoleName("用户");
 		user.setPassword(password);
 		user.setUserName(name);
-		boolean bool = userService.createUser(user);
-
-		if(bool){
-			return "Sign up succeed";
+		int userNums = userService.countUserNum();
+		String url = request.getScheme() + "://"
+				+ request.getServerName() + ":" + request.getServerPort()+request.getContextPath();
+		if (userNums<=50){
+			boolean bool = userService.createUser(user);
+			if(bool){
+				return "Sign up succeed <a href = \""+url+"\">Click  Me To Login</a>";
+			}else {
+				return "Sign up Failed <a href = \""+url+"/signup\">Click Me To Re-Sign-Up</a>";
+			}
 		}else {
-			return "Sign up Failed";
+			return "User Number is full<br>" +
+					"Anyway, you can still login with a guest account<br>" +
+					"username: guest<br>" +
+					"password: guest<br>" +
+					"<a href = \"" + url + "\">Click  Me To Login</a>";
 		}
 	}
 	

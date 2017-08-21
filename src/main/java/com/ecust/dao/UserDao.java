@@ -28,4 +28,6 @@ public interface UserDao {
 
 	public void deleteUser(@Param("id")String id);
 
+	public int countUserNum();
+
 }

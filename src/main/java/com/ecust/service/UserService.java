@@ -22,4 +22,6 @@ public interface UserService {
 	public Boolean updateUser(User user);
 
 	public Boolean deleteUser(String id);
+
+	public int countUserNum();
 }

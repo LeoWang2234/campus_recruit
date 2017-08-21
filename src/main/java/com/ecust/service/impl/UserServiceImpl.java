@@ -23,6 +23,13 @@ public class UserServiceImpl implements UserService {
 	public User login(User user){
 		return userDao.login(user);
 	}
+
+	@Override
+	public int countUserNum() {
+		int userNums = userDao.countUserNum();
+		return userNums;
+	}
+
 	@Override
 	public Map<String, Object> queryAllUser(Integer pageNo, Integer pageSize) {
 		// 分页，并判断分页参数是否存在
@@ -96,5 +103,7 @@ public class UserServiceImpl implements UserService {
 		userDao.deleteUser(id);
 		return true;
 	}
-	
+
+
+
 }

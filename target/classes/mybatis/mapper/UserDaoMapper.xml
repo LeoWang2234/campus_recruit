@@ -81,6 +81,13 @@
 			id = #{id}
 			
 	</select>
+	<select id="countUserNum" resultType="int">
+		SELECT
+		count(*)
+		FROM
+		equ_user
+	</select>
+
 	<update id="updateUser" parameterType="User">
 		UPDATE 
 			equ_user

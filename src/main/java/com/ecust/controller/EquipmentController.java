@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 
 import com.ecust.dto.CompanyForm;
 import com.ecust.permision.AdminPermission;
+import com.ecust.permision.GuestPermission;
 import com.ecust.permission.AdmintPermission;
 import com.ecust.pojo.Company;
 import com.ecust.pojo.User;
@@ -92,6 +93,7 @@ public class EquipmentController {
 	}
 	
 	//添加设备
+	@GuestPermission
 	@ResponseBody
 	@RequestMapping(value="/createEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean createEquipment(@RequestBody CompanyForm companyForm){

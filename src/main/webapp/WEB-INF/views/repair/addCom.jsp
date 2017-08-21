@@ -193,7 +193,7 @@
                                 alert("添加成功!");
                                 pagehtml($("#currentPage").val());
                             } else {
-                                alert("添加失败！");
+                                alert("游客身份不能添加！");
                             }
 
                         },

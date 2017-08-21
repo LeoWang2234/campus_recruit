@@ -1,6 +1,7 @@
 package com.ecust;
 
 import com.ecust.permision.AdminPermission;
+import com.ecust.permision.GuestPermission;
 import com.ecust.permission.AdmintPermission;
 import com.ecust.pojo.User;
 import org.springframework.web.method.HandlerMethod;
@@ -21,8 +22,13 @@ public class PermissionsInterceptor extends HandlerInterceptorAdapter {
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         Method method = handlerMethod.getMethod();
         boolean isPass=true;
+        HttpSession session = request.getSession();
+        User currentUser = (User) session.getAttribute("currentUser");
         if(method.getAnnotation(AdminPermission.class)!=null){
-            isPass=isAdmin(request);
+            isPass=isAdmin(currentUser);
+        }
+        if(method.getAnnotation(GuestPermission.class)!=null){
+            isPass=isGuest(currentUser);
         }
         if(!isPass){//未授权，返回401信息
 //            Gson gson=new Gson();
@@ -35,13 +41,15 @@ public class PermissionsInterceptor extends HandlerInterceptorAdapter {
         return isPass;
     }
 
-    private boolean isAdmin(HttpServletRequest request){
+    private boolean isGuest(User currentUser) {
         //判断是否是管理员
-        //创建session
-        HttpSession session = request.getSession();
-        //获得session中的用户
-        User currentUser = (User) session.getAttribute("currentUser");
+        if (currentUser.getRoleName().equals("guest")) {
+            return false;
+        }
+        return true;
+    }
 
+    private boolean isAdmin(User currentUser){
         if (currentUser.getRoleName().equals("管理员")) {
             return true;
         }
