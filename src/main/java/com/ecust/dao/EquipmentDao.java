@@ -32,7 +32,10 @@ public interface EquipmentDao {
 
 	void updateStatus(@Param("id") int id,@Param("status") int status);
 
-	void addToMe(@Param("equipmentId")int equipmentId,@Param("userId")int userId);
+	void addToMe(@Param("equipmentId") int equipmentId, @Param("userId") int userId);
 
+	void notInterested(@Param("equipmentId")int equipmentId,@Param("userId")int userId);
 
+	public int maxId();
 }
+

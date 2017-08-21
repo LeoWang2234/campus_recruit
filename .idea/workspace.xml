@@ -7,32 +7,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc9821b-1f8b-41e5-a50c-cd6b06ca8125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/permision/GuestPermission.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ecust/PermissionsInterceptor.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/InputData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/SessionData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/PermissionsInterceptor.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/PermissionsInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/WeChatController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/WeChatController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/test/AspectTest.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/test/AspectTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/utils/DataTrans.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/utils/DataTrans.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher.class" afterPath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/UserService.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/WeChatController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/WeChatController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/test/AspectTest.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/test/AspectTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/utils/DataTrans.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/utils/DataTrans.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/recruit.war" afterPath="$PROJECT_DIR$/target/recruit.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserDaoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/UserDaoMapper.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/UserDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/addCom.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/addCom.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/list.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listall.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listall.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,78 +62,71 @@
       <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="93" column="4" lean-forward="true" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+            <state relative-caret-position="51">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PermissionsInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java">
+      <file leaf-file-name="listall.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="239" column="31" lean-forward="false" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
+              <folding>
+                <marker date="1503338176000" expanded="true" signature="15670:15677" ph="×" />
+                <marker date="1503338176000" expanded="true" signature="17719:17737" ph="..." />
+                <marker date="1503338176000" expanded="true" signature="17869:17887" ph="..." />
+                <marker date="1503338176000" expanded="true" signature="18019:18037" ph="..." />
+                <marker date="1503338176000" expanded="true" signature="18575:18581" ph="&amp;nbsp;" />
+                <marker date="1503338176000" expanded="true" signature="18581:18587" ph="&amp;nbsp;" />
+                <marker date="1503338176000" expanded="true" signature="18824:18830" ph="&amp;nbsp;" />
+                <marker date="1503338176000" expanded="true" signature="18830:18836" ph="&amp;nbsp;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EquipmentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="38" column="15" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuestPermission.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/GuestPermission.java">
+      <file leaf-file-name="EquipmentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2437#2438#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminPermission.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/AdminPermission.java">
+      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="111">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="EquipmentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-658">
-              <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-              <folding>
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/SignController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="199" column="44" lean-forward="true" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
-              <folding>
-                <marker date="1503279298000" expanded="true" signature="10140:10147" ph="×" />
-              </folding>
+            <state relative-caret-position="474">
+              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,20 +134,30 @@
       <file leaf-file-name="UserDaoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="85" column="16" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+            <state relative-caret-position="271">
+              <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
               <folding>
-                <marker date="1503278686000" expanded="true" signature="257:351" ph="SELECT * FRO... equ_user" />
-                <marker date="1503278686000" expanded="true" signature="422:543" ph="SELECT e2.*,... equ_user" />
-                <marker date="1503278686000" expanded="true" signature="616:741" ph="SELECT er.*,... equ_role" />
-                <marker date="1503278686000" expanded="true" signature="781:934" ph="INSERT INTO equ_role" />
-                <marker date="1503278686000" expanded="true" signature="976:1021" ph="DELETE FROM " />
-                <marker date="1503278686000" expanded="true" signature="1082:1353" ph="INSERT INTO equ_user" />
-                <marker date="1503278686000" expanded="true" signature="1423:1475" ph="SELECT * FRO... equ_user" />
-                <marker date="1503278686000" expanded="true" signature="1538:1573" ph="SELECT count... equ_user" />
-                <marker date="1503278686000" expanded="true" signature="1635:1888" ph="UPDATE equ_u... " />
-                <marker date="1503278686000" expanded="true" signature="1930:1975" ph="DELETE FROM " />
+                <marker date="1503337788000" expanded="true" signature="257:351" ph="SELECT * FRO... equ_user" />
+                <marker date="1503337788000" expanded="true" signature="422:543" ph="SELECT e2.*,... equ_user" />
+                <marker date="1503337788000" expanded="true" signature="616:741" ph="SELECT er.*,... equ_role" />
+                <marker date="1503337788000" expanded="true" signature="781:934" ph="INSERT INTO equ_role" />
+                <marker date="1503337788000" expanded="true" signature="976:1021" ph="DELETE FROM " />
+                <marker date="1503337788000" expanded="true" signature="1082:1353" ph="INSERT INTO equ_user" />
+                <marker date="1503337788000" expanded="true" signature="1423:1475" ph="SELECT * FRO... equ_user" />
+                <marker date="1503337788000" expanded="true" signature="1538:1573" ph="SELECT count... equ_user" />
+                <marker date="1503337788000" expanded="true" signature="1635:1888" ph="UPDATE equ_u... " />
+                <marker date="1503337788000" expanded="true" signature="1930:1975" ph="DELETE FROM " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AspectTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,19 +166,36 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="27" />
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
+      <file leaf-file-name="EquipmentDaoMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+            <state relative-caret-position="329">
+              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1503337819000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
+                <marker date="1503337819000" expanded="true" signature="992:1422" ph="SELECT ee.id... companies" />
+                <marker date="1503337819000" expanded="true" signature="1220:1238" ph="SELECT cpy_i... " />
+                <marker date="1503337819000" expanded="true" signature="1220:1257" ph="SELECT cpy_i... user_company" />
+                <marker date="1503337819000" expanded="true" signature="1220:1278" ph="SELECT cpy_i... user_company" />
+                <marker date="1503337819000" expanded="true" signature="1592:1755" ph="SELECT ee.id... companies" />
+                <marker date="1503337819000" expanded="true" signature="1793:1869" ph="insert into user_company... " />
+                <marker date="1503337819000" expanded="true" signature="1793:1870" ph="UPDATE user_... " />
+                <marker date="1503337819000" expanded="true" signature="1913:1998" ph="insert into user_company... " />
+                <marker date="1503337819000" expanded="true" signature="2041:2107" ph="UPDATE compa... " />
+                <marker date="1503337819000" expanded="true" signature="2193:2331" ph="UPDATE compa... " />
+                <marker date="1503337819000" expanded="true" signature="2376:2588" ph="INSERT INTO companies... " />
+                <marker date="1503337819000" expanded="true" signature="2641:2676" ph="SELECT max(i... companies" />
+                <marker date="1503337819000" expanded="true" signature="2712:2810" ph="update user_... " />
+                <marker date="1503337819000" expanded="true" signature="2856:2911" ph="DELETE FROM " />
+                <marker date="1503337819000" expanded="true" signature="2982:3111" ph="SELECT et.*,... equ_type" />
+                <marker date="1503337819000" expanded="true" signature="3151:3272" ph="INSERT INTO equ_type... " />
+                <marker date="1503337819000" expanded="true" signature="3312:3365" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -177,36 +211,19 @@
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AdminPerm</find>
-      <find>AdminPermi</find>
-      <find>AdminPermis</find>
-      <find>AdminPermiss</find>
-      <find>AdminPermissio</find>
-      <find>deleteEquipment</find>
-      <find>queryAllEquipment</find>
-      <find>AdminPermission</find>
-      <find>yon</find>
-      <find>yo</find>
-      <find>用户</find>
-      <find>l</find>
-      <find>s</find>
-      <find>signup succ</find>
       <find>signup suc</find>
       <find>signup su</find>
       <find>signup s</find>
       <find>signup</find>
-      <find>signup</find>
       <find>signu</find>
       <find>sign</find>
-      <find>sign</find>
-      <find>addToMe</find>
       <find>sign up</find>
       <find>d</find>
       <find>di</find>
@@ -214,6 +231,23 @@
       <find>点我</find>
       <find>点 我</find>
       <find>createEquipment</find>
+      <find>se</find>
+      <find>s</find>
+      <find>session</find>
+      <find>m</find>
+      <find>max</find>
+      <find>maxId</find>
+      <find>B</find>
+      <find>bu</find>
+      <find>bu ga</find>
+      <find>bu gan</find>
+      <find>bu gan x</find>
+      <find>bu gan xi</find>
+      <find>bu gan xing</find>
+      <find>bu gan xing q</find>
+      <find>bu gan xing qu</find>
+      <find>不感兴趣</find>
+      <find>addToMe</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -236,12 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/utils/MessageUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/utils/MessageUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/utils/SignUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/interface_url.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/start/InterfaceUrlIntiServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/start/GlobalConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/quartz/QuartzJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/start/InterfaceUrlInti.java" />
@@ -251,12 +279,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wechat/common/WeChatTask.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-quartz.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/schedule/TestJob.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/DepartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -267,26 +292,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/SignController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/pojo/RUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/test/EquipmentDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/permision/GuestPermission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/InputData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/SessionData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/SessionData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/InputData.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp" />
       </list>
     </option>
   </component>
@@ -797,6 +831,112 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechatinput" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dispatcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -930,7 +1070,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="schedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecust" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="permission" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1731,7 +1939,7 @@
       <workItem from="1502973459648" duration="23157000" />
       <workItem from="1503022829025" duration="48794000" />
       <workItem from="1503101776969" duration="4046000" />
-      <workItem from="1503232414719" duration="21171000" />
+      <workItem from="1503232414719" duration="38740000" />
     </task>
     <servers />
   </component>
@@ -1768,7 +1976,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137231000" />
+    <option name="totallyTimeSpent" value="154800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1254" height="777" extended-state="6" />
@@ -1786,7 +1994,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31824818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64671534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1860,13 +2068,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java</url>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1875,156 +2083,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-paginator.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/AdmintPermission.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1724">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502973380000" expanded="true" signature="2547:2553" ph="&amp;nbsp;" />
-            <marker date="1502973380000" expanded="true" signature="2553:2559" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/repairHistory.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-          <folding>
-            <marker date="1502978682000" expanded="true" signature="2679:2697" ph="..." />
-            <marker date="1502978682000" expanded="true" signature="2773:2791" ph="..." />
-            <marker date="1502978682000" expanded="true" signature="2867:2885" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1239">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/RepairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/schedule/ValidationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/signup.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/ChartsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/DepartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/dmaku.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/RUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="e#179#180#0" expanded="false" />
-            <element signature="e#210#211#0" expanded="false" />
-            <element signature="e#298#299#0" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#364#365#0" expanded="false" />
-            <element signature="e#412#413#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/test/EquipmentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2033,52 +2091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="233" column="58" lean-forward="true" selection-start-line="233" selection-start-column="58" selection-end-line="233" selection-end-column="58" />
-          <folding>
-            <marker date="1503214309000" expanded="true" signature="15680:15687" ph="×" />
-            <marker date="1503214309000" expanded="true" signature="17735:17753" ph="..." />
-            <marker date="1503214309000" expanded="true" signature="17895:17913" ph="..." />
-            <marker date="1503214309000" expanded="true" signature="18055:18073" ph="..." />
-            <marker date="1503214309000" expanded="true" signature="18630:18636" ph="&amp;nbsp;" />
-            <marker date="1503214309000" expanded="true" signature="18636:18642" ph="&amp;nbsp;" />
-            <marker date="1503214309000" expanded="true" signature="19103:19109" ph="&amp;nbsp;" />
-            <marker date="1503214309000" expanded="true" signature="19109:19115" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="424" column="72" lean-forward="false" selection-start-line="424" selection-start-column="67" selection-end-line="424" selection-end-column="72" />
-          <folding>
-            <marker date="1503206654000" expanded="true" signature="12923:12930" ph="×" />
-            <marker date="1503206654000" expanded="true" signature="14972:14990" ph="..." />
-            <marker date="1503206654000" expanded="true" signature="15122:15140" ph="..." />
-            <marker date="1503206654000" expanded="true" signature="15272:15290" ph="..." />
-            <marker date="1503206654000" expanded="true" signature="15828:15834" ph="&amp;nbsp;" />
-            <marker date="1503206654000" expanded="true" signature="15834:15840" ph="&amp;nbsp;" />
-            <marker date="1503206654000" expanded="true" signature="15983:15989" ph="&amp;nbsp;" />
-            <marker date="1503206654000" expanded="true" signature="15989:15995" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="28" column="0" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2099,22 +2115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -2123,76 +2123,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="486" column="42" lean-forward="true" selection-start-line="486" selection-start-column="42" selection-end-line="486" selection-end-column="42" />
-          <folding>
-            <marker date="1503250383000" expanded="true" signature="15675:15682" ph="×" />
-            <marker date="1503250383000" expanded="true" signature="17724:17742" ph="..." />
-            <marker date="1503250383000" expanded="true" signature="17874:17892" ph="..." />
-            <marker date="1503250383000" expanded="true" signature="18024:18042" ph="..." />
-            <marker date="1503250383000" expanded="true" signature="18580:18586" ph="&amp;nbsp;" />
-            <marker date="1503250383000" expanded="true" signature="18586:18592" ph="&amp;nbsp;" />
-            <marker date="1503250383000" expanded="true" signature="18829:18835" ph="&amp;nbsp;" />
-            <marker date="1503250383000" expanded="true" signature="18835:18841" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-          <folding>
-            <marker date="1503250383000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
-            <marker date="1503250383000" expanded="true" signature="992:1421" ph="SELECT ee.id... companies" />
-            <marker date="1503250383000" expanded="true" signature="1220:1238" ph="SELECT cpy_i... " />
-            <marker date="1503250383000" expanded="true" signature="1220:1257" ph="SELECT cpy_i... user_company" />
-            <marker date="1503250383000" expanded="true" signature="1220:1277" ph="SELECT cpy_i... user_company" />
-            <marker date="1503250383000" expanded="true" signature="1591:1754" ph="SELECT ee.id... companies" />
-            <marker date="1503250383000" expanded="true" signature="1792:1868" ph="insert into user_company... " />
-            <marker date="1503250383000" expanded="true" signature="1792:1869" ph="UPDATE user_... " />
-            <marker date="1503250383000" expanded="true" signature="1911:1977" ph="UPDATE compa... " />
-            <marker date="1503250383000" expanded="true" signature="2063:2201" ph="UPDATE compa... " />
-            <marker date="1503250383000" expanded="true" signature="2246:2458" ph="INSERT INTO companies... " />
-            <marker date="1503250383000" expanded="true" signature="2493:2591" ph="update user_... " />
-            <marker date="1503250383000" expanded="true" signature="2637:2692" ph="DELETE FROM " />
-            <marker date="1503250383000" expanded="true" signature="2763:2892" ph="SELECT et.*,... equ_type" />
-            <marker date="1503250383000" expanded="true" signature="2932:3053" ph="INSERT INTO equ_type... " />
-            <marker date="1503250383000" expanded="true" signature="3093:3146" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -2223,54 +2157,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="82" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/ChartsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="85" column="16" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding>
-            <marker date="1503278686000" expanded="true" signature="257:351" ph="SELECT * FRO... equ_user" />
-            <marker date="1503278686000" expanded="true" signature="422:543" ph="SELECT e2.*,... equ_user" />
-            <marker date="1503278686000" expanded="true" signature="616:741" ph="SELECT er.*,... equ_role" />
-            <marker date="1503278686000" expanded="true" signature="781:934" ph="INSERT INTO equ_role" />
-            <marker date="1503278686000" expanded="true" signature="976:1021" ph="DELETE FROM " />
-            <marker date="1503278686000" expanded="true" signature="1082:1353" ph="INSERT INTO equ_user" />
-            <marker date="1503278686000" expanded="true" signature="1423:1475" ph="SELECT * FRO... equ_user" />
-            <marker date="1503278686000" expanded="true" signature="1538:1573" ph="SELECT count... equ_user" />
-            <marker date="1503278686000" expanded="true" signature="1635:1888" ph="UPDATE equ_u... " />
-            <marker date="1503278686000" expanded="true" signature="1930:1975" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2285,25 +2176,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/permision/GuestPermission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="93" column="4" lean-forward="true" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-658">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
             <element signature="e#584#585#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
@@ -2314,18 +2197,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="199" column="44" lean-forward="true" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
+          <caret line="199" column="44" lean-forward="false" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
           <folding>
-            <marker date="1503279298000" expanded="true" signature="10140:10147" ph="×" />
+            <marker date="1503281073000" expanded="true" signature="10140:10147" ph="×" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2334,17 +2209,379 @@
         <state relative-caret-position="165">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+        <state relative-caret-position="1741">
+          <caret line="131" column="44" lean-forward="true" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/resp/TextMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/PermissionsInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/utils/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="132" column="38" lean-forward="false" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/common/WeChatTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/BaseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/ImageMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/LinkMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/TextMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/VideoMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/message/req/VoiceMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/InputData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="e#252#253#0" expanded="false" />
+            <element signature="e#284#285#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#450#451#0" expanded="false" />
+            <element signature="e#509#510#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/SessionData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/ChartsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/ChartsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="71" column="55" lean-forward="true" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/equipmentMS-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/utils/DataTrans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#2178#2355#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#3455#3809#0" expanded="true" />
+            <element signature="e#3808#3809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="424" column="72" lean-forward="false" selection-start-line="424" selection-start-column="67" selection-end-line="424" selection-end-column="72" />
+          <folding>
+            <marker date="1503206654000" expanded="true" signature="12923:12930" ph="×" />
+            <marker date="1503206654000" expanded="true" signature="14972:14990" ph="..." />
+            <marker date="1503206654000" expanded="true" signature="15122:15140" ph="..." />
+            <marker date="1503206654000" expanded="true" signature="15272:15290" ph="..." />
+            <marker date="1503206654000" expanded="true" signature="15828:15834" ph="&amp;nbsp;" />
+            <marker date="1503206654000" expanded="true" signature="15834:15840" ph="&amp;nbsp;" />
+            <marker date="1503206654000" expanded="true" signature="15983:15989" ph="&amp;nbsp;" />
+            <marker date="1503206654000" expanded="true" signature="15989:15995" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="441" column="35" lean-forward="true" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+          <folding>
+            <marker date="1503335348000" expanded="true" signature="15680:15687" ph="×" />
+            <marker date="1503335348000" expanded="true" signature="17735:17753" ph="..." />
+            <marker date="1503335348000" expanded="true" signature="17895:17913" ph="..." />
+            <marker date="1503335348000" expanded="true" signature="18055:18073" ph="..." />
+            <marker date="1503335348000" expanded="true" signature="18630:18636" ph="&amp;nbsp;" />
+            <marker date="1503335348000" expanded="true" signature="18636:18642" ph="&amp;nbsp;" />
+            <marker date="1503335348000" expanded="true" signature="18889:18895" ph="&amp;nbsp;" />
+            <marker date="1503335348000" expanded="true" signature="18895:18901" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="15" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding>
+            <marker date="1503337788000" expanded="true" signature="257:351" ph="SELECT * FRO... equ_user" />
+            <marker date="1503337788000" expanded="true" signature="422:543" ph="SELECT e2.*,... equ_user" />
+            <marker date="1503337788000" expanded="true" signature="616:741" ph="SELECT er.*,... equ_role" />
+            <marker date="1503337788000" expanded="true" signature="781:934" ph="INSERT INTO equ_role" />
+            <marker date="1503337788000" expanded="true" signature="976:1021" ph="DELETE FROM " />
+            <marker date="1503337788000" expanded="true" signature="1082:1353" ph="INSERT INTO equ_user" />
+            <marker date="1503337788000" expanded="true" signature="1423:1475" ph="SELECT * FRO... equ_user" />
+            <marker date="1503337788000" expanded="true" signature="1538:1573" ph="SELECT count... equ_user" />
+            <marker date="1503337788000" expanded="true" signature="1635:1888" ph="UPDATE equ_u... " />
+            <marker date="1503337788000" expanded="true" signature="1930:1975" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <marker date="1503337819000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
+            <marker date="1503337819000" expanded="true" signature="992:1422" ph="SELECT ee.id... companies" />
+            <marker date="1503337819000" expanded="true" signature="1220:1238" ph="SELECT cpy_i... " />
+            <marker date="1503337819000" expanded="true" signature="1220:1257" ph="SELECT cpy_i... user_company" />
+            <marker date="1503337819000" expanded="true" signature="1220:1278" ph="SELECT cpy_i... user_company" />
+            <marker date="1503337819000" expanded="true" signature="1592:1755" ph="SELECT ee.id... companies" />
+            <marker date="1503337819000" expanded="true" signature="1793:1869" ph="insert into user_company... " />
+            <marker date="1503337819000" expanded="true" signature="1793:1870" ph="UPDATE user_... " />
+            <marker date="1503337819000" expanded="true" signature="1913:1998" ph="insert into user_company... " />
+            <marker date="1503337819000" expanded="true" signature="2041:2107" ph="UPDATE compa... " />
+            <marker date="1503337819000" expanded="true" signature="2193:2331" ph="UPDATE compa... " />
+            <marker date="1503337819000" expanded="true" signature="2376:2588" ph="INSERT INTO companies... " />
+            <marker date="1503337819000" expanded="true" signature="2641:2676" ph="SELECT max(i... companies" />
+            <marker date="1503337819000" expanded="true" signature="2712:2810" ph="update user_... " />
+            <marker date="1503337819000" expanded="true" signature="2856:2911" ph="DELETE FROM " />
+            <marker date="1503337819000" expanded="true" signature="2982:3111" ph="SELECT et.*,... equ_type" />
+            <marker date="1503337819000" expanded="true" signature="3151:3272" ph="INSERT INTO equ_type... " />
+            <marker date="1503337819000" expanded="true" signature="3312:3365" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding>
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="239" column="31" lean-forward="false" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
+          <folding>
+            <marker date="1503338176000" expanded="true" signature="15670:15677" ph="×" />
+            <marker date="1503338176000" expanded="true" signature="17719:17737" ph="..." />
+            <marker date="1503338176000" expanded="true" signature="17869:17887" ph="..." />
+            <marker date="1503338176000" expanded="true" signature="18019:18037" ph="..." />
+            <marker date="1503338176000" expanded="true" signature="18575:18581" ph="&amp;nbsp;" />
+            <marker date="1503338176000" expanded="true" signature="18581:18587" ph="&amp;nbsp;" />
+            <marker date="1503338176000" expanded="true" signature="18824:18830" ph="&amp;nbsp;" />
+            <marker date="1503338176000" expanded="true" signature="18830:18836" ph="&amp;nbsp;" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.ecust.pojo.User;
 import com.wechat.utils.MessageUtil;
 import com.wechat.utils.SignUtil;
 import com.wechat.dispatcher.EventDispatcher;
@@ -59,6 +61,7 @@ public class WeChatController {
     // post 方法用于接收微信服务端消息
     public void DoPost(HttpServletRequest request,HttpServletResponse response) {
         System.out.println("这是 post 方法！");
+
         try{
             Map<String, String> map=MessageUtil.parseXml(request);
             String msgtype=map.get("MsgType");

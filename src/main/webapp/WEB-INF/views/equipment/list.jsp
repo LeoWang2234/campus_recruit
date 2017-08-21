@@ -432,12 +432,7 @@
                                         + val.id
                                         + ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>"
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return apply("+val.id+")'>";
-
-                                        if(val.applied==0){
-                                            html += "置为已投";
-                                        }else{
-                                            html += "置为未投";
-                                        }
+                                        html += "置为未投";
                                         html += "</button>"
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteEquipment("
                                         + val.id

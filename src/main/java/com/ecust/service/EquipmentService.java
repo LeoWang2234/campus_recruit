@@ -10,28 +10,32 @@ import org.apache.ibatis.annotations.Param;
 
 public interface EquipmentService {
 
-	Map<String, Object> queryAllEquipment(int pageNo, int pageSize, String name, int applied,int userId);
+    Map<String, Object> queryAllEquipment(int pageNo, int pageSize, String name, int applied, int userId);
 
-	List<Map<String, Object>> queryAllEquipmentForValidation();
+    List<Map<String, Object>> queryAllEquipmentForValidation();
 
-	Map<String, Object> queryEquipmentById(int equipmentId);
+    Map<String, Object> queryEquipmentById(int equipmentId);
 
-	Boolean updateEquipment(Company company);
+    Boolean updateEquipment(Company company);
 
-	Boolean createEquipment(Company company);
+    Boolean createEquipment(Company company);
 
-	Boolean deleteEquipment(String equipmentId);
+    Boolean notInterested(int equipmentId, int userId);
 
-	Boolean apply(String equipmentId,int userId);
+    Boolean deleteEquipment(String equipmentId);
 
-	Map<String, Object> queryAllType();
+    Boolean apply(String equipmentId, int userId);
 
-	boolean createType(String createId, String typeName);
+    Map<String, Object> queryAllType();
 
-	Boolean deleteType(String typeId);
+    boolean createType(String createId, String typeName);
 
-	Boolean updateStatus(int id,int status);
+    Boolean deleteType(String typeId);
 
-	public Boolean addToMe(int equipmentId,int userId);
+    Boolean updateStatus(int id, int status);
+
+    public Boolean addToMe(int equipmentId, int userId);
+
+    public int maxId();
 
 }

@@ -59,7 +59,7 @@
 		<if test=" applied == 2">   <!-- 新增信息查询 -->
 			NOT
 		</if>
-		IN (SELECT cpy_id FROM user_company WHERE user_id = ${userId}
+		IN (SELECT cpy_id FROM user_company WHERE user_id = ${userId }
 		<if test=" applied == 0">   <!-- 只查未投 -->
 			AND status = 0
 		</if>
@@ -90,6 +90,10 @@
 
 	<update id="addToMe">
 		insert into user_company (user_id, cpy_id) values (#{userId},#{equipmentId})
+	</update>
+
+	<update id="notInterested">
+		insert into user_company (user_id, cpy_id,status) values (#{userId},#{equipmentId},2)
 	</update>
 
 	<update id="updateStatus">
@@ -130,6 +134,14 @@
 			#{status}
 		)
 	</insert>
+
+	<select id="maxId" resultType="int">
+		SELECT
+		max(id)
+		FROM
+		companies
+	</select>
+
 	<update id="apply">
 		update user_company set status=ABS(status - 1) where cpy_id=#{equipmentId} and user_id = #{userId};
 	</update>

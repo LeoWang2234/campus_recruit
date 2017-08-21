@@ -96,9 +96,19 @@ public class EquipmentController {
 	@GuestPermission
 	@ResponseBody
 	@RequestMapping(value="/createEquipment",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public boolean createEquipment(@RequestBody CompanyForm companyForm){
+	public boolean createEquipment(@RequestBody CompanyForm companyForm,HttpServletRequest request){
+		//创建session
+		HttpSession session = request.getSession();
+
+		//获得session中的用户
+		User currentUser = (User) session.getAttribute("currentUser");
+
 		Company company = DataTrans.toCompany(companyForm);
 		Boolean bool = equipmentService.createEquipment(company);
+
+		// 用户添加一条信息时，将此信息自动更新到用户自己的未投递列表中
+		int companyId = equipmentService.maxId();
+		equipmentService.addToMe(companyId, currentUser.getId());
 		return true;
 	}
 	
@@ -108,6 +118,20 @@ public class EquipmentController {
 	@RequestMapping(value="/deleteEquipment/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public boolean deleteEquipment(@PathVariable("equipmentId") String equipmentId){
 		Boolean bool = equipmentService.deleteEquipment(equipmentId);
+		return bool;
+	}
+
+	// 用户对此条信息没兴趣
+	@ResponseBody
+	@RequestMapping(value="/notInterested/{equipmentId}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public boolean notInterested(@PathVariable("equipmentId") int equipmentId,HttpServletRequest request){
+		//创建session
+		HttpSession session = request.getSession();
+
+		//获得session中的用户
+		User currentUser = (User) session.getAttribute("currentUser");
+
+		Boolean bool = equipmentService.notInterested(equipmentId,currentUser.getId());
 		return bool;
 	}
 

@@ -25,7 +25,7 @@
     <context:component-scan base-package="com.ecust.*"/>
 
     <!-- 自动扫描(自动注入) -->
-    <context:component-scan base-package="com.wechat.*" />
+    <context:component-scan base-package="com.wechat.*"/>
     <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />
     <!-- 使用spring自带的占位符替换功能 -->
     <bean

@@ -14,7 +14,6 @@ public class AspectTest {
     public void testAspect() {
 
         EquipmentController equipmentController = new EquipmentController();
-        equipmentController.createEquipment(new CompanyForm());
 
     }
 }
