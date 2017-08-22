@@ -434,7 +434,11 @@
                                         + "</button>"
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return notInterested("
                                         + val.id
-                                        + ")' data-target='#addUserModal'>不感兴趣</button></td></tr>>";
+                                        + ")' data-target='#addUserModal'>不感兴趣</button>";
+                                        html += "</button>"
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteEquipment("
+                                        + val.id
+                                        + ")' data-target='#addUserModal'>删除</button></td></tr>"
                                     $("#equList").append(html);
 
                                 });
@@ -497,6 +501,37 @@
                 },
             });
         return false;
+    }
+    //删除设备
+    function deleteEquipment(equipmentId) {
+
+        if (!equipmentId) {
+            alert('Error！');
+            return false;
+        }
+        var result = confirm("确定删除当前信息？");
+        if (result) {
+
+        } else {
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/deleteEquipment/"
+                + equipmentId,
+                type: "get",
+                success: function (data) {
+                    if (data == true) {
+                        alert("删除成功！");
+                        pagehtml($("#currentPage").val());
+                    } else {
+                        alert("删除失败！");
+                    }
+                },
+                error: function () {
+                    alert("删除错误");
+                },
+            });
     }
 </script>
 

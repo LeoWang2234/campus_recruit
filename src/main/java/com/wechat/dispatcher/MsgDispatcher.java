@@ -79,13 +79,13 @@ public class MsgDispatcher {
                         inputData.setVisitTime(1);
                         inputData.getCompanyForm().setLink(map.get("Content"));
                         txtmsg.setContent("您已经添加完成");
-                        session.remove(openid);
 
                         new Thread() {
                             @Override
                             public void run(){
                                 Company company = DataTrans.toCompany(session.get(openid).getCompanyForm());
                                 Boolean bool = equipmentService.createEquipment(company);
+                                session.remove(openid);
                             }
                         }.start();
                     } else {

@@ -151,7 +151,7 @@ body{background-color:#1abc9c}
 .select__list{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:1rem}
 .select__label{color:#fff;cursor:pointer;font-weight:500;opacity:0.6;padding:0 2rem;text-transform:capitalize}
 .select__label--active{opacity:1}
-input{background-color:#fff;margin:.5rem 0;text-transform:capitalize;text-align:center}
+input{background-color:#fff;margin:.5rem 0;text-align:center}
 textarea:focus,input:focus{outline-color:#fff}
 .pointer{border-left:1rem solid transparent;border-right:1rem solid transparent;border-bottom:1rem solid #fff;height:0;position:relative;top:.6rem;-webkit-transition:all 30s ease;transition:all 30s ease;width:0}
 .pointer.--usr-rtn{right:9rem}
