@@ -400,7 +400,7 @@
                                         + val.position
                                         + "</td>"
                                         + "<td>"
-                                        + "<a href= \"#\" onclick= \"goVisit(" + val.link + ")\">" + val.link + "</a>"
+                                        + "<a href= \""+val.link+"\" target=\"_blank\">" + val.link + "</a>"
                                         + "</td>"
                                         + "<td>"
                                         + val.deadline
