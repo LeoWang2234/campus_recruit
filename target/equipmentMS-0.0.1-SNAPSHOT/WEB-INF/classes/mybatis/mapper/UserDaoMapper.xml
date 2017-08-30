@@ -7,8 +7,16 @@
 		SELECT 
 			* FROM equ_user e
 		WHERE
-			 e.userName = #{userName} AND e.password = #{password}
+			 e.userName = #{userName} AND e.password = #{password} limit 1
 	
+	</select>
+
+	<select id="signUp" parameterType="User" resultType="User">
+		SELECT
+		* FROM equ_user e
+		WHERE
+		e.userName = #{userName}  limit 1
+
 	</select>
 	<select id="queryAllUser" resultType="java.util.Map">
 		SELECT e2.*,e1.trueName AS createName
@@ -17,8 +25,8 @@
 			equ_user e1 JOIN equ_user e2 ON e1.id = e2.createId
 		ORDER BY 
 			id	
-		
 	</select>
+
 	<select id="queryAllRole" resultType="java.util.Map">
 		SELECT er.*,eu.trueName AS createName 
 		FROM 

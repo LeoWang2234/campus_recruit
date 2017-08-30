@@ -62,7 +62,7 @@ public class MsgDispatcher {
                                 session.remove(openid);
                             }
                         };
-                        timer.schedule(task, 1000 * 30);
+                        timer.schedule(task, 1000 * 60);
                         inputData = new InputData();
                         inputData.setVisitTime(1);
                         session.put(openid, inputData);
@@ -78,12 +78,16 @@ public class MsgDispatcher {
                     } else if (inputData.getVisitTime() == 3) {
                         inputData.setVisitTime(1);
                         inputData.getCompanyForm().setLink(map.get("Content"));
-                        txtmsg.setContent("您已经添加完成");
+                        txtmsg.setContent("您已经添加完成,添加信息为\n公司名称：" +
+                                "" + inputData.getCompanyForm().getName() + "\n职位：" +
+                                "" + inputData.getCompanyForm().getPosition() + "\n链接:" +
+                                "" + inputData.getCompanyForm().getLink() + "");
 
                         new Thread() {
                             @Override
                             public void run(){
                                 Company company = DataTrans.toCompany(session.get(openid).getCompanyForm());
+                                company.setCreatedUser(openid);
                                 Boolean bool = equipmentService.createEquipment(company);
                                 session.remove(openid);
                             }

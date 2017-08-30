@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * Created by cheng on 2017/8/17.
  */
-public class Company implements Serializable{
+public class Company implements Serializable {
     //¹«Ë¾Ãû³ÆID
     private String id;
     private String name;
@@ -23,6 +23,16 @@ public class Company implements Serializable{
 
     private String push_code;
     private Integer status;
+
+    private String createdUser;
+
+    public String getCreatedUser() {
+        return createdUser;
+    }
+
+    public void setCreatedUser(String createdUser) {
+        this.createdUser = createdUser;
+    }
 
     public String getId() {
         return id;

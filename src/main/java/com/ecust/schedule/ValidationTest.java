@@ -22,8 +22,8 @@ public class ValidationTest {
 
     SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 
-    //    @Scheduled(cron = "5 * * * * *")
-    @Scheduled(fixedRate = 50000)
+    @Scheduled(cron = "50 * * * * *")
+//    @Scheduled(fixedRate = 50000)
     public void validateTest() {
 
         Date date1;

@@ -24,4 +24,6 @@ public interface UserService {
 	public Boolean deleteUser(String id);
 
 	public int countUserNum();
+
+	User signUp(User user);
 }

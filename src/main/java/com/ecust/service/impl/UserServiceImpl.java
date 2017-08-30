@@ -31,6 +31,11 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	public User signUp(User user) {
+		return userDao.signUp(user);
+	}
+
+	@Override
 	public Map<String, Object> queryAllUser(Integer pageNo, Integer pageSize) {
 		// 分页，并判断分页参数是否存在
 		Page page = new Page();

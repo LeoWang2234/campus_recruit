@@ -99,9 +99,19 @@ public class UserController {
 		user.setRoleName("用户");
 		user.setPassword(password);
 		user.setUserName(name);
-		int userNums = userService.countUserNum();
+
 		String url = request.getScheme() + "://"
 				+ request.getServerName() + ":" + request.getServerPort()+request.getContextPath();
+
+		// 检查用户是否已经注册过啦
+		User currentUser = userService.signUp(user);
+
+		if (currentUser != null) {
+			return "This name is taken  Or You've already signed up<br><a href = \""+url+"/signup\">Click  Me To Re-Sign-up</a><br>" +
+					"<a href = \""+url+"\">Click Me To Login</a>";
+		}
+
+		int userNums = userService.countUserNum();
 		if (userNums<=50){
 			boolean bool = userService.createUser(user);
 			if(bool){

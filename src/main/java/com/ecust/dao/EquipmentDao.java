@@ -12,6 +12,8 @@ public interface EquipmentDao {
 
 	List<Map<String, Object>> queryAllEquipment(@Param("name") String name, @Param("applied") int applied,@Param("userId") int userId);
 
+	List<Map<String, Object>> queryAllEquipmentOfMe(@Param("name") String name, @Param("applied") int applied, @Param("userId") int userId);
+
 	List<Map<String, Object>> queryAllEquipmentForValidation();
 
 	Map<String, Object> queryEquipmentById(@Param("equipmentId")int equipmentId);

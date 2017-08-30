@@ -30,4 +30,6 @@ public interface UserDao {
 
 	public int countUserNum();
 
+	User signUp(User user);
+
 }

@@ -12,6 +12,8 @@ public interface EquipmentService {
 
     Map<String, Object> queryAllEquipment(int pageNo, int pageSize, String name, int applied, int userId);
 
+    Map<String, Object> queryAllEquipmentOfMe(int pageNo, int pageSize, String name, int applied, int userId);
+
     List<Map<String, Object>> queryAllEquipmentForValidation();
 
     Map<String, Object> queryEquipmentById(int equipmentId);

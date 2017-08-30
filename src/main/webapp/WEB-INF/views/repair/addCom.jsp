@@ -16,8 +16,9 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" charset="utf-8"
+        src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
-
 <div class="row search">
     <div class="col-md-6">
         <form action="" method="post">
@@ -52,7 +53,6 @@
             <th class="col-md-2">截止时间</th>
             <th class="col-md-1">是否内推</th>
             <th class="col-md-1">内推码</th>
-            <th class="col-md-1">状态</th>
         </tr>
         </thead>
         <tbody id="equList"></tbody>
@@ -268,9 +268,6 @@
                                             + "</td>"
                                             + "<td>"
                                             + val.push_code
-                                            + "</td>"
-                                            + "<td>"
-                                            + val.status
                                             + "</td>");
 
                                 });

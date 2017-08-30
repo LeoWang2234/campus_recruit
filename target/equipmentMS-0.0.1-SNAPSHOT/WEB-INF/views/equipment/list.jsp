@@ -16,9 +16,9 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
 <script type="text/javascript" charset="utf-8"
         src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
 
 <div class="row search">
     <div class="col-md-6">
@@ -38,6 +38,7 @@
     <div class="col-md-4">
     </div>
 </div>
+<p><font face="verdana">下列是所有已投递公司：</font></p>
 <div>
     <table class="table table-hover  table-bordered table-striped"
            style="margin-bottom: 0px;">
@@ -233,7 +234,7 @@
                         alert("删除成功！");
                         pagehtml($("#currentPage").val());
                     } else {
-                        alert("删除失败！");
+                        alert("您只可以删除自己添加的信息！");
                     }
                 },
                 error: function () {
@@ -294,7 +295,7 @@
                                 alert("修改成功!");
                                 pagehtml($("#currentPage").val());
                             } else {
-                                alert("修改失败！");
+                                alert("您只可以修改自己添加的信息！");
                             }
                         },
                         error: function () {

@@ -31,8 +31,8 @@
 			style="height: 0px;">
 			<li><a href="javascript:pageRepair()"><i class="glyphicon glyphicon-user"></i>添加招聘 </a></li>
 			<!--href="javascript:pageRepairHistory()"-->
-			<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>添加历史</a></li>
-			<li><a href="javascript:pageRepairChart()"><i class="glyphicon glyphicon-globe"></i>历史统计</a></li>
+			<li><a href="javascript:pageRepairHistory()"><i class="glyphicon glyphicon-th-list"></i>我的添加</a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-globe"></i>历史统计</a></li>
 		</ul></li>
 	<!-- <li style="margin: 0"><a href="#"> <i
 			class="glyphicon glyphicon-globe"></i> 配件 <span

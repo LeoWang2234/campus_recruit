@@ -38,6 +38,7 @@
     <div class="col-md-4">
     </div>
 </div>
+<p><font face="verdana">下列是所有新增公司：</font></p>
 <div>
     <table class="table table-hover  table-bordered table-striped"
            style="margin-bottom: 0px;">
@@ -294,7 +295,7 @@
                                 alert("修改成功!");
                                 pagehtml($("#currentPage").val());
                             } else {
-                                alert("修改失败！");
+                                alert("只可以修改自己添加的信息！");
                             }
                         },
                         error: function () {
@@ -525,7 +526,7 @@
                         alert("删除成功！");
                         pagehtml($("#currentPage").val());
                     } else {
-                        alert("删除失败！");
+                        alert("只可以删除自己添加的信息！");
                     }
                 },
                 error: function () {

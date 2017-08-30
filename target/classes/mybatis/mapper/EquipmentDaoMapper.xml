@@ -39,6 +39,28 @@
 
 	</select>
 
+	<select id="queryAllEquipmentOfMe" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+		WHERE
+
+		ee.created_user = #{userId}
+		<if test="name != null and name != ''">
+			AND ee.name like CONCAT('%',#{name},'%')
+		</if>
+
+	</select>
 	<select id="queryAllEquipment" resultType="java.util.Map">
 		SELECT
 		ee.id,
@@ -81,7 +103,8 @@
 		ee.deadline,
 		ee.push,
 		ee.push_code,
-		ee.status
+		ee.status,
+		ee.created_user
 		FROM
 			companies ee
 		WHERE
@@ -123,7 +146,8 @@
 			deadline,
 			push,
 			push_code,
-			status
+			status,
+			created_user
 		)VALUES(
 			#{name},
 			#{position},
@@ -131,7 +155,8 @@
 			#{deadline},
 			#{push},
 			#{push_code},
-			#{status}
+			#{status},
+			#{createdUser}
 		)
 	</insert>
 

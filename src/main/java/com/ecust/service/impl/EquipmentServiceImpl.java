@@ -52,6 +52,26 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     }
 
+
+    @Override
+    public Map<String, Object> queryAllEquipmentOfMe(int pageNumber, int pageSize, String name, int applied, int userId) {
+
+        // 分页，并判断分页参数是否存在
+        Page page = new Page();
+        if (page.getPageNo() == null && page.getPageSize() == null) {
+            page.setPageNo(pageNumber);
+            page.setPageSize(pageSize);
+        } else {
+            page.setPageNo(1);
+            page.setPageSize(10);
+        }
+        PageUtils.page(page);
+        List<Map<String, Object>> map = equipmentDao.queryAllEquipmentOfMe(name, applied, userId);
+        Map<String, Object> result = PageUtils.proccess(map);
+        return result;
+
+    }
+
     @Override
     public Map<String, Object> queryEquipmentById(int equipmentId) {
 
