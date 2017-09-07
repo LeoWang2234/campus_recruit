@@ -17,6 +17,7 @@
                             scope-resolver="org.springframework.context.annotation.Jsr330ScopeMetadataResolver">
     </context:component-scan>
 
+
     <!-- 开启定时任务 -->
     <task:annotation-driven />
     <!-- 开启注解 -->

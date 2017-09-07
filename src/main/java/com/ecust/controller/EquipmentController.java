@@ -117,7 +117,7 @@ public class EquipmentController {
         Map<String, Object> map = equipmentService.queryEquipmentById(Integer.parseInt(company.getId()));
 
         // 说明是该用户添加的消息，可以删改 ，管理员也可以
-        if (Integer.valueOf((String) map.get("created_user")) == (int) currentUser.getId()
+        if (Integer.valueOf(((String) map.get("created_user")).trim()) == (int) currentUser.getId()
                 || (currentUser.getRoleName() != null && currentUser.getRoleName().equals("管理员"))) {
             Boolean bool = equipmentService.updateEquipment(company);
             return true;

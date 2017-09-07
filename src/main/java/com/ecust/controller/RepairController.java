@@ -35,7 +35,7 @@ public class RepairController {
 		boolean bool = repairService.repairEquipment(repair);
 		return bool;
 	}
-	
+
 	//查询所有维修记录
 	@ResponseBody
 	@RequestMapping(value="/queryAllRepairHistory",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -44,17 +44,22 @@ public class RepairController {
 		Map<String,Object> map  = repairService.queryAllRepairHistory(pageNo,pageSize);
 		return map;
 	}
-	
+
 	//切换到repairHistory.jsp
 	@RequestMapping(value="/pageRepairHistory",method = RequestMethod.GET)
 	public String pageRepairHistory(HttpServletRequest request){
 		return "repair/repairHistory";
 	}
-	
+
+	@RequestMapping(value="/copyClipBoard",method = RequestMethod.GET)
+	public String copyClipBoard(HttpServletRequest request){
+		return "repair/copyClipBoard";
+	}
+
 	//切换到repairChart.jsp
 	@RequestMapping(value="/pageRepairChart",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public String pageRepairChart(HttpServletRequest request){
-	
+
 		return "repair/repairChart";
 	}
 }

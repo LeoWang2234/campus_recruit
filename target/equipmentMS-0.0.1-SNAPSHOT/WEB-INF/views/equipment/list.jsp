@@ -38,7 +38,7 @@
     <div class="col-md-4">
     </div>
 </div>
-<p><font face="verdana">下列是所有已投递公司：</font></p>
+
 <div>
     <table class="table table-hover  table-bordered table-striped"
            style="margin-bottom: 0px;">
@@ -194,11 +194,11 @@
     </div>
 </form>
 
-<script type="text/javascript">
-    $(function () {
-        pagehtml($("#currentPage").val());
+    <script type="text/javascript">
+        $(function () {
+            pagehtml($("#currentPage").val());
 
-    });
+        });
 
     $('#datetimepicker').datetimepicker({
         format: 'MM/dd/yyyy',

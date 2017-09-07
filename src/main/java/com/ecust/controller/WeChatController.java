@@ -13,6 +13,7 @@ import com.wechat.utils.SignUtil;
 import com.wechat.dispatcher.EventDispatcher;
 import com.wechat.dispatcher.MsgDispatcher;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,6 +23,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/wechat")
 public class WeChatController {
+
+
+
     private static Logger logger = Logger.getLogger(WeChatController.class);
 
     /**

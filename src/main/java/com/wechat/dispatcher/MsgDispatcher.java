@@ -2,9 +2,12 @@ package com.wechat.dispatcher;
 
 import com.ecust.dto.CompanyForm;
 import com.ecust.pojo.Company;
+import com.ecust.pojo.MyCopyMessage;
 import com.ecust.service.EquipmentService;
+import com.ecust.service.MyCopyService;
 import com.ecust.service.impl.EquipmentServiceImpl;
 import com.ecust.utils.DataTrans;
+import com.ecust.utils.PropertyUtils;
 import com.wechat.wechatinput.InputData;
 import com.wechat.wechatinput.SessionData;
 import com.wechat.utils.MessageUtil;
@@ -12,6 +15,7 @@ import com.wechat.message.resp.Article;
 import com.wechat.message.resp.NewsMessage;
 import com.wechat.message.resp.TextMessage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
@@ -27,16 +31,30 @@ import java.util.*;
 @Component
 public class MsgDispatcher {
 
+
+    private static String userId;
+
     static EquipmentService equipmentService;
+    static MyCopyService myCopyService;
 
     @Autowired
-    public void setSomeThing(EquipmentService equipmentService){
+    public void setEquipmentService(EquipmentService equipmentService){
         MsgDispatcher.equipmentService = equipmentService;
     }
 
+    @Autowired
+    public void setMyCopyService(MyCopyService myCopyService){
+        MsgDispatcher.myCopyService = myCopyService;
+    }
+
+
+
+
     private static Timer timer = new Timer();
 
-    public static String processMessage(Map<String, String> map) {
+    public static String processMessage(final Map<String, String> map) {
+
+
         if (map.get("MsgType").equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) { // 文本消息
             final String openid = map.get("FromUserName"); //用户 openid
             String mpid = map.get("ToUserName");   //公众号原始 ID
@@ -50,6 +68,16 @@ public class MsgDispatcher {
             txtmsg.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT);
             System.out.println(map.get("Content").trim());
             System.out.println(map.get("Content"));
+
+            // 先找到对应 userId ,方便向数据库中插入 ，先判断用户有没有权限
+            userId = setUserId(map.get("FromUserName"));
+            if (userId == null) {
+                txtmsg.setContent("您暂时还没有权限使用添加功能");
+                return MessageUtil.textMessageToXml(txtmsg);
+            }
+
+
+            // 用户的正常逻辑处理
             if (map.get("MsgType").equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) { // 文本消息
 
                 InputData inputData = session.get(openid);
@@ -82,22 +110,29 @@ public class MsgDispatcher {
                                 "" + inputData.getCompanyForm().getName() + "\n职位：" +
                                 "" + inputData.getCompanyForm().getPosition() + "\n链接:" +
                                 "" + inputData.getCompanyForm().getLink() + "");
-
                         new Thread() {
                             @Override
                             public void run(){
                                 Company company = DataTrans.toCompany(session.get(openid).getCompanyForm());
-                                company.setCreatedUser(openid);
+                                company.setCreatedUser(userId);
                                 Boolean bool = equipmentService.createEquipment(company);
                                 session.remove(openid);
                             }
                         }.start();
                     } else {
                         session.remove(openid);
-                        txtmsg.setContent("添加招聘请回复\"添加\"");
                     }
                 } else {
-                    txtmsg.setContent("添加招聘请回复\"添加\""); // 不添加逻辑
+                    new Thread() {
+                        @Override
+                        public void run(){
+                            MyCopyMessage myCopyMessage = new MyCopyMessage();
+                            myCopyMessage.setUserId(userId);
+                            myCopyMessage.setMessage(map.get("Content"));
+                            myCopyService.setText(myCopyMessage);
+                        }
+                    }.start();
+                    txtmsg.setContent("消息已到粘贴板");
                 }
                 return MessageUtil.textMessageToXml(txtmsg);
             }
@@ -141,5 +176,9 @@ public class MsgDispatcher {
         }
 
         return null;
+    }
+
+    private static String setUserId(String ToUserName) {
+        return PropertyUtils.getProperty(ToUserName,"/wechat.properties");
     }
 }

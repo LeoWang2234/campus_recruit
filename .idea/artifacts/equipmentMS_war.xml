@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="equipmentMS:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="equipmentMS-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="recruit.war">
       <element id="artifact" artifact-name="equipmentMS:war exploded" />
     </root>
   </artifact>

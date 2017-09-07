@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecust.dao.MyCopyDao">
+
+
+	<select id="queryAllEquipmentForValidation" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+	</select>
+
+	<select id="queryAllEquipmentOfMe" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+		WHERE
+
+		ee.created_user = #{userId}
+		<if test="name != null and name != ''">
+			AND ee.name like CONCAT('%',#{name},'%')
+		</if>
+
+	</select>
+	<select id="queryAllEquipment" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.applied
+		FROM
+		companies ee
+
+		WHERE
+
+		ee.id
+		<if test=" applied == 2">   <!-- 新增信息查询 -->
+			NOT
+		</if>
+		IN (SELECT cpy_id FROM user_company WHERE user_id = ${userId }
+		<if test=" applied == 0">   <!-- 只查未投 -->
+			AND status = 0
+		</if>
+		<if test=" applied == 1">   <!-- 只查已投 -->
+			AND status = 1
+		</if>
+		)
+		<if test="name != null and name != ''">
+			AND ee.name like CONCAT('%',#{name},'%')
+		</if>
+
+	</select>
+	<select id="getText" resultType="java.util.Map">
+		SELECT
+		message
+		FROM
+		my_copy
+		WHERE
+		user_id = #{userId} order by create_time desc limit 1
+	</select>
+
+	<update id="addToMe">
+		insert into user_company (user_id, cpy_id) values (#{userId},#{equipmentId})
+	</update>
+
+	<update id="notInterested">
+		insert into user_company (user_id, cpy_id,status) values (#{userId},#{equipmentId},2)
+	</update>
+
+	<update id="updateStatus">
+		UPDATE
+		companies
+		SET
+		status = #{status}
+		WHERE
+		id = #{id}
+	</update>
+	<update id="updateEquipment" parameterType="com.ecust.pojo.Equipment">
+		UPDATE
+		companies
+		SET
+		name = #{name},
+		position = #{position},
+		link = #{link},
+		deadline = #{deadline}
+		WHERE
+		id = #{id}
+	</update>
+	<insert id="setText">
+		INSERT INTO my_copy(
+		message,
+		user_id,
+		create_time
+		)VALUES(
+		#{message},
+		#{userId},
+		NOW()
+		)
+	</insert>
+
+	<select id="maxId" resultType="int">
+		SELECT
+		max(id)
+		FROM
+		companies
+	</select>
+
+	<update id="apply">
+		update user_company set status=ABS(status - 1) where cpy_id=#{equipmentId} and user_id = #{userId};
+	</update>
+	<delete id="deleteEquipment">
+		DELETE FROM
+		companies
+		WHERE
+		id = #{equipmentId}
+
+	</delete>
+	<select id="queryAllType" resultType="java.util.Map">
+		SELECT et.*,eu.trueName AS createName
+		FROM
+		equ_type et,equ_user eu
+		WHERE
+		et.createId = eu.id
+		ORDER BY et.typeId ASC
+	</select>
+	<insert id="createType">
+		INSERT INTO equ_type(
+		typeName,
+		createId,
+		createTime
+		)
+		VALUES(
+		#{typeName},
+		#{createId},
+		NOW()
+		)
+	</insert>
+	<delete id="deleteType">
+		DELETE FROM
+			equ_type
+		WHERE
+			typeId = #{typeId}
+	</delete>
+
+	<delete id="clear">
+		DELETE  FROM my_copy
+	</delete>
+</mapper>

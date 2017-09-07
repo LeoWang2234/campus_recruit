@@ -33,6 +33,14 @@ public class UserController {
 	public String login(User user,HttpServletRequest request){
 		String name = request.getParameter("userName");
 		String password = request.getParameter("password");
+
+		HttpSession session = request.getSession();
+		User currentUser = (User) session.getAttribute("currentUser");
+		// 用户已经登录了，无需重复登录,跳转回主页
+		if (currentUser != null) {
+			return "forward:/WEB-INF/views/main.jsp";
+		}
+
 		//用户名或密码为空,用户输入账号或密码不能为字符串“null”
 		if(name == null || password == null){
 			request.setAttribute("loginMsg","enter your info first");
@@ -43,16 +51,12 @@ public class UserController {
 			request.setAttribute("loginMsg","invalid input");
 			return "forward:/login.jsp";
 		}
-		User currentUser = userService.login(user);
-//		User currentUser = new User();
-//		currentUser.setPassword("SUPER");
-//		currentUser.setUserName("SUPER");
+		currentUser = userService.login(user);
 
 		if(currentUser == null){
 			request.setAttribute("loginMsg", "username or password is wrong");
 			return "forward:/login.jsp";
 		}else{
-			HttpSession session = request.getSession();
 			session.setAttribute("currentUser", currentUser);
 			return "forward:/WEB-INF/views/main.jsp";
 		}
