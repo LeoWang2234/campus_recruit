@@ -18,6 +18,8 @@ public interface EquipmentService {
 
     Map<String, Object> queryEquipmentById(int equipmentId);
 
+    Map<String, Object> queryEquipmentByName(String equipmentName);
+
     Boolean updateEquipment(Company company);
 
     Boolean createEquipment(Company company);

@@ -18,6 +18,8 @@ public interface EquipmentDao {
 
 	Map<String, Object> queryEquipmentById(@Param("equipmentId")int equipmentId);
 
+	Map<String, Object> queryEquipmentByName(@Param("equipmentName")String equipmentName);
+
 	void updateEquipment(Company company);
 
 	void createEquipment(Company coompany);

@@ -111,6 +111,23 @@
 			ee.id = #{equipmentId}
 	</select>
 
+	<select id="queryEquipmentByName" resultType="java.util.Map">
+		SELECT
+		ee.id,
+		ee.name,
+		ee.position,
+		ee.link,
+		ee.deadline,
+		ee.push,
+		ee.push_code,
+		ee.status,
+		ee.created_user
+		FROM
+		companies ee
+		WHERE
+		ee.name = #{equipmentName} limit 1
+	</select>
+
 	<update id="addToMe">
 		insert into user_company (user_id, cpy_id) values (#{userId},#{equipmentId})
 	</update>

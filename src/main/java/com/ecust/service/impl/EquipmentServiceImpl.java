@@ -80,6 +80,13 @@ public class EquipmentServiceImpl implements EquipmentService {
     }
 
     @Override
+    public Map<String, Object> queryEquipmentByName(String equipmentName) {
+
+        Map<String, Object> map = equipmentDao.queryEquipmentByName(equipmentName);
+        return map;
+    }
+
+    @Override
     public Boolean addToMe(int equipmentId, int userId) {
         equipmentDao.addToMe(equipmentId, userId);
         return true;

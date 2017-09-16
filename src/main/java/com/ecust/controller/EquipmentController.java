@@ -5,13 +5,16 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.alibaba.fastjson.JSON;
 import com.ecust.dto.CompanyForm;
 import com.ecust.permision.AdminPermission;
 import com.ecust.permision.GuestPermission;
 import com.ecust.permission.AdmintPermission;
 import com.ecust.pojo.Company;
+import com.ecust.pojo.Result;
 import com.ecust.pojo.User;
 import com.ecust.utils.DataTrans;
+import net.sf.json.util.JSONUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -129,8 +132,8 @@ public class EquipmentController {
     //添加设备
     @GuestPermission
     @ResponseBody
-    @RequestMapping(value = "/createEquipment", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public boolean createEquipment(@RequestBody CompanyForm companyForm, HttpServletRequest request) {
+    @RequestMapping(value = "/createEquipment" ,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Result createEquipment(@RequestBody CompanyForm companyForm, HttpServletRequest request) {
         //创建session
         HttpSession session = request.getSession();
 
@@ -140,12 +143,25 @@ public class EquipmentController {
         Company company = DataTrans.toCompany(companyForm);
         company.setCreatedUser(String.valueOf(currentUser.getId()));
 
+        Map resultInDB = equipmentService.queryEquipmentByName(company.getName());
+
+        // 该公司已存在，直接返回
+        if (resultInDB != null && resultInDB.size() > 0) {
+            Result result = new Result("Information Already Exist, Please Don't Add Again");
+            return result;
+        }
         Boolean bool = equipmentService.createEquipment(company); // 这里将userId的类型设置为string主要是为了方便微信客户端录入
 
         // 用户添加一条信息时，将此信息自动更新到用户自己的未投递列表中
         int companyId = equipmentService.maxId();
         equipmentService.addToMe(companyId, currentUser.getId());
-        return true;
+        if (bool) {
+            Result result = new Result("Add Info Succeed");
+            return result;
+        }else {
+            Result result = new Result("Add Info Failed");
+            return result;
+        }
     }
 
     //删除设备

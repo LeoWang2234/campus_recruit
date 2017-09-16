@@ -84,7 +84,7 @@ public class MsgDispatcher {
                 if (map.get("Content").trim().equals("添加") || inputData != null) { // 添加逻辑
                     if (inputData == null) {
 
-                        // 定时器，用户操作时间 30 秒，则视为放弃了操作
+                        // 定时器，用户操作时间 1 分钟，则视为放弃了操作
                         TimerTask task = new TimerTask() {
                             public void run() {
                                 session.remove(openid);
@@ -96,6 +96,12 @@ public class MsgDispatcher {
                         session.put(openid, inputData);
                         txtmsg.setContent("请输入公司姓名:");
                     } else if (inputData.getVisitTime() == 1) {
+                        Map result = equipmentService.queryEquipmentByName(map.get("Content"));
+                        if (result != null) {
+                            txtmsg.setContent("该公司的招聘信息已经存在,不要重复添加");
+                            session.remove(openid);
+                            return MessageUtil.textMessageToXml(txtmsg);
+                        }
                         inputData.setVisitTime(2);
                         txtmsg.setContent("请输入招聘岗位:");
                         inputData.getCompanyForm().setName(map.get("Content"));

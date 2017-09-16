@@ -11,7 +11,7 @@
 <div class="wrap flex-c-c">
     <form action="${pageContext.request.contextPath}/user/createUser" method="post" class="flex-c-c" id="myform">
         <ul class="select__list">
-            <li id="js-usr-rtn" class="select__label">Sign in</li>
+            <li id="js-usr-rtn" class="select__label">Sign Up</li>
             <%--<li id="js-usr-new" class="select__label select__label--active">Sign up</li>--%>
             <%--<li id="js-usr-rst" class="select__label">Forget PassWord</li>--%>
         </ul>

@@ -48,6 +48,9 @@
         <property name="password" value="${password}"></property>
     </bean>
 
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <property name="defaultCharset" value="UTF-8"/>
+    </bean>
     <!--<bean id="myAspect" class="com.ecust.aspect.CompanyAspect">-->
         <!--&lt;!&ndash; configure properties of aspect here as normal &ndash;&gt;-->
     <!--</bean>-->

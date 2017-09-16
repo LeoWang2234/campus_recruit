@@ -16,6 +16,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/myjs/updatedata.js"></script>
 <script type="text/javascript" charset="utf-8"
         src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hiddenoverflow.css">
@@ -73,79 +74,14 @@
     <input type="text" id="currentPage" style="display:none" value="1"></input>
     <input type="text" id="pageSize" style="display:none" value="5"></input>
 </div>
-<!-- 添加模态框 -->
-<form method="post" class="form-horizontal" action="" role="form"
-      id="createForm" style="margin: 20px;">
-    <div class="modal fade" id="createEquipment" tabindex="-1"
-         role="dialog" aria-labelledby="createModalLabel" aria-hidden="true"
-         data-backdrop="static">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;
-                    </button>
-                    <h4 class="modal-title" id="crdateModalLabel">添加招聘</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="crName" class="col-md-4 control-label">公司名称</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="crName" name="name"
-                                   placeholder="请输入公司名称">
-                        </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="positioin" class="col-md-4 control-label">招聘岗位</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" name="produceName"
-                                   value="" id="positioin" placeholder="请输入招聘岗位">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="link" class="col-md-4 control-label">投递链接</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" name="no" id="link"
-                                   placeholder="请输入投递链接">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="push" class="col-md-4 control-label">备注</label>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" name="no" id="push"
-                                   placeholder="供填写内推码或者其他备注信息">
-                        </div>
-                    </div>
-                    <div id="datetimepicker" class="form-group">
-                        <!-- Text input-->
-                        <label for="dead_line" class="col-md-4 control-label">截止日期</label>
-                        <div class="col-md-6">
-                            <input type="text" name="time" class="form-control" id="dead_line" placeholder="点击下方小日历选择日期"
-                                   class="input-xlarge"/>
-                            <span class="add-on">
-                                <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
-                                   data-date-icon="icon-calendar"></i>
-                            </span>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="modal-footer" style="text-align:center">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消
-                    </button>
-                    <button type="submit" class="btn btn-primary">添加</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal -->
-    </div>
-
-</form>
+<jsp:include page="/WEB-INF/views/main/adddata.jsp"/>
+<jsp:include page="/WEB-INF/views/main/updatedata.jsp"/>
 
 <script type="text/javascript">
+
+    var myContextPath = "${pageContext.request.contextPath}"
+
     $('#createEquipment').modal()
 
 
@@ -191,12 +127,8 @@
                             deadline: deadline
                         }),
                         success: function (data) {
-                            if (data == true) {
-                                alert("添加成功!");
-                                pagehtml($("#currentPage").val());
-                            } else {
-                                alert("游客身份不能添加！");
-                            }
+
+                            alert(data.message);
 
                         },
                         error: function () {
@@ -341,34 +273,42 @@
         pagehtml(1);
     }
 
-    //获取要修改的设备
-    function getEquipmentById(equipmentId) {
 
-        if (!equipmentId) {
-            alert('Error！');
-            return false;
-        }
-        $
-            .ajax({
-                url: "${pageContext.request.contextPath}/equipment/queryEquipmentById",
-                data: {
-                    "equipmentId": equipmentId
-                },
-                type: "get",
-                success: function (data) {
-                    $("#upName").val(data.name);
-                    $("#upProduceName").val(data.position);
-                    $("#link").val(data.link);
-                    $("#dead_line").val(data.deadline);
-                    $("#upEquipmentId").val(data.id);
-                },
-                error: function () {
-                    alert("请求出错");
-                },
+
+    //修改设备
+    $("#updateForm")
+        .submit(
+            function (e) {
+                var name = $.trim($("#upName").val());
+                var position = $.trim($("#upProduceName").val());
+                var link = $.trim($("#link").val());
+                var deadline = $.trim($("#dead_line").val());
+                $
+                    .ajax({
+                        url: "${pageContext.request.contextPath}/equipment/updateEquipment",
+                        type: "post",
+                        contentType: "application/json",
+                        data: JSON.stringify({
+                            name: name,
+                            position: position,
+                            link: link,
+                            id: $("#upEquipmentId").val(),
+                            deadline: deadline
+                        }),
+                        success: function (data) {
+                            if (data == true) {
+                                alert("修改成功!");
+                                pagehtml($("#currentPage").val());
+                            } else {
+                                alert("只可以修改自己添加的信息！");
+                            }
+                        },
+                        error: function () {
+                            alert("修改出错!");
+                        }
+                    });
+                e.preventDefault();
             });
-        return false;
-    }
+
 </script>
-
-
 </html>

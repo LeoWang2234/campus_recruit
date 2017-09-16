@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8" %>
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <meta charset="utf-8"/>
@@ -13,6 +14,7 @@
 	rel="stylesheet" /> --%>
 <script type="text/javascript" charset="utf-8"
 		src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/myjs/updatedata.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
@@ -72,134 +74,12 @@
 	<input type="text" id="currentPage" style="display:none" value="1"></input>
 	<input type="text" id="pageSize" style="display:none" value="5"></input>
 </div>
-
-<!-- 更新模态框 -->
-<form method="post" class="form-horizontal" action="" role="form"
-	  id="updateForm" style="margin: 20px;">
-	<div class="modal fade" id="updateEquipment" tabindex="-1"
-		 role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true"
-		 data-backdrop="static">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<input type="text" name="equipmentId" id="upEquipmentId"
-					   style="display: none"/>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-							aria-hidden="true">&times;
-					</button>
-					<h4 class="modal-title" id="updateModalLabel">信息修改</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="upName" class="col-md-4 control-label">公司名称</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" id="upName" name="name"
-								   placeholder="公司名称">
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="upProduceName" class="col-md-4 control-label">招聘岗位</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="produceName"
-								   value="" id="upProduceName" placeholder="招聘岗位">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="link" class="col-md-4 control-label">投递链接</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="no" id="link"
-								   placeholder="请输入投递链接">
-						</div>
-					</div>
-					<div id="datetimepicker" class="form-group">
-						<!-- Text input-->
-						<label for="dead_line" class="col-md-4 control-label">截止日期</label>
-						<div class="col-md-6">
-							<input type="text" name="time" class="form-control" id="dead_line" placeholder="点击下方小日历选择日期"
-								   class="input-xlarge"/>
-							<span class="add-on">
-                                <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
-								   data-date-icon="icon-calendar"></i>
-                            </span>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="modal-footer" style="text-align:center">
-					<button type="button" class="btn btn-default" data-dismiss="modal">取消
-					</button>
-					<button type="submit" class="btn btn-primary">修改</button>
-				</div>
-			</div>
-			<!-- /.modal-content -->
-		</div>
-		<!-- /.modal -->
-	</div>
-</form>
-<!-- 添加模态框 -->
-<form method="post" class="form-horizontal" action="" role="form"
-	  id="createForm" style="margin: 20px;">
-	<div class="modal fade" id="createEquipment" tabindex="-1"
-		 role="dialog" aria-labelledby="createModalLabel" aria-hidden="true"
-		 data-backdrop="static">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-							aria-hidden="true">&times;
-					</button>
-					<h4 class="modal-title" id="crdateModalLabel">添加设备</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="crName" class="col-md-4 control-label">公司名称</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" id="crName" name="name"
-								   placeholder="请输入公司名称">
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="crProduceName" class="col-md-4 control-label">招聘岗位</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="produceName"
-								   value="" id="crProduceName" placeholder="请输入招聘岗位">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="crNo" class="col-md-4 control-label">设备编号</label>
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="no" id="crNo"
-								   placeholder="请输入设备编号">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="crTypeId" class="col-md-4 control-label">部门</label>
-						<div class="col-md-6">
-							<select class="form-control" id="crTypeId">
-								<option value="none">请选择设备类型</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer" style="text-align:center">
-					<button type="button" class="btn btn-default" data-dismiss="modal">取消
-					</button>
-					<button type="submit" class="btn btn-primary">添加</button>
-				</div>
-			</div>
-			<!-- /.modal-content -->
-		</div>
-		<!-- /.modal -->
-	</div>
-</form>
-
-
-
-
+<jsp:include page="/WEB-INF/views/main/updatedata.jsp"/>
 <script type="text/javascript">
+
+
+    var myContextPath = "${pageContext.request.contextPath}"
+
     $(function () {
         pagehtml($("#currentPage").val());
 
@@ -237,33 +117,6 @@
             });
     }
 
-    //获取要修改的设备
-    function getEquipmentById(equipmentId) {
-
-        if (!equipmentId) {
-            alert('Error！');
-            return false;
-        }
-        $
-            .ajax({
-                url: "${pageContext.request.contextPath}/equipment/queryEquipmentById",
-                data: {
-                    "equipmentId": equipmentId
-                },
-                type: "get",
-                success: function (data) {
-                    $("#upName").val(data.name);
-                    $("#upProduceName").val(data.position);
-                    $("#link").val(data.link);
-                    $("#dead_line").val(data.deadline);
-                    $("#upEquipmentId").val(data.id);
-                },
-                error: function () {
-                    alert("请求出错");
-                },
-            });
-        return false;
-    }
     //修改设备
     $("#updateForm")
         .submit(
