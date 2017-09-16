@@ -123,7 +123,7 @@ public class EquipmentController {
         if (Integer.valueOf(((String) map.get("created_user")).trim()) == (int) currentUser.getId()
                 || (currentUser.getRoleName() != null && currentUser.getRoleName().equals("管理员"))) {
             Boolean bool = equipmentService.updateEquipment(company);
-            return true;
+            return bool;
         } else {
             return false;
         }

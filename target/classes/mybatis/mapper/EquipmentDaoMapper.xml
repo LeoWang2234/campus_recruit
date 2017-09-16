@@ -151,7 +151,8 @@
 			name = #{name},
 			position = #{position},
 			link = #{link},
-			deadline = #{deadline}
+			deadline = #{deadline},
+			push_code = #{push_code}
 		WHERE
 			id = #{id}
 	</update>

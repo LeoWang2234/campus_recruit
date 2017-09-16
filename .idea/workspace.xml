@@ -7,43 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc9821b-1f8b-41e5-a50c-cd6b06ca8125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/pojo/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/alterdata.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/updatedata.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/myjs/updatedata.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js" afterPath="$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/dao/EquipmentDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/EquipmentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher$2.class" afterPath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher$3.class" afterPath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher.class" afterPath="$PROJECT_DIR$/target/classes/com/wechat/dispatcher/MsgDispatcher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/dao/EquipmentDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/EquipmentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/service/impl/EquipmentServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher$2.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher$3.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/wechat/dispatcher/MsgDispatcher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/recruit.war" afterPath="$PROJECT_DIR$/target/recruit.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signup.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signup.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis/mapper/EquipmentDaoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listapplied.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listapplied.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/signup.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/signup.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listnew.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/listnew.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/lisunapplied.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/equipment/lisunapplied.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/adddata.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/adddata.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/addCom.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/addCom.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/myadd.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/repair/myadd.jsp" />
     </list>
@@ -57,145 +41,300 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="listapplied.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="100" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="100" />
-              <folding>
-                <marker date="1505577870000" expanded="true" signature="9235:9242" ph="×" />
-                <marker date="1505577870000" expanded="true" signature="12596:12614" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="12749:12767" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="12902:12920" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="13460:13466" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13466:13472" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13715:13721" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13721:13727" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lisunapplied.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-              <folding>
-                <marker date="1505577870000" expanded="true" signature="9273:9280" ph="×" />
-                <marker date="1505577870000" expanded="true" signature="12626:12644" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="12776:12794" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="12926:12944" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="13482:13488" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13488:13494" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13637:13643" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="13643:13649" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myadd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="100" lean-forward="false" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
-              <folding>
-                <marker date="1505578053000" expanded="true" signature="8669:8676" ph="×" />
-                <marker date="1505578053000" expanded="true" signature="12025:12043" ph="..." />
-                <marker date="1505578053000" expanded="true" signature="12175:12193" ph="..." />
-                <marker date="1505578053000" expanded="true" signature="12325:12343" ph="..." />
-                <marker date="1505578053000" expanded="true" signature="12890:12896" ph="&amp;nbsp;" />
-                <marker date="1505578053000" expanded="true" signature="12896:12902" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatedata.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/updatedata.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="797">
-              <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adddata.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="51" column="77" lean-forward="false" selection-start-line="51" selection-start-column="77" selection-end-line="51" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeChatController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="75" column="58" lean-forward="false" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgDispatcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="100" column="57" lean-forward="false" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wechat/wechatinput/SessionData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding>
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatedata.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#getEquipmentById#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="60" />
-              <folding>
-                <marker date="1505577870000" expanded="true" signature="6966:6973" ph="×" />
-                <marker date="1505577870000" expanded="true" signature="10321:10339" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="10471:10489" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="10621:10639" ph="..." />
-                <marker date="1505577870000" expanded="true" signature="11186:11192" ph="&amp;nbsp;" />
-                <marker date="1505577870000" expanded="true" signature="11192:11198" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.23407775">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="listapplied.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="113">
+                  <caret line="15" column="107" lean-forward="false" selection-start-line="15" selection-start-column="107" selection-end-line="15" selection-end-column="107" />
+                  <folding>
+                    <marker date="1505584314000" expanded="true" signature="7900:7907" ph="×" />
+                    <marker date="1505584314000" expanded="true" signature="11261:11279" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11414:11432" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11567:11585" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="12125:12131" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12131:12137" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12380:12386" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12386:12392" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="listnew.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1505583848000" expanded="true" signature="14370:14377" ph="×" />
+                    <marker date="1505583848000" expanded="true" signature="17643:17661" ph="..." />
+                    <marker date="1505583848000" expanded="true" signature="17793:17811" ph="..." />
+                    <marker date="1505583848000" expanded="true" signature="17943:17961" ph="..." />
+                    <marker date="1505583848000" expanded="true" signature="18462:18468" ph="&amp;nbsp;" />
+                    <marker date="1505583848000" expanded="true" signature="18468:18474" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="lisunapplied.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="103">
+                  <caret line="15" column="105" lean-forward="false" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
+                  <folding>
+                    <marker date="1505584314000" expanded="true" signature="7926:7933" ph="×" />
+                    <marker date="1505584314000" expanded="true" signature="11279:11297" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11429:11447" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11579:11597" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="12135:12141" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12141:12147" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12290:12296" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12296:12302" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myadd.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="88">
+                  <caret line="16" column="93" lean-forward="false" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
+                  <folding>
+                    <marker date="1505584314000" expanded="true" signature="7392:7399" ph="×" />
+                    <marker date="1505584314000" expanded="true" signature="10748:10766" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="10898:10916" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11048:11066" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11613:11619" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="11619:11625" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1915">
+                  <caret line="292" column="43" lean-forward="true" selection-start-line="292" selection-start-column="43" selection-end-line="292" selection-end-column="43" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1502973380000" expanded="true" signature="6932:6939" ph="×" />
+                    <marker date="1502973380000" expanded="true" signature="8377:8383" ph="&amp;nbsp;" />
+                    <marker date="1502973380000" expanded="true" signature="8383:8389" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="updatedata.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/updatedata.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="137">
+                  <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="adddata.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="148">
+                  <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="retrivedata.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="alterdata.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="155">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                  <folding>
+                    <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
+                    <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
+                    <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="lisunapplied.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-800">
+                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="115" />
+                  <folding>
+                    <marker date="1505584314000" expanded="true" signature="7926:7933" ph="×" />
+                    <marker date="1505584314000" expanded="true" signature="11279:11297" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11429:11447" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="11579:11597" ph="..." />
+                    <marker date="1505584314000" expanded="true" signature="12135:12141" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12141:12147" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12290:12296" ph="&amp;nbsp;" />
+                    <marker date="1505584314000" expanded="true" signature="12296:12302" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="366">
+                  <caret line="104" column="58" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="58" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/list.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                  <folding>
+                    <marker date="1502973380000" expanded="true" signature="2547:2553" ph="&amp;nbsp;" />
+                    <marker date="1502973380000" expanded="true" signature="2553:2559" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1879">
+                  <caret line="89" column="15" lean-forward="false" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+                  <folding>
+                    <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
+                    <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
+                    <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
+                    <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="78">
+                  <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentService.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="101">
+                  <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentServiceImpl.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="116">
+                  <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentDaoMapper.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+                  <folding>
+                    <marker date="1505586216000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
+                    <marker date="1505586216000" expanded="true" signature="1947:2129" ph="SELECT ee.id... companies" />
+                    <marker date="1505586216000" expanded="true" signature="2207:2391" ph="SELECT ee.id... companies" />
+                    <marker date="1505586216000" expanded="true" signature="2207:2399" ph="SELECT ee.id... companies" />
+                    <marker date="1505586216000" expanded="true" signature="2437:2513" ph="insert into user_company... " />
+                    <marker date="1505586216000" expanded="true" signature="2557:2642" ph="insert into user_company... " />
+                    <marker date="1505586216000" expanded="true" signature="2685:2751" ph="UPDATE compa... " />
+                    <marker date="1505586216000" expanded="true" signature="2837:3004" ph="UPDATE compa... " />
+                    <marker date="1505586216000" expanded="true" signature="3049:3297" ph="INSERT INTO companies... " />
+                    <marker date="1505586216000" expanded="true" signature="3350:3385" ph="SELECT max(i... companies" />
+                    <marker date="1505586216000" expanded="true" signature="3421:3519" ph="update user_... " />
+                    <marker date="1505586216000" expanded="true" signature="3565:3620" ph="DELETE FROM " />
+                    <marker date="1505586216000" expanded="true" signature="3691:3820" ph="SELECT et.*,... equ_type" />
+                    <marker date="1505586216000" expanded="true" signature="3860:3981" ph="INSERT INTO equ_type... " />
+                    <marker date="1505586216000" expanded="true" signature="4021:4074" ph="DELETE FROM " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1154">
+                  <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -205,44 +344,44 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lis</find>
-      <find>listall</find>
-      <find>l</find>
-      <find>list</find>
-      <find>list&quot;</find>
+      <find>updata</find>
+      <find>updat</find>
+      <find>updateda</find>
+      <find>updatedat</find>
+      <find>updatedata</find>
       <find>re</find>
-      <find>repairHis</find>
-      <find>repairHist</find>
-      <find>repairHistor</find>
-      <find>repairHistory</find>
-      <find>t</find>
-      <find>tian jia</find>
-      <find>添加</find>
-      <find>添加zha</find>
-      <find>添加zhao pin</find>
-      <find>添加招聘</find>
-      <find>pageRepair</find>
-      <find>pageEquipment</find>
-      <find>updateEquipment</find>
+      <find>retriva</find>
+      <find>retriv</find>
+      <find>retrive</find>
+      <find>retrived</find>
+      <find>retriveda</find>
+      <find>retrivedat</find>
+      <find>retrivedata</find>
+      <find>datetimepicker</find>
+      <find>a</find>
+      <find>alter</find>
+      <find>alterda</find>
+      <find>alterdat</find>
+      <find>&lt;jsp:include page=&quot;/WEB-INF/views/main/updatedata.jsp&quot;/&gt;</find>
       <find>updateForm</find>
-      <find>center</find>
-      <find>10</find>
-      <find>upEquipmentId</find>
-      <find>createEquipment</find>
-      <find>StringHttpMessageConverter</find>
-      <find>signup</find>
-      <find>修改</find>
       <find>queryEquipmentById</find>
       <find>getEquipmentById</find>
-      <find>session</find>
+      <find>alterdata</find>
+      <find>u</find>
+      <find>upda</find>
+      <find>update</find>
+      <find>updateE</find>
+      <find>updateEq</find>
+      <find>updateEqu</find>
+      <find>updateEquipment</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -265,9 +404,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/test/AspectTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/dmaku.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDaoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/UserServiceImpl.java" />
@@ -305,17 +441,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/pojo/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signup.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wechat/dispatcher/MsgDispatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml" />
       </list>
     </option>
   </component>
@@ -1628,7 +1767,7 @@
       <workItem from="1504230502994" duration="1065000" />
       <workItem from="1504783328926" duration="227000" />
       <workItem from="1505540127395" duration="4445000" />
-      <workItem from="1505546866845" duration="22478000" />
+      <workItem from="1505546866845" duration="28653000" />
     </task>
     <servers />
   </component>
@@ -1665,7 +1804,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243614000" />
+    <option name="totallyTimeSpent" value="249789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1251" height="777" extended-state="6" />
@@ -1683,7 +1822,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51970804" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51970804" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64671534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1694,9 +1833,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40729928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38875103" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34077752" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43649635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1757,7 +1896,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="112" />
+      <option name="time" value="115" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1766,35 +1905,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="237" column="43" lean-forward="false" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar!/org/springframework/scheduling/support/ScheduledMethodRunnable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1863,18 +1973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6393">
-          <caret line="15" column="74" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="74" />
-          <folding>
-            <marker date="1502973380000" expanded="true" signature="6932:6939" ph="×" />
-            <marker date="1502973380000" expanded="true" signature="8377:8383" ph="&amp;nbsp;" />
-            <marker date="1502973380000" expanded="true" signature="8383:8389" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/stateChart.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1890,14 +1988,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1928,32 +2018,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="397" column="43" lean-forward="false" selection-start-line="397" selection-start-column="43" selection-end-line="397" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#1;n#html#0;n#!!top" expanded="true" />
-            <marker date="1505561197000" expanded="true" signature="15780:15787" ph="×" />
-            <marker date="1505561197000" expanded="true" signature="19053:19071" ph="..." />
-            <marker date="1505561197000" expanded="true" signature="19203:19221" ph="..." />
-            <marker date="1505561197000" expanded="true" signature="19353:19371" ph="..." />
-            <marker date="1505561197000" expanded="true" signature="19872:19878" ph="&amp;nbsp;" />
-            <marker date="1505561197000" expanded="true" signature="19878:19884" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+            <element signature="e#308#309#0" expanded="false" />
+            <element signature="e#354#355#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1990,54 +2064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1599">
-          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding>
-            <marker date="1505569009000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
-            <marker date="1505569009000" expanded="true" signature="1947:2129" ph="SELECT ee.id... companies" />
-            <marker date="1505569009000" expanded="true" signature="2207:2391" ph="SELECT ee.id... companies" />
-            <marker date="1505569009000" expanded="true" signature="2207:2399" ph="SELECT ee.id... companies" />
-            <marker date="1505569009000" expanded="true" signature="2437:2513" ph="insert into user_company... " />
-            <marker date="1505569009000" expanded="true" signature="2557:2642" ph="insert into user_company... " />
-            <marker date="1505569009000" expanded="true" signature="2685:2751" ph="UPDATE compa... " />
-            <marker date="1505569009000" expanded="true" signature="2837:2975" ph="UPDATE compa... " />
-            <marker date="1505569009000" expanded="true" signature="3020:3268" ph="INSERT INTO companies... " />
-            <marker date="1505569009000" expanded="true" signature="3321:3356" ph="SELECT max(i... companies" />
-            <marker date="1505569009000" expanded="true" signature="3392:3490" ph="update user_... " />
-            <marker date="1505569009000" expanded="true" signature="3536:3591" ph="DELETE FROM " />
-            <marker date="1505569009000" expanded="true" signature="3662:3791" ph="SELECT et.*,... equ_type" />
-            <marker date="1505569009000" expanded="true" signature="3831:3952" ph="INSERT INTO equ_type... " />
-            <marker date="1505569009000" expanded="true" signature="3992:4045" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/dao/EquipmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2050,22 +2076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -2128,61 +2138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="60" />
-          <folding>
-            <marker date="1505577870000" expanded="true" signature="6966:6973" ph="×" />
-            <marker date="1505577870000" expanded="true" signature="10321:10339" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="10471:10489" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="10621:10639" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="11186:11192" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="11192:11198" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="100" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="100" />
-          <folding>
-            <marker date="1505577870000" expanded="true" signature="9235:9242" ph="×" />
-            <marker date="1505577870000" expanded="true" signature="12596:12614" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="12749:12767" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="12902:12920" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="13460:13466" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13466:13472" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13715:13721" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13721:13727" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="100" lean-forward="false" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
-          <folding>
-            <marker date="1505578053000" expanded="true" signature="8669:8676" ph="×" />
-            <marker date="1505578053000" expanded="true" signature="12025:12043" ph="..." />
-            <marker date="1505578053000" expanded="true" signature="12175:12193" ph="..." />
-            <marker date="1505578053000" expanded="true" signature="12325:12343" ph="..." />
-            <marker date="1505578053000" expanded="true" signature="12890:12896" ph="&amp;nbsp;" />
-            <marker date="1505578053000" expanded="true" signature="12896:12902" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -2196,8 +2151,8 @@
         <state relative-caret-position="270">
           <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2210,46 +2165,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/pojo/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="51" column="77" lean-forward="false" selection-start-line="51" selection-start-column="77" selection-end-line="51" selection-end-column="77" />
+        <state relative-caret-position="299">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listnew.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1505583848000" expanded="true" signature="14370:14377" ph="×" />
+            <marker date="1505583848000" expanded="true" signature="17643:17661" ph="..." />
+            <marker date="1505583848000" expanded="true" signature="17793:17811" ph="..." />
+            <marker date="1505583848000" expanded="true" signature="17943:17961" ph="..." />
+            <marker date="1505583848000" expanded="true" signature="18462:18468" ph="&amp;nbsp;" />
+            <marker date="1505583848000" expanded="true" signature="18468:18474" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/updatedata.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+        <state relative-caret-position="137">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1915">
+          <caret line="292" column="43" lean-forward="true" selection-start-line="292" selection-start-column="43" selection-end-line="292" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502973380000" expanded="true" signature="6932:6939" ph="×" />
+            <marker date="1502973380000" expanded="true" signature="8377:8383" ph="&amp;nbsp;" />
+            <marker date="1502973380000" expanded="true" signature="8383:8389" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="15" column="107" lean-forward="false" selection-start-line="15" selection-start-column="107" selection-end-line="15" selection-end-column="107" />
+          <folding>
+            <marker date="1505584314000" expanded="true" signature="7900:7907" ph="×" />
+            <marker date="1505584314000" expanded="true" signature="11261:11279" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11414:11432" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11567:11585" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="12125:12131" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12131:12137" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12380:12386" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12386:12392" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/lisunapplied.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+        <state relative-caret-position="-800">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="115" />
           <folding>
-            <marker date="1505577870000" expanded="true" signature="9273:9280" ph="×" />
-            <marker date="1505577870000" expanded="true" signature="12626:12644" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="12776:12794" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="12926:12944" ph="..." />
-            <marker date="1505577870000" expanded="true" signature="13482:13488" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13488:13494" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13637:13643" ph="&amp;nbsp;" />
-            <marker date="1505577870000" expanded="true" signature="13643:13649" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="7926:7933" ph="×" />
+            <marker date="1505584314000" expanded="true" signature="11279:11297" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11429:11447" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11579:11597" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="12135:12141" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12141:12147" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12290:12296" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12296:12302" ph="&amp;nbsp;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/updatedata.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/myadd.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="16" column="93" lean-forward="false" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
           <folding>
-            <element signature="n#!!doc;n#getEquipmentById#0" expanded="false" />
+            <marker date="1505584314000" expanded="true" signature="7392:7399" ph="×" />
+            <marker date="1505584314000" expanded="true" signature="10748:10766" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="10898:10916" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11048:11066" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11613:11619" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="11619:11625" ph="&amp;nbsp;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1879">
+          <caret line="89" column="15" lean-forward="false" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+          <folding>
+            <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
+            <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
+            <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1154">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="104" column="58" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <marker date="1502973380000" expanded="true" signature="2547:2553" ph="&amp;nbsp;" />
+            <marker date="1502973380000" expanded="true" signature="2553:2559" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/EquipmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EquipmentDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <marker date="1505586216000" expanded="true" signature="774:916" ph="SELECT ee.id... companies" />
+            <marker date="1505586216000" expanded="true" signature="1947:2129" ph="SELECT ee.id... companies" />
+            <marker date="1505586216000" expanded="true" signature="2207:2391" ph="SELECT ee.id... companies" />
+            <marker date="1505586216000" expanded="true" signature="2207:2399" ph="SELECT ee.id... companies" />
+            <marker date="1505586216000" expanded="true" signature="2437:2513" ph="insert into user_company... " />
+            <marker date="1505586216000" expanded="true" signature="2557:2642" ph="insert into user_company... " />
+            <marker date="1505586216000" expanded="true" signature="2685:2751" ph="UPDATE compa... " />
+            <marker date="1505586216000" expanded="true" signature="2837:3004" ph="UPDATE compa... " />
+            <marker date="1505586216000" expanded="true" signature="3049:3297" ph="INSERT INTO companies... " />
+            <marker date="1505586216000" expanded="true" signature="3350:3385" ph="SELECT max(i... companies" />
+            <marker date="1505586216000" expanded="true" signature="3421:3519" ph="update user_... " />
+            <marker date="1505586216000" expanded="true" signature="3565:3620" ph="DELETE FROM " />
+            <marker date="1505586216000" expanded="true" signature="3691:3820" ph="SELECT et.*,... equ_type" />
+            <marker date="1505586216000" expanded="true" signature="3860:3981" ph="INSERT INTO equ_type... " />
+            <marker date="1505586216000" expanded="true" signature="4021:4074" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/service/impl/EquipmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

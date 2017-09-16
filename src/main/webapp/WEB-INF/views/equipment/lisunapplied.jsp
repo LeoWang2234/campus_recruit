@@ -11,16 +11,16 @@
 <%-- <link type="text/css"
 	href="${pageContext.request.contextPath}/css/bootstrap-pagination.min.css"
 	rel="stylesheet" /> --%>
-<script type="text/javascript" charset="utf-8"
-        src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
-
-<script type="text/javascript" src="${pageContext.request.contextPath}/myjs/updatedata.js"></script><script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/myjs/retrivedata.js" charset='utf-8'></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/myjs/alterdata.js" charset='utf-8'></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
+
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hiddenoverflow.css">
 <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
-<script type="text/javascript" charset="utf-8"
-        src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
 
 <div class="row search">
     <div class="col-md-6">
@@ -73,7 +73,6 @@
     <input type="text" id="pageSize" style="display:none" value="5"></input>
 </div>
 
-<jsp:include page="/WEB-INF/views/main/adddata.jsp"/>
 <jsp:include page="/WEB-INF/views/main/updatedata.jsp"/>
 
 <script type="text/javascript">
@@ -129,42 +128,7 @@
     }
 
 
-    //修改设备
-    $("#updateForm")
-        .submit(
-            function (e) {
-                var name = $.trim($("#upName").val());
-                var position = $.trim($("#upProduceName").val());
-                var link = $.trim($("#link").val());
-                var deadline = $.trim($("#dead_line").val());
-                $
-                    .ajax({
-                        url: "${pageContext.request.contextPath}/equipment/updateEquipment",
-                        type: "post",
-                        contentType: "application/json",
-                        data: JSON.stringify({
-                            name: name,
-                            position: position,
-                            link: link,
-                            id: $("#upEquipmentId").val(),
-                            deadline: deadline
-                        }),
-                        success: function (data) {
-                            if (data == true) {
-                                alert("修改成功!");
-                                pagehtml($("#currentPage").val());
-                            } else {
-                                alert("只可以修改自己添加的信息！");
-                            }
 
-                        },
-                        error: function () {
-                            alert("修改出错!");
-                        }
-
-                    });
-                e.preventDefault();
-            });
 
     //添加设备
     $("#createForm")

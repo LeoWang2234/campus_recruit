@@ -55,7 +55,7 @@
                                    placeholder="供填写内推码或者其他备注信息">
                         </div>
                     </div>
-                    <div id="datetimepicker" class="form-group">
+                    <div id="datetimepicker_add" class="form-group">
                         <!-- Text input-->
                         <label for="dead_line" class="col-md-4 control-label">截止日期</label>
                         <div class="col-md-6">
@@ -66,10 +66,9 @@
                                    data-date-icon="icon-calendar"></i>
                             </span>
                         </div>
-
                     </div>
-
                 </div>
+
                 <div class="modal-footer" style="text-align:center">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消
                     </button>

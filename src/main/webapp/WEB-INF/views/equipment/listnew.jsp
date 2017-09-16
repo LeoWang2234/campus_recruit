@@ -272,40 +272,6 @@
             });
         return false;
     }
-    //修改设备
-    $("#updateForm")
-        .submit(
-            function (e) {
-                var name = $.trim($("#upName").val());
-                var position = $.trim($("#upProduceName").val());
-                var link = $.trim($("#link").val());
-                var deadline = $.trim($("#dead_line").val());
-                $
-                    .ajax({
-                        url: "${pageContext.request.contextPath}/equipment/updateEquipment",
-                        type: "post",
-                        contentType: "application/json",
-                        data: JSON.stringify({
-                            name: name,
-                            position: position,
-                            link: link,
-                            id: $("#upEquipmentId").val(),
-                            deadline: deadline
-                        }),
-                        success: function (data) {
-                            if (data == true) {
-                                alert("修改成功!");
-                                pagehtml($("#currentPage").val());
-                            } else {
-                                alert("只可以修改自己添加的信息！");
-                            }
-                        },
-                        error: function () {
-                            alert("修改出错!");
-                        }
-                    });
-                e.preventDefault();
-            });
 
     //添加设备
     $("#createForm")
