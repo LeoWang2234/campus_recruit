@@ -32,11 +32,11 @@ public class 	DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	
-	//切换到list.jsp
+	//切换到listapplied.jsp
 	@RequestMapping(value="/pageDepartment",method = RequestMethod.GET)
 	public String pageDepartment(HttpServletRequest request){
 	
-		return "department/list";
+		return "department/listapplied";
 	}
 	//查询所有部门
 	@ResponseBody

@@ -34,7 +34,7 @@ public class EquipmentController {
     @RequestMapping(value = "/pageEquipment", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String pageDepartment(HttpServletRequest request) {
 
-        return "equipment/list";
+        return "equipment/listapplied";
     }
 
     //查询所有设备
@@ -79,7 +79,7 @@ public class EquipmentController {
     @RequestMapping(value = "/pageType", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String pageType(HttpServletRequest request) {
 
-        return "equipment/listall";
+        return "equipment/listnew";
     }
 
     //根据设备ID查询设备

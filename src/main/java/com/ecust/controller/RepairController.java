@@ -45,10 +45,10 @@ public class RepairController {
 		return map;
 	}
 
-	//切换到repairHistory.jsp
+	//切换到myadd.jsp
 	@RequestMapping(value="/pageRepairHistory",method = RequestMethod.GET)
 	public String pageRepairHistory(HttpServletRequest request){
-		return "repair/repairHistory";
+		return "repair/myadd";
 	}
 
 	@RequestMapping(value="/copyClipBoard",method = RequestMethod.GET)

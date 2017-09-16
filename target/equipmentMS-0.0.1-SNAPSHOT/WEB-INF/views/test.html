@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style type=”text/css”>
+    .newsInfo:hover {
+        background: #eee;
+        color: #333;
+        z-index: 999;
+    }
+    .newsInfo {
+
+        position: relative;
+        z-index: 0;
+    }
+    .newsInfo span {
+
+        display: none;
+    }
+    .newsInfo:hover span {
+        display: block;
+        position: absolute;
+        min-width:400px;
+        top: 28px;
+        left:100px;
+        border: 1px solid #cccccc;
+        background: #C1CDC1;
+        color: black;
+        padding: 5px;
+        text-align: left;
+        overflow: hidden;
+    }
+    .newInfoTruncation {
+        width:120px;
+        white-space:nowrap;
+        word-break:keep-all;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+</style>
+<head>
+    <link href="index.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+<div>
+    <a href="#"class="newsInfo">
+        <div class="newInfoTruncation">
+            参考消息网2月29日报道 韩媒称，中国正在迅速增强国防实力。去年年底和今年年初，中国先后采取了各种史无前例的强化军事力量的措施。有预测称，连续5年实现两位数增长的中国国防预算今年的涨幅将超出以往。
+        </div>
+        <span>
+                参考消息网2月29日报道 韩媒称，中国正在迅速增强国防实力。去年年底和今年年初，中国先后采取了各种史无前例的强化军事力量的措施。有预测称，连续5年实现两位数增长的中国国防预算今年的涨幅将超出以往。
+            </span>
+    </a>
+</div>
+</body>
+</html>

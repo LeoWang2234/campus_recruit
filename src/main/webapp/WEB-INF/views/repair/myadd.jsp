@@ -16,6 +16,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/hiddenoverflow.css">
 <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-datetimepicker.min.css">
 <script type="text/javascript" charset="utf-8"
 		src="${pageContext.request.contextPath}/js/bootstrap-paginator.min.js"></script>
@@ -45,15 +46,14 @@
 		   style="margin-bottom: 0px;">
 		<thead>
 		<tr>
-			<th class="col-md-1">序号</th>
-			<th class="col-md-1">公司名称</th>
+			<th class="col-md-0.5">序号</th>
+			<th class="col-md-1.5">公司名称</th>
 			<th class="col-md-1">招聘岗位</th>
 			<th class="col-md-2">投递链接</th>
-			<th class="col-md-2">截止时间</th>
-			<th class="col-md-1">是否内推</th>
-			<th class="col-md-1">内推码</th>
+			<th class="col-md-1.3">截止时间</th>
+			<th class="col-md-1.2">备注</th>
 			<th class="col-md-1">状态</th>
-			<th class="col-md-2">操作</th>
+			<th class="col-md-1.5">操作</th>
 		</tr>
 		</thead>
 		<tbody id="equList"></tbody>
@@ -70,7 +70,7 @@
 		<button type="button" class="btn btn-default" value="100" onclick="changePageSize(this)">100</button>
 	</div>
 	<input type="text" id="currentPage" style="display:none" value="1"></input>
-	<input type="text" id="pageSize" style="display:none" value="10"></input>
+	<input type="text" id="pageSize" style="display:none" value="5"></input>
 </div>
 
 <!-- 更新模态框 -->
@@ -380,29 +380,54 @@
                                 data.data,
                                 function (j, val) {
                                     var html;
+                                    var hidden_position = "<div><a  class=\"newsInfo\"><div class=\"newInfoTruncation\">"
+                                        + val.position
+                                        + "</div>"
+                                        + "<span>"
+                                        + val.position
+                                        + "</span></a></div>";
+                                    var hidden_name = "<div><a  class=\"newsInfo\"><div class=\"newInfoTruncation\">"
+                                        + val.name
+                                        + "</div>"
+                                        + "<span>"
+                                        + val.name
+                                        + "</span></a></div>";
+                                    var hidden_link = "<div class=\"newInfoTruncation\">"
+                                        + val.link
+                                        + "</div>"
+                                        + "<span>"
+                                        + val.link
+                                        + "</span>";
+                                    var hidden_push_code = "<div class=\"newInfoTruncation\">"
+                                        + val.push_code
+                                        + "</div>"
+                                        + "<span>"
+                                        + val.push_code
+                                        + "</span>";
                                     html = "<tr>"
-                                        + "<td>"
+                                        + "<td align=\"center\">"
                                         + ((data.page.pageNo - 1)
                                         * data.page.pageSize
                                         + j + 1)
                                         + "</td>"
                                         + "<td>"
-                                        + val.name
+                                        + hidden_name
                                         + "</td>"
                                         + "<td>"
-                                        + val.position
+                                        + hidden_position
                                         + "</td>"
                                         + "<td>"
-                                        + "<a href= \""+val.link+"\" target=\"_blank\">" + val.link + "</a>"
+                                        + "<a href= \"" + val.link + "\" target=\"_blank\" class=\"newsInfo\">"
+                                        + hidden_link
+                                        + "</a>"
                                         + "</td>"
-                                        + "<td>"
+                                        + "<td align=\"center\">"
                                         + val.deadline
-                                        + "</td>"
-                                        + "<td>";
-                                    html += "</td>"
-                                        + "<td>"
-                                        + val.push_code
                                         + "</td>";
+
+                                    html +=  "<td>" + "<div><a  class=\"newsInfo\">"
+                                        + hidden_push_code
+                                        + "</a></div></td>";
 
                                     if(val.status == 0){
                                         html += "<td style='background:#7CCD7C'>正在进行";
@@ -414,15 +439,8 @@
                                         html += "<td >状态未知";
                                     }
 
-                                    html += "</td>"
 
-                                    if(val.push==0){
-                                        html += "否";
-                                    }else{
-                                        html += "是";
-                                    }
-                                    html += "</td>"
-                                        + "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
+                                    html +=  "<td><button type='button' class='btn btn-info btn-xs' onclick='return getEquipmentById("
                                         + val.id
                                         + ")' data-toggle='modal' data-target='#updateEquipment'>修改</button>";
                                     html += "</button>"
