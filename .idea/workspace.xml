@@ -7,27 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc9821b-1f8b-41e5-a50c-cd6b06ca8125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/clr-bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login_timeout.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/LoginInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/EquipmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/controller/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/LoginInterceptor.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/EquipmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/recruit.war" afterPath="$PROJECT_DIR$/target/recruit.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/error.html" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/error.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/menu.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main/menu.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,12 +24,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="112" column="60" lean-forward="true" selection-start-line="112" selection-start-column="60" selection-end-line="112" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="145">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,85 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alterdata.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retrivedata.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2829">
-              <caret line="237" column="20" lean-forward="true" selection-start-line="237" selection-start-column="20" selection-end-line="237" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="60" />
+            <state relative-caret-position="269">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="113" />
               <folding>
                 <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
                 <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
@@ -147,6 +61,85 @@
                 <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
                 <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="57" column="59" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alterdata.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="61" lean-forward="true" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retrivedata.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adddata.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listapplied.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <marker date="1505584314000" expanded="true" signature="7900:7907" ph="×" />
+                <marker date="1505584314000" expanded="true" signature="11261:11279" ph="..." />
+                <marker date="1505584314000" expanded="true" signature="11414:11432" ph="..." />
+                <marker date="1505584314000" expanded="true" signature="11567:11585" ph="..." />
+                <marker date="1505584314000" expanded="true" signature="12125:12131" ph="&amp;nbsp;" />
+                <marker date="1505584314000" expanded="true" signature="12131:12137" ph="&amp;nbsp;" />
+                <marker date="1505584314000" expanded="true" signature="12380:12386" ph="&amp;nbsp;" />
+                <marker date="1505584314000" expanded="true" signature="12386:12392" ph="&amp;nbsp;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-299">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,10 +153,10 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -221,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/service/MyCopyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/MyCopyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/WeChatController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring.xml" />
@@ -263,15 +255,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login_timeout.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login_timeout_mediate.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout_mediate.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout_mediate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/myjs/timeout.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
       </list>
     </option>
   </component>
@@ -470,6 +463,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="repair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipmentMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1369,7 +1396,7 @@
       <workItem from="1505546866845" duration="29445000" />
       <workItem from="1505785919430" duration="311000" />
       <workItem from="1505786339260" duration="9391000" />
-      <workItem from="1505800738499" duration="16169000" />
+      <workItem from="1505800738499" duration="17819000" />
     </task>
     <servers />
   </component>
@@ -1406,7 +1433,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276452000" />
+    <option name="totallyTimeSpent" value="278102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1251" height="777" extended-state="6" />
@@ -1434,7 +1461,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2671533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40729928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66861314" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2820513" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43649635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1507,13 +1534,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/SignController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -1611,14 +1631,6 @@
             <marker date="1502973380000" expanded="true" signature="8377:8383" ph="&amp;nbsp;" />
             <marker date="1502973380000" expanded="true" signature="8383:8389" ph="&amp;nbsp;" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1778,14 +1790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="298" column="34" lean-forward="true" selection-start-line="298" selection-start-column="34" selection-end-line="298" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
@@ -1799,23 +1803,6 @@
         <state relative-caret-position="435">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="306" column="0" lean-forward="true" selection-start-line="300" selection-start-column="4" selection-end-line="306" selection-end-column="0" />
-          <folding>
-            <marker date="1505584314000" expanded="true" signature="7900:7907" ph="×" />
-            <marker date="1505584314000" expanded="true" signature="11261:11279" ph="..." />
-            <marker date="1505584314000" expanded="true" signature="11414:11432" ph="..." />
-            <marker date="1505584314000" expanded="true" signature="11567:11585" ph="..." />
-            <marker date="1505584314000" expanded="true" signature="12125:12131" ph="&amp;nbsp;" />
-            <marker date="1505584314000" expanded="true" signature="12131:12137" ph="&amp;nbsp;" />
-            <marker date="1505584314000" expanded="true" signature="12380:12386" ph="&amp;nbsp;" />
-            <marker date="1505584314000" expanded="true" signature="12386:12392" ph="&amp;nbsp;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1867,55 +1854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="60" />
-          <folding>
-            <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
-            <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
-            <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="112" column="60" lean-forward="true" selection-start-line="112" selection-start-column="60" selection-end-line="112" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/controller/EquipmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2829">
@@ -1934,14 +1872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login_timeout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1955,6 +1885,116 @@
         <state relative-caret-position="73">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="57" column="59" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login_timeout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/alterdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="61" lean-forward="true" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="113" />
+          <folding>
+            <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
+            <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
+            <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
+            <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/adddata.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/equipment/listapplied.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <marker date="1505584314000" expanded="true" signature="7900:7907" ph="×" />
+            <marker date="1505584314000" expanded="true" signature="11261:11279" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11414:11432" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="11567:11585" ph="..." />
+            <marker date="1505584314000" expanded="true" signature="12125:12131" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12131:12137" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12380:12386" ph="&amp;nbsp;" />
+            <marker date="1505584314000" expanded="true" signature="12386:12392" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/timeout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="49" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="20" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

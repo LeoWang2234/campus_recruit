@@ -7,13 +7,16 @@
 
     <title>首页</title>
 
+
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/myjs/timeout.js" charset="gbk"></script>
     <link rel="stylesheet"
           href="${pageContext.request.contextPath}/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
     <style>
         #main-nav {
             margin-left: 1px;
@@ -89,12 +92,13 @@
 </head>
 <body>
 
-<div style="height: 8%" id="head">
+<div style="height: 8%">
     <jsp:include page="main/head.jsp"/>
 </div>
-<div class="container-fluid " id="navigation" id="menu-main">
+<div class="container-fluid " id="navigation">
     <div class="row" style="height: 100%;">
-        <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;height: 100%;background-color: #f5f3f3" id="menu">
+        <div class="col-md-2 col-sm-2 col-xs-2"
+             style="padding: 0;height: 100%;background-color: #f5f3f3">
             <jsp:include page="main/menu.jsp"></jsp:include>
         </div>
         <div class="col-md-10 col-sm-10 col-xs-10" id="main">
@@ -103,24 +107,24 @@
     </div>
 </div>
 <script type="text/javascript">
+    var myTime = setTimeout("Timeout()", 10000);
 
+    function resetTime() {
+        clearTimeout(myTime);
+        myTime = setTimeout('Timeout()', 10000);
+    }
+
+    function Timeout() {
+        alert("您的登录已超时, 请点确定后重新登录!");
+        document.location.href = 'login.jsp';
+    }
+
+    document.documentElement.onkeydown = resetTime;
+    document.documentElement.onclick = resetTime;
 
 </script>
 
 </body>
 
-<script language="javascript">
-    var myContextPath = "${pageContext.request.contextPath}"
-    var myTime = setTimeout("Timeout()", 10000);
-    function resetTime() {
-        clearTimeout(myTime);
-        myTime = setTimeout('Timeout()', 10000);
-    }
-    function Timeout() {
-        document.location.href= myContextPath+'/login_timeout.jsp';
-    }
-    document.documentElement.onkeydown=resetTime;
-    document.doocumentElement.onclick=resetTime;
-</script>
 
 </html>
