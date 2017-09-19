@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<p><font face="verdana">下列公司是您添加的：</font></p>
+<p><font face="verdana" size="3">下列是所有<font color="#ff4500">您添加</font>的公司：</font></p>
 <div>
 	<table class="table table-hover  table-bordered table-striped"
 		   style="margin-bottom: 0px;">
