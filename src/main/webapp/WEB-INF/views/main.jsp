@@ -108,11 +108,11 @@
 <script type="text/javascript">
 
     var myContextPath = "${pageContext.request.contextPath}"
-    var myTime = setTimeout("Timeout()", 10000);
+    var myTime = setTimeout("Timeout()", 60000 * 30);
 
     function resetTime() {
         clearTimeout(myTime);
-        myTime = setTimeout('Timeout()', 10000);
+        myTime = setTimeout('Timeout()', 60000 * 30);
     }
 
     function Timeout() {
