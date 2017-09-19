@@ -24,10 +24,10 @@ import com.ecust.service.UserService;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	
+
 	@Autowired
 	private UserService userService;
-	
+
 	//登录
 	@RequestMapping("/login")
 	public String login(User user,HttpServletRequest request){
@@ -37,7 +37,7 @@ public class UserController {
 		HttpSession session = request.getSession();
 		User currentUser = (User) session.getAttribute("currentUser");
 		// 用户已经登录了，无需重复登录,跳转回主页
-		if (currentUser != null) {
+		if (currentUser != null && currentUser.getUserName().equals(name)) {
 			return "forward:/WEB-INF/views/main.jsp";
 		}
 
@@ -64,26 +64,25 @@ public class UserController {
 	//退出
 	@RequestMapping("/logout")
 	public String logout(HttpSession session){
-		
+
 		session.invalidate();
-		
+
 		return "redirect:/login.jsp";
-		
+
 	}
-	
 	//首页
 	@RequestMapping(value ="/home",method = RequestMethod.GET)
 	public String home(){
 		return "main/home";
 	}
-	
+
 	//切换到list.jsp
 	@RequestMapping(value="/pageUser",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public String pageDepartment(HttpServletRequest request){
-	
+
 		return "user/list";
 	}
-	
+
 	//查询所有用户
 	@ResponseBody
 	@RequestMapping(value="/queryAllUser",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -92,7 +91,7 @@ public class UserController {
 		Map<String,Object> map  = userService.queryAllUser(pageNo,pageSize);
 		return map;
 	}
-	
+
 	//添加角色
 	@ResponseBody
 	@RequestMapping(value="/createUser",method = RequestMethod.POST)
@@ -131,7 +130,7 @@ public class UserController {
 					"<a href = \"" + url + "\">Click  Me To Login</a>";
 		}
 	}
-	
+
 	//获取要修改的用户
 	@ResponseBody
 	@RequestMapping(value="/queryUserById",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -139,7 +138,7 @@ public class UserController {
 		Map<String,Object> map = userService.queryUserById(id);
 		return map;
 	}
-	
+
 	//更新设备
 	@ResponseBody
 	@RequestMapping(value="/updateUser",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -147,7 +146,7 @@ public class UserController {
 		Boolean bool = userService.updateUser(user);
 		return bool;
 	}
-	
+
 	//删除用户
 	@ResponseBody
 	@RequestMapping(value="/deleteUser/{id}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -155,14 +154,14 @@ public class UserController {
 		Boolean bool = userService.deleteUser(id);
 		return bool;
 	}
-	
+
 	//切换到list.jsp
 	@RequestMapping(value="/pageRole",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public String pageRole(HttpServletRequest request){
-	
+
 		return "user/roleList";
 	}
-	
+
 	//查询所有角色
 	@ResponseBody
 	@RequestMapping(value="/queryAllRole",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -170,7 +169,7 @@ public class UserController {
 		Map<String,Object> map  = userService.queryAllRole();
 		return map;
 	}
-	
+
 	//添加角色
 	@ResponseBody
 	@RequestMapping(value="/createRole",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
@@ -181,7 +180,7 @@ public class UserController {
 		boolean bool = userService.createRole(createId,roleName,remark);
 		return bool;
 	}
-	
+
 	//删除角色
 	@ResponseBody
 	@RequestMapping(value="/deleteRole/{id}",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

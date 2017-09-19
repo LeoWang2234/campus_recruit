@@ -1,0 +1,293 @@
+/*--
+Author: 小贝壳网站模板
+Author URL: http://www.smallseashell.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* start editing from here */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--login start here--*/
+body{
+   background:#2C3E50;
+   padding:100px 0px 30px 0px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 100%;
+}
+.login {
+  width: 22.5%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px 20px;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+}
+ h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+.rib {
+  background: url(../images/clr-bar.png)no-repeat;
+  width: 402px;
+  height: 5px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: -1%;
+  left: 0%;
+}
+form {
+  text-align: center;
+}
+.login input[type="text"] {
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #bcbcbc;
+  padding: 15px 20px;
+  background: #F3F5F6;
+  border-top: 3px solid #EEF0F1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+  width: 70%;
+  -webkit-appearance: none;
+  display: inline-block;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.login input[type="password"]{
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #bcbcbc;
+  padding: 15px 20px;
+  background: #F3F5F6;
+  border-top: 3px solid #EEF0F1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+  width: 70%;
+  -webkit-appearance: none;
+  display: inline-block;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.login input[type="submit"] {
+  background: #2ECC71;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px 7px;
+  width: 82%;
+  border-radius: 6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0px 0px 0px 0px;
+  border-bottom: 3px solid #2AB766;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.login input[type="submit"]:hover {
+	background:#CC6E91;
+	border-bottom: 3px solid #C14171;
+	transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.copyright {
+  padding: 150px 0px 0px 0px;
+  text-align: center;
+}
+.copyright p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.copyright p a{
+  font-size: 15px;
+  font-weight: 400;
+  color: #2ECC71;
+}
+.copyright p a:hover{
+	color: #E92E74;
+	 transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+/*--login end here--*/
+/*--meadia quiries start here--*/
+@media(max-width:1440px){
+.login {
+     width: 25.2%;
+}
+.social ul li a.face {
+  padding: 0.5em 1em 0.5em 2.2em;
+}
+.social ul li a.face:hover {
+   padding: 0.5em 1em 0.5em 2.2em;
+}
+.social ul li a.twit {
+  padding: 0.5em 1em 0.5em 2.5em;
+}
+.social ul li a.twit:hover {
+  padding: 0.5em 1em 0.5em 2.5em;
+}
+}
+@media(max-width:1366px){
+.login {
+  width: 26.3%;
+}
+}
+@media(max-width:1280px){
+.login {
+  width: 28.4%;
+}
+}
+@media(max-width:1024px){
+.login {
+     width: 35.2%;
+}
+}
+@media(max-width:768px){
+.login {
+    width: 46.8%;
+}
+}
+@media(max-width:736px){
+.login {
+  width: 50.07%;
+}
+}
+@media(max-width:667px){
+.login {
+  width: 55.5%;
+}	
+}
+@media(max-width:640px){
+.login {
+  width: 56.4%;
+}
+}
+@media(max-width:600px){
+.login {
+  width: 61.75%;
+}	
+}
+@media(max-width:568px){
+.login {
+  width: 65.3%;
+}	
+}
+@media(max-width:480px){
+.login {
+    width: 75.2%;
+}
+.login input[type="submit"] {
+  font-size: 14px;
+  padding: 10px 7px;
+  width: 80%;
+}
+.login input[type="password"] {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.login input[type="text"] {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+}
+@media(max-width:414px){
+.rib {
+  width: 352px;
+  background-size: 100%;
+}	
+}
+@media(max-width:384px){
+.rib {
+  width: 315px;	
+}
+}
+@media(max-width:375px){
+.login {
+  width: 76.8%;
+}	
+}
+@media(max-width:320px){
+.rib {
+  background: url(../images/clr-bar.png)no-repeat;
+  width: 266px;
+  height: 3px;
+  background-size: 100%;
+}
+.login input[type="text"] {
+  font-size: 12px;
+}
+.login input[type="password"] {
+  font-size: 12px;
+}
+body {
+  padding: 50px 0px 30px 0px;
+}
+h1 {
+  font-size: 21px;
+}
+.login input[type="submit"] {
+  font-size: 12px;
+  padding: 10px 7px;
+  width: 88%;
+}
+.copyright {
+  padding: 85px 0px 0px 0px;
+}
+.copyright p {
+  font-size: 13px;
+}
+.copyright p a{
+  font-size: 13px;
+}
+.login {
+   width: 70.4%;
+  padding: 40px 20px;
+}
+}
+
