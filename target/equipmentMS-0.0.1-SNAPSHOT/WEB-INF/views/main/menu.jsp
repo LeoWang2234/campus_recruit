@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <!-- data-spy="affix" -->
 <ul id="main-nav" class="nav nav-tabs nav-stacked " display="none">
-    <li class="active" style="margin: 0" id="home"><a> <i class="glyphicon glyphicon-th-large"></i> 首页 </a> </li>
+    <%--<li class="active" style="margin: 0" id="home"><a href="#"> <i class="glyphicon glyphicon-th-large"></i> 首页 </a> </li>--%>
     <li style="margin: 0" id="equipmentMenu"><a href="#systemSetting"  data-toggle="collapse">
         <i class="glyphicon glyphicon-cog"></i> 所有招聘
         <%--<span class="pull-right glyphicon glyphicon-chevron-down"></span>--%>

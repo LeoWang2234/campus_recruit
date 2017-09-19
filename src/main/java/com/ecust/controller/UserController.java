@@ -47,6 +47,7 @@ public class UserController {
                     return "forward:/WEB-INF/views/main.jsp";
                 }else {
                     // 登录传进来的名字和 session 里的名字对不上，跳转到登录页面
+                    request.setAttribute("loginMsg", "enter your info first");
                     return "forward:/login.jsp";
                 }
             }
