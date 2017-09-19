@@ -81,7 +81,7 @@
 
 <script type="text/javascript">
 
-    var myContextPath = "${pageContext.request.contextPath}"
+    var myContextPath = "${pageContext.request.contextPath}";
 
     $('#createEquipment').modal()
 

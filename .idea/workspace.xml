@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc9821b-1f8b-41e5-a50c-cd6b06ca8125" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ecust/LoginInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/ecust/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/LoginInterceptor.class" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/classes/com/ecust/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/myjs/timeout.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/target/equipmentMS-0.0.1-SNAPSHOT/WEB-INF/views/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +25,8 @@
       <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="125">
+              <caret line="121" column="51" lean-forward="true" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,15 +49,15 @@
       <file leaf-file-name="addCom.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="113" />
+            <state relative-caret-position="242">
+              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
               <folding>
-                <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
-                <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
-                <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
-                <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
-                <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
-                <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
+                <marker date="1505820573000" expanded="true" signature="7364:7371" ph="×" />
+                <marker date="1505820573000" expanded="true" signature="10719:10737" ph="..." />
+                <marker date="1505820573000" expanded="true" signature="10869:10887" ph="..." />
+                <marker date="1505820573000" expanded="true" signature="11019:11037" ph="..." />
+                <marker date="1505820573000" expanded="true" signature="11584:11590" ph="&amp;nbsp;" />
+                <marker date="1505820573000" expanded="true" signature="11590:11596" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
@@ -258,12 +256,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login_timeout_mediate.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout_mediate.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout_mediate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_timeout.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/myjs/timeout.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
       </list>
     </option>
@@ -1396,7 +1394,7 @@
       <workItem from="1505546866845" duration="29445000" />
       <workItem from="1505785919430" duration="311000" />
       <workItem from="1505786339260" duration="9391000" />
-      <workItem from="1505800738499" duration="17819000" />
+      <workItem from="1505800738499" duration="18061000" />
     </task>
     <servers />
   </component>
@@ -1433,7 +1431,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278102000" />
+    <option name="totallyTimeSpent" value="278344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1251" height="777" extended-state="6" />
@@ -1930,21 +1928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="113" />
-          <folding>
-            <marker date="1505584633000" expanded="true" signature="7363:7370" ph="×" />
-            <marker date="1505584633000" expanded="true" signature="10718:10736" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="10868:10886" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="11018:11036" ph="..." />
-            <marker date="1505584633000" expanded="true" signature="11583:11589" ph="&amp;nbsp;" />
-            <marker date="1505584633000" expanded="true" signature="11589:11595" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/myjs/retrivedata.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1986,10 +1969,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/repair/addCom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <marker date="1505820573000" expanded="true" signature="7364:7371" ph="×" />
+            <marker date="1505820573000" expanded="true" signature="10719:10737" ph="..." />
+            <marker date="1505820573000" expanded="true" signature="10869:10887" ph="..." />
+            <marker date="1505820573000" expanded="true" signature="11019:11037" ph="..." />
+            <marker date="1505820573000" expanded="true" signature="11584:11590" ph="&amp;nbsp;" />
+            <marker date="1505820573000" expanded="true" signature="11590:11596" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="125">
+          <caret line="121" column="51" lean-forward="true" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />

@@ -106,6 +106,8 @@
     </div>
 </div>
 <script type="text/javascript">
+
+    var myContextPath = "${pageContext.request.contextPath}"
     var myTime = setTimeout("Timeout()", 10000);
 
     function resetTime() {
@@ -114,8 +116,7 @@
     }
 
     function Timeout() {
-        alert("您的登录已超时, 请点确定后重新登录!");
-        document.location.href = 'login.jsp';
+        document.location.href = myContextPath + '/login_timeout.jsp';
     }
 
     document.documentElement.onkeydown = resetTime;
