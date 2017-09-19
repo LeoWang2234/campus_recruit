@@ -414,7 +414,10 @@
                                         + "<td align=\"center\"><button type='button' class='btn btn-info btn-xs' onclick='return addToMe("+val.id+")'>"
                                         + "未投"
                                         + "</button>"
-                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return notInterested("
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return addToMeAndSetApplied("
+                                        + val.id
+                                        + ")' data-target='#addUserModal'>已投</button>";
+                                    html += "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return notInterested("
                                         + val.id
                                         + ")' data-target='#addUserModal'>忽略</button>";
                                         html += "</button>"
@@ -512,6 +515,36 @@
                     alert("删除错误");
                 },
             });
+    }
+
+
+    function addToMeAndSetApplied(equipmentId) {
+        var result = confirm("确定执行此操作？");
+        if (result) {
+
+        } else {
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/addToMeAndSetApplied/"+ equipmentId,
+                data: {
+                    "equipmentId": equipmentId
+                },
+                type: "get",
+                success: function (data) {
+                    if (data == true) {
+                        alert("设置成功！");
+                        pagehtml($("#currentPage").val());
+                    } else {
+                        alert("设置失败！");
+                    }
+                },
+                error: function () {
+                    alert("设置错误");
+                },
+            });
+        return false;
     }
 </script>
 

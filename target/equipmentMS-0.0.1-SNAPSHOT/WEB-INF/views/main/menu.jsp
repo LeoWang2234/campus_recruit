@@ -54,6 +54,10 @@
 </ul>
 <script type="text/javascript">
 
+
+    $(function () { $('#systemSetting').collapse('show')});
+
+
     //用户权限管理
     $(function () {
 

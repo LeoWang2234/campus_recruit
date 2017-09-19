@@ -218,6 +218,25 @@ public class EquipmentController {
     }
 
 
+    //更改投递状态
+    @ResponseBody
+    @RequestMapping(value = "/addToMeAndSetApplied/{equipmentId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public boolean addToMeAndSetApplied(@PathVariable("equipmentId") String equipmentId, HttpServletRequest request) {
+        //创建session
+        HttpSession session = request.getSession();
+
+        //获得session中的用户
+        User currentUser = (User) session.getAttribute("currentUser");
+
+        equipmentService.addToMe(Integer.parseInt(equipmentId), currentUser.getId());
+
+        Boolean bool = equipmentService.apply(equipmentId, currentUser.getId());
+
+        return bool;
+    }
+
+
+
     //查询所有角色
     @ResponseBody
     @RequestMapping(value = "/queryAllType", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

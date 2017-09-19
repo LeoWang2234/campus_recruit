@@ -102,7 +102,7 @@ html,body {
 				<jsp:include page="main/menu.jsp"></jsp:include>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10" id="main">
-				<jsp:include page="repair/copyClipBoard.jsp"></jsp:include>
+				<jsp:include page="equipment/listnew.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>
