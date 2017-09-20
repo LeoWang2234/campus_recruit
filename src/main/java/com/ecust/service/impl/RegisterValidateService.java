@@ -38,6 +38,7 @@ public class RegisterValidateService {
         }
 
         currentUser.setNewpassword(userIn.getNewpassword());
+        currentUser.setActiveCode(MD5Util.encode2hex(currentUser.getUserName()));
         userService.updateUserForReNewPwd(currentUser);
         sendEmailToUserForPassword(currentUser, url);
         result.setMessage("我们已向您邮箱发了一封确认邮件，确认后生效");
@@ -165,47 +166,51 @@ public class RegisterValidateService {
         //数据访问层，通过email获取用户信息
         User user = (User) userService.queryUserByName(email);
 
-        if (user.getStatus() == 0) {
-            result = new Result("login", "您的用户名还为你激活，先去邮箱激活吧");
+        if (user == null) {
+            result = new Result("signup", "用户不存在，可能已经被移除，去注册吧");
             return result;
         }
 
-        //验证用户是否存在，点击链接进来激活的，用户一般都存在
-        if (user != null) {
-            //验证用户激活状态
-            if (user.getNewpassword() != null && !user.getNewpassword().equals(user.getPassword())) {
-                ///没激活
-                Date currentTime = new Date();//获取当前时间
-                //验证链接是否过期
-                Date dNow = new Date();   //当前时间
-                Date dBefore = new Date();
-                Calendar calendar = Calendar.getInstance();  //得到日历
-                calendar.setTime(dNow);//把当前时间赋给日历
-                calendar.add(Calendar.DAY_OF_MONTH, -1);  //设置为前一天
-                dBefore = calendar.getTime();   //得到前一天的时间
-                if (dBefore.before(user.getRepwdTime())) {
-                    //验证激活码是否正确
-                    if (validateCode.equals(user.getActiveCode())) {
-                        //激活成功， //并更新用户的激活状态，为已激活
-                        user.setPassword(user.getNewpassword());
-                        result = new Result("login", "重置密码成功，点我去登录吧");
-                        // 注册完就将 activecode 置为空
-                        user.setActiveCode("");
-                        userService.updateUser(user);
-                    } else {
-                        result = new Result("login", "您已经重置过了，点我去登录吧");
-                    }
-                } else {
-                    // 1 成功 2 重复激活 3 链接失效 4 未知错误
-                    // 验证邮件已经超时，拒绝验证
-                    // 超时后，如果该用户未验证，则删除该用户
-                    result = new Result("password", "激活邮件已经失效，点我重新找回密码吧");
-                }
-            } else {
-                result = new Result("login", "密码已经重置成功，点我去登录");
-            }
+        if (user != null && user.getStatus() == 0) {
+            result = new Result("login", "您的用户名还未你激活，先去邮箱激活吧");
+            return result;
         }
-        return result;
+        //验证用户是否存在，点击链接进来激活的，用户一般都存在
+        if (!validateCode.equals(user.getActiveCode())) {
+            result = new Result("password", "激活邮件已经失效，点我重新找回密码吧");
+            return result;
+        }
+        //验证用户激活状态
+        if (user.getNewpassword() != null) {
+            ///没激活
+            Date currentTime = new Date();//获取当前时间
+            //验证链接是否过期
+            Date dNow = new Date();   //当前时间
+            Date dBefore = new Date();
+            Calendar calendar = Calendar.getInstance();  //得到日历
+            calendar.setTime(dNow);//把当前时间赋给日历
+            calendar.add(Calendar.DAY_OF_MONTH, -1);  //设置为前一天
+            dBefore = calendar.getTime();   //得到前一天的时间
+            if (dBefore.before(user.getRepwdTime())) {
+                //验证激活码是否正确
+                //激活成功， //并更新用户的激活状态，为已激活
+                user.setPassword(user.getNewpassword());
+                user.setActiveCode(MD5Util.encode2hex(user.getUserName()));
+                result = new Result("login", "重置密码成功，点我去登录吧");
+                userService.updateUser(user);
+                return result;
+            }else {
+                result = new Result("login", "验证链接已经过期");
+                userService.updateUser(user);
+                return result;
+            }
+        } else {
+            // 1 成功 2 重复激活 3 链接失效 4 未知错误
+            // 验证邮件已经超时，拒绝验证
+            // 超时后，如果该用户未验证，则删除该用户
+            result = new Result("password", "新密码无效，点我重新找回密码吧");
+            return result;
+        }
     }
 
 
@@ -222,7 +227,7 @@ public class RegisterValidateService {
         //验证用户是否存在，点击链接进来激活的，用户一般都存在
         if (user != null) {
             //验证用户激活状态
-            if (user.getStatus() == 0) {
+            if (validateCode.equals(user.getActiveCode())) {
                 ///没激活
                 Date currentTime = new Date();//获取当前时间
                 //验证链接是否过期
@@ -235,13 +240,16 @@ public class RegisterValidateService {
 
                 if (dBefore.before(user.getCreateTime())) {
                     //验证激活码是否正确
-                    if (validateCode.equals(user.getActiveCode())) {
+                    if (user.getStatus() == 0) {
                         //激活成功， //并更新用户的激活状态，为已激活
                         System.out.println("==sq===" + user.getStatus());
                         user.setStatus(1);//把状态改为激活
+                        user.setActiveCode(MD5Util.encode2hex(user.getUserName()));
                         userService.updateUser(user); // 只有这个会更新 创建时间
-                        System.out.println("==sh===" + user.getStatus());
                         result = new Result("login", "激活成功，点我去登录吧");
+                        return result;
+                    } else {
+                        result = new Result("login", "您已经激活，点我去登录");
                         return result;
                     }
                 } else {
@@ -254,14 +262,12 @@ public class RegisterValidateService {
                     return result;
                 }
             } else {
-                result = new Result("login", "您已经激活，点我去登录");
+                result = new Result("login", "链接已经失效，不如去登录吧");
                 return result;
             }
         } else {
             result = new Result("signup", "该用户已别移除，重新注册吧");
             return result;
         }
-
-        return new Result("login", "服务器内部错误");
     }
 }

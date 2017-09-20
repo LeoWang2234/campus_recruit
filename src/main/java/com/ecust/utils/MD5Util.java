@@ -45,10 +45,8 @@ public class MD5Util {
             }
 
             hexString.append(hex);
-            hexString.append(String.valueOf(System.currentTimeMillis()));
-
         }
-
+        hexString.append(System.currentTimeMillis() + "");
         return hexString.toString();
     }
 
