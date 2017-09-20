@@ -8,6 +8,8 @@ public class User implements Serializable{
 	//账号
 	private String userName;
 	private String password;
+
+	private String newpassword;
 	//真实姓名
 	private String trueName;
 	//角色：管理员，使用者，维修者
@@ -15,8 +17,45 @@ public class User implements Serializable{
 	//部门
 	private String deptName;
 	private Integer createId;
-	private Date createTime; 
+	private Date createTime;  // 创建账号的时间
+	private Date repwdTime;  // 申请修改密码的时间
+
 	private String phone;
+	private String activeCode;
+
+	private Integer status;
+
+	public Date getRepwdTime() {
+		return repwdTime;
+	}
+
+	public void setRepwdTime(Date repwdTime) {
+		this.repwdTime = repwdTime;
+	}
+
+	public String getNewpassword() {
+		return newpassword;
+	}
+	public void setNewpassword(String newpassword) {
+		this.newpassword = newpassword;
+	}
+
+	public String getActiveCode() {
+		return activeCode;
+	}
+
+	public void setActiveCode(String activeCode) {
+		this.activeCode = activeCode;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
 	public Integer getCreateId() {
 		return createId;
 	}

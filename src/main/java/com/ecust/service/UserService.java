@@ -3,6 +3,7 @@ package com.ecust.service;
 import java.util.Map;
 
 import com.ecust.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 public interface UserService {
 	public User login(User user);
@@ -19,7 +20,11 @@ public interface UserService {
 
 	public Map<String, Object> queryUserById(int id);
 
+	public User queryUserByName(String  userName);
+
 	public Boolean updateUser(User user);
+
+	public Boolean updateUserForReNewPwd(User user);
 
 	public Boolean deleteUser(String id);
 

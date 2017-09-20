@@ -1,12 +1,21 @@
 package com.ecust.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.text.ParseException;
 import java.util.Map;
 
+import javax.imageio.spi.RegisterableService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.ecust.pojo.RUser;
+import com.ecust.pojo.Result;
+import com.ecust.service.impl.RegisterValidateService;
 import com.ecust.utils.DataTrans;
+import com.ecust.utils.EncodingTool;
+import com.ecust.utils.MD5Util;
+import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -20,6 +29,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.ecust.pojo.Equipment;
 import com.ecust.pojo.User;
 import com.ecust.service.UserService;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/user")
@@ -27,6 +37,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RegisterValidateService registerValidateService;
 
     //登录
     @RequestMapping("/login")
@@ -45,9 +58,9 @@ public class UserController {
             if (name != null) {
                 if (name.equals(currentUser.getUserName())) {
                     return "forward:/WEB-INF/views/main.jsp";
-                }else {
+                } else {
                     // 登录传进来的名字和 session 里的名字对不上，跳转到登录页面
-                    request.setAttribute("loginMsg", "enter your info first");
+                    request.setAttribute("loginMsg", "input your info please");
                     return "forward:/login.jsp";
                 }
             }
@@ -57,7 +70,7 @@ public class UserController {
 
         //用户名或密码为空,用户输入账号或密码不能为字符串“null”
         if (name == null || password == null) {
-            request.setAttribute("loginMsg", "enter your info first");
+            request.setAttribute("loginMsg", "input your info please");
             return "forward:/login.jsp";
         }
         //注册时进行空格等信息的过滤
@@ -67,10 +80,15 @@ public class UserController {
         }
         currentUser = userService.login(user);
 
+
         if (currentUser == null) {
             request.setAttribute("loginMsg", "username or password is wrong");
             return "forward:/login.jsp";
         } else {
+            if (currentUser.getStatus() != null && currentUser.getStatus() == 0) {
+                request.setAttribute("loginMsg", "Check Email for validation first please");
+                return "forward:/login.jsp";
+            }
             session.setAttribute("currentUser", currentUser);
             return "forward:/WEB-INF/views/main.jsp";
         }
@@ -109,43 +127,94 @@ public class UserController {
     }
 
     //添加角色
+    @RequestMapping(value = "/createUser/{action}", method = RequestMethod.GET)
+    public String createUserGet(HttpServletRequest request) throws UnsupportedEncodingException {
+        return "forward:/login.jsp";
+    }
+
+    //添加角色
     @ResponseBody
-    @RequestMapping(value = "/createUser", method = RequestMethod.POST)
-    public String createUser(HttpServletRequest request) {
-        String name = request.getParameter("userName");
-        String password = request.getParameter("password");
-        User user = new User();
-        user.setRoleName("用户");
-        user.setPassword(password);
-        user.setUserName(name);
+    @RequestMapping(value = "/createUser/{action}", method = RequestMethod.POST)
+    public ModelAndView createUser(HttpServletRequest request, @PathVariable int action) throws UnsupportedEncodingException {
 
         String url = request.getScheme() + "://"
                 + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
 
-        // 检查用户是否已经注册过啦
-        User currentUser = userService.signUp(user);
+        String name = request.getParameter("userName");
+        String password = request.getParameter("password");
 
-        if (currentUser != null) {
-            return "This name is taken  Or You've already signed up<br><a href = \"" + url + "/signup\">Click  Me To Re-Sign-up</a><br>" +
-                    "<a href = \"" + url + "\">Click Me To Login</a>";
-        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("user/validation");
 
-        int userNums = userService.countUserNum();
-        if (userNums <= 50) {
-            boolean bool = userService.createUser(user);
-            if (bool) {
-                return "Sign up succeed <a href = \"" + url + "\">Click  Me To Login</a>";
-            } else {
-                return "Sign up Failed <a href = \"" + url + "/signup\">Click Me To Re-Sign-Up</a>";
-            }
+
+        Result result = null;
+        User user = new User();
+        if (action == 2) {
+            // 此时是找回密码的逻辑
+            user.setUserName(name);
+            user.setNewpassword(password);
+            user.setActiveCode(MD5Util.encode2hex(name));
+            result = registerValidateService.findPswBack(user, url);
         } else {
-            return "User Number is full<br>" +
-                    "Anyway, you can still login with a guest account<br>" +
-                    "username: guest<br>" +
-                    "password: guest<br>" +
-                    "<a href = \"" + url + "\">Click  Me To Login</a>";
+            // 用户注册的逻辑
+            user.setRoleName("user");
+            user.setPassword(password);
+            // 设置激活状态，默认未激活
+            user.setStatus(0);
+            user.setUserName(name);
+            user.setActiveCode(MD5Util.encode2hex(name));
+            result = registerValidateService.login(user, url);
         }
+
+        modelAndView.addObject("message", result.getMessage());
+
+        if (result.getCode().equals("signup")) {
+            modelAndView.addObject("url", url + "/signup");
+        } else {
+            // 去登录
+            modelAndView.addObject("url", url);
+        }
+        return modelAndView;
     }
+
+
+    //获取要修改的用户
+    @ResponseBody
+    @RequestMapping(value = "/validateUser/{action}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ModelAndView validateUser(@PathVariable("action") int action,
+                                     @RequestParam("email") String name,
+                                     @RequestParam("activeCode") String activeCode, HttpServletRequest request) {
+
+        String url = request.getScheme() + "://"
+                + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("user/validation");
+
+        Result result = null;
+        try {
+            if (action == 1) {
+                result = registerValidateService.processActivate(name, activeCode);
+            }else {
+                result = registerValidateService.processFindPassWordBack(name, activeCode);
+            }
+            modelAndView.addObject("message", result.getMessage());
+            if (result.getCode().equals("login")) {
+                modelAndView.addObject("url", url);
+            }
+            if (result.getCode().equals("signup")) {
+                modelAndView.addObject("url", url + "/signup");
+            }
+            if (result.getCode().equals("password")) {
+                modelAndView.addObject("url", url + "/findpasswordback");
+            }
+        } catch (ParseException e) {
+            modelAndView.addObject("message", "Server internal Error");
+        }
+
+        return modelAndView;
+    }
+
 
     //获取要修改的用户
     @ResponseBody

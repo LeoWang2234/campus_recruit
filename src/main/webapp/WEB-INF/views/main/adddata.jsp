@@ -69,6 +69,8 @@
                     </div>
                 </div>
 
+                <input type="hidden" name="token" value="${token}">
+
                 <div class="modal-footer" style="text-align:center">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消
                     </button>

@@ -16,4 +16,9 @@ public class SignController {
         return "main/signup";
     }
 
+    @RequestMapping("/findpasswordback")
+    public String findpasswordback(HttpSession session){
+        return "main/findpasswordback";
+    }
+
 }

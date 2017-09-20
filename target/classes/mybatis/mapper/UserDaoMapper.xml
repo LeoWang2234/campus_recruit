@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ecust.dao.UserDao">
-	<select id="login" parameterType="User" resultType="User">
+    <select id="login" parameterType="User" resultType="User">
 		SELECT 
 			* FROM equ_user e
 		WHERE
@@ -11,14 +11,14 @@
 	
 	</select>
 
-	<select id="signUp" parameterType="User" resultType="User">
+    <select id="signUp" parameterType="User" resultType="User">
 		SELECT
 		* FROM equ_user e
 		WHERE
 		e.userName = #{userName}  limit 1
 
 	</select>
-	<select id="queryAllUser" resultType="java.util.Map">
+    <select id="queryAllUser" resultType="java.util.Map">
 		SELECT e2.*,e1.trueName AS createName
 		
 		FROM 
@@ -27,7 +27,7 @@
 			id	
 	</select>
 
-	<select id="queryAllRole" resultType="java.util.Map">
+    <select id="queryAllRole" resultType="java.util.Map">
 		SELECT er.*,eu.trueName AS createName 
 		FROM 
 			equ_role er,equ_user eu
@@ -35,7 +35,7 @@
 			er.createId = eu.id
 		ORDER BY er.id ASC
 	</select>
-	<insert id="createRole">
+    <insert id="createRole">
 		INSERT INTO
 			equ_role(
 				roleName,
@@ -51,13 +51,13 @@
 		)
 	
 	</insert>
-	<delete id="deleteRole">
+    <delete id="deleteRole">
 		DELETE FROM
 			equ_role
 		WHERE
 			id = #{id}
 	</delete>
-	<insert id="createUser" parameterType="User">
+    <insert id="createUser" parameterType="User">
 		INSERT INTO
 			equ_user(
 				userName,
@@ -67,7 +67,9 @@
 				deptName,
 				createId,
 				createTime,
-				phone
+				phone,
+				activeCode,
+				status
 			)
 		VALUES(
 			#{userName},
@@ -77,10 +79,12 @@
 			#{deptName},
 			#{createId},
 			NOW(),
-			#{phone}
+			#{phone},
+			#{activeCode},
+			#{status}
 		)
 	</insert>
-	<select id="queryUserById" resultType="java.util.Map">
+    <select id="queryUserById" resultType="java.util.Map">
 		SELECT
 			*
 		FROM
@@ -89,30 +93,62 @@
 			id = #{id}
 			
 	</select>
-	<select id="countUserNum" resultType="int">
+    <select id="queryUserByName" resultType="User">
+		SELECT
+		*
+		FROM
+		equ_user
+		WHERE
+		userName = #{userName} limit 1
+
+	</select>
+    <select id="countUserNum" resultType="int">
 		SELECT
 		count(*)
 		FROM
 		equ_user
 	</select>
 
-	<update id="updateUser" parameterType="User">
+    <update id="updateUser" parameterType="User">
 		UPDATE 
 			equ_user
 		SET
 			userName = #{userName},
 			password = #{password},
+			newpassword = #{newpassword},
 			roleName = #{roleName},
 			trueName = #{trueName},
 			deptName = #{deptName}, 
 			createId = #{createId},
-			createTime = NOW(),
-			phone = #{phone}
+			phone = #{phone},
+			activeCode = #{activeCode},
+			status = #{status}
 		WHERE
 			id = #{id}
 	
 	</update>
-	<delete id="deleteUser">
+
+
+	<update id="updateUserForReNewPwd" parameterType="User">
+		UPDATE
+		equ_user
+		SET
+		userName = #{userName},
+		password = #{password},
+		newpassword = #{newpassword},
+		roleName = #{roleName},
+		trueName = #{trueName},
+		deptName = #{deptName},
+		createId = #{createId},
+		repwdTime = NOW(),
+		phone = #{phone},
+		activeCode = #{activeCode},
+		status = #{status}
+		WHERE
+		id = #{id}
+
+	</update>
+    <delete id="deleteUser">
 		DELETE FROM
 			equ_user
 		WHERE

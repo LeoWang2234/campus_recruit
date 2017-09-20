@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private UserDao userDao;
+
 	public User login(User user){
 		return userDao.login(user);
 	}
@@ -96,19 +97,32 @@ public class UserServiceImpl implements UserService {
 		Map<String, Object> map = userDao.queryUserById(id);
 		return map;
 	}
+
+	@Override
+	public User queryUserByName(String userName) {
+		User user = userDao.queryUserByName(userName);
+		return user;
+	}
+
 	@Override
 	public Boolean updateUser(User user) {
 		
 		userDao.updateUser(user);
 		return true;
 	}
+
+
+	@Override
+	public Boolean updateUserForReNewPwd(User user) {
+		userDao.updateUserForReNewPwd(user);
+		return true;
+	}
+
 	@Override
 	public Boolean deleteUser(String id) {
 		
 		userDao.deleteUser(id);
 		return true;
 	}
-
-
 
 }

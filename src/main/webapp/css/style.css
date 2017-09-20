@@ -127,7 +127,7 @@ form {
 }
 .login input[type="submit"]:hover {
 	background:#CC6E91;
-	border-bottom: 3px solid #C14171;
+	border-bottom: 3px solid #fff;
 	transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -148,7 +148,7 @@ form {
   color: #2ECC71;
 }
 .copyright p a:hover{
-	color: #E92E74;
+	color: #2ECC71;
 	 transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;

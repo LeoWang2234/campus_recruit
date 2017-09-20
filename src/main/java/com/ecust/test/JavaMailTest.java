@@ -11,7 +11,7 @@ public class JavaMailTest {
     @Test
     public void sendMail() {
         MailService mailService = new MailServiceImpl();
-        mailService.sendMail();
+//        mailService.sendMail();
 
     }
 }

@@ -74,7 +74,7 @@ width:992px;
                             <div>
                                 <div class="login-item">
                                     <span class="span_user glyphicon glyphicon-user "></span>
-                                    <input type="text"  class="form-input" id="user" maxlength="21" placeholder="用户名" name="userName" value="">
+                                    <input type="text"  class="form-input" id="user" maxlength="21" placeholder="注册邮箱" name="userName" value="">
                                 </div>
                             </div>
                             <div>
@@ -85,19 +85,29 @@ width:992px;
                             </div>
 
                             <input type="submit" class="formBtn-login" value="登 录" />
+                            <br>
                             <div>
-                                <p style="text-align: center"><a href="${pageContext.request.contextPath}/signup"  >点 我 注 册</a></p>
+                            <div>
+                                <p style="text-align: center">
+                                    <a href="${pageContext.request.contextPath}/signup"  >点 我 注 册</a>
+                                    &nbsp;&nbsp; &nbsp;&nbsp;
+                                    <a href="${pageContext.request.contextPath}/findpasswordback"  >找 回 密 码</a>
+                                </p>
+                            </div>
                             </div>
 
                         </form>
                     </div>
-                    <div class="clear"></div>
+                    <br>
+                    <%--<div class="clear"></div>--%>
                     <div class="errorMsg">
-                        <c:if test="${loginMsg !=null}">
+
                         <center>
-                        	<div class="ts"><img src="${pageContext.request.contextPath}/images/ts.png" > ${loginMsg}</div>
+                            <%--<div class="ts">--%>
+
+                            <h4 > <font color="#ff4500">${loginMsg} </font></h4>
                         </center>
-                        </c:if>
+
                         <!-- <div class="forgotpassword">
                              <a href="#" onclick="link()">忘记密码？</a>
                         </div> -->

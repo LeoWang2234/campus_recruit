@@ -24,7 +24,11 @@ public interface UserDao {
 
 	public Map<String, Object> queryUserById(@Param("id")int id);
 
+	public User queryUserByName(@Param("userName") String  userName);
+
 	public void updateUser(User user);
+
+	public void updateUserForReNewPwd(User user);
 
 	public void deleteUser(@Param("id")String id);
 
