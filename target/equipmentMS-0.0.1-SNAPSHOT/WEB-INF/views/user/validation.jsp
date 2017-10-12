@@ -31,7 +31,7 @@
     <a href="${url}"><h1>${message}</h1></a>
 </div>
 <div class="copyright">
-    <p> <a href="#">喜欢你，没道理</a></p>
+    <p> <a href="#">心随我动</a></p>
 </div>
 <!--login form end here-->
 </body>

@@ -277,9 +277,9 @@
                                         + "&nbsp;&nbsp;<button type='button' class='btn btn-info btn-xs' onclick='return apply(" + val.id + ")'>";
                                     html += "置为未投";
                                     html += "</button>"
-                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return deleteEquipment("
+                                        + "&nbsp;&nbsp;<button type='button' class='btn btn-danger btn-xs' onclick='return notInterested("
                                         + val.id
-                                        + ")' data-target='#addUserModal'>删除</button></td></tr>>";
+                                        + ")' data-target='#addUserModal'>忽略</button></td></tr>>";
                                     $("#equList").append(html);
 
                                 });
@@ -291,6 +291,37 @@
                 error: function (error) {
                     alert("error");
                 }
+            });
+    }
+    //删除设备
+    function notInterested(equipmentId) {
+
+        if (!equipmentId) {
+            alert('Error！');
+            return false;
+        }
+        var result = confirm("确定不感兴趣么？");
+        if (result) {
+
+        } else {
+            return false;
+        }
+        $
+            .ajax({
+                url: "${pageContext.request.contextPath}/equipment/notInterested/"
+                + equipmentId,
+                type: "get",
+                success: function (data) {
+                    if (data == true) {
+                        alert("设置成功！");
+                        pagehtml($("#currentPage").val());
+                    } else {
+                        alert("设置失败！");
+                    }
+                },
+                error: function () {
+                    alert("设置出错");
+                },
             });
     }
 

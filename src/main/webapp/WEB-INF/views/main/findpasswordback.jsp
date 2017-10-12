@@ -13,14 +13,14 @@
     <form action="${pageContext.request.contextPath}/user/createUser/2" method="post" class="flex-c-c" id="myform"
           onsubmit="return dosubmit()">
         <ul class="select__list">
-            <li id="js-usr-rtn" class="select__label">Where's My Psw</li>
+            <li id="js-usr-rtn" class="select__label">找回密码</li>
             <%--<li id="js-usr-new" class="select__label select__label--active">Sign up</li>--%>
             <%--<li id="js-usr-rst" class="select__label">Forget PassWord</li>--%>
         </ul>
         <span class="pointer"></span>
-        <input type="email" placeholder="Email Address" class="ui-field" id="js-field__email" name="userName"/>
-        <input type="password" placeholder="New Password" class="ui-field" id="js-field__pass" name="password" />
-        <input type="password" placeholder="Confirm New Password" class="ui-field" id="js-field__r-pass" />
+        <input type="email" placeholder="注册邮箱" class="ui-field" id="js-field__email" name="userName"/>
+        <input type="password" placeholder="新密码" class="ui-field" id="js-field__pass" name="password" />
+        <input type="password" placeholder="确认新密码" class="ui-field" id="js-field__r-pass" />
         <button id="js-btn" class="ui-button" onclick="return signup()">重置密码</button>
     </form>
 </div>

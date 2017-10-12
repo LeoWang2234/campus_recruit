@@ -13,15 +13,15 @@
     <form action="${pageContext.request.contextPath}/user/createUser/1" method="post" class="flex-c-c" id="myform"
               onsubmit="return dosubmit()">
         <ul class="select__list">
-            <li id="js-usr-rtn" class="select__label">Sign Up</li>
+            <li id="js-usr-rtn" class="select__label">注册新用户</li>
             <%--<li id="js-usr-new" class="select__label select__label--active">Sign up</li>--%>
             <%--<li id="js-usr-rst" class="select__label">Forget PassWord</li>--%>
         </ul>
         <span class="pointer"></span>
         <input type="hidden" name="token" value="${token}">
-        <input type="email" placeholder="Email Address" class="ui-field" id="js-field__email" name="userName"/>
-        <input type="password" placeholder="Password" class="ui-field" id="js-field__pass" name="password"/>
-        <input type="password" placeholder="Confirm Password" class="ui-field" id="js-field__r-pass"/>
+        <input type="email" placeholder="邮箱地址" class="ui-field" id="js-field__email" name="userName"/>
+        <input type="password" placeholder="密码" class="ui-field" id="js-field__pass" name="password"/>
+        <input type="password" placeholder="确认密码" class="ui-field" id="js-field__r-pass"/>
         <button id="js-btn" class="ui-button --usr-new" onclick="return signup()"></button>
     </form>
 </div>
@@ -52,10 +52,10 @@
         var password = $("#js-field__pass").val();
         var password2 = $("#js-field__r-pass").val();
         if (!userName || !password || !password2) {
-            alert("Invalid Input");
+            alert("无效的输入");
             return false;
         } else if (password2 != password) {
-            alert("password should be same")
+            alert("两次密码不一致")
             return false;
         } else {
 //            document.getElementById("myform").submit();

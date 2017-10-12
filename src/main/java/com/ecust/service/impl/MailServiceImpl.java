@@ -21,7 +21,7 @@ public class MailServiceImpl implements MailService {
     public static final String PROTOCOL = "smtp";
     public static final int PORT = 25;
     public static final String FROM = "wangcheng2234@163.com";//发件人的email
-    public static final String PWD = "wangcheng1234";//发件人密码
+    public static final String PWD = "wangcheng.163";//发件人密码
 //    @Override
 //    public void sendMail(User user, String content) {
 //        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
@@ -77,7 +77,7 @@ public class MailServiceImpl implements MailService {
         try {
             System.out.println("--send--"+content);
             // Instantiate a message
-            Message msg = new MimeMessage(session);
+            final Message msg = new MimeMessage(session);
 
             //Set message attributes
             msg.setFrom(new InternetAddress(FROM));
@@ -88,7 +88,18 @@ public class MailServiceImpl implements MailService {
             msg.setContent(content , "text/html;charset=utf-8");
 
             //Send the message
-            Transport.send(msg);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    // 邮件发送失败，则一直重发，直到成功
+                        try {
+                            Transport.send(msg);
+                        } catch (MessagingException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+            }).start();
         }
         catch (MessagingException mex) {
             mex.printStackTrace();
